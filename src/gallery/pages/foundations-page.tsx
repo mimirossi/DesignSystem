@@ -5,23 +5,45 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 import { Slider } from "@/components/ui/slider"
 import { copyToClipboard } from "@/gallery/lib/copy"
-import { FAMILIES, STEPS, contrast, paletteHex, semanticRoles, typeRoles } from "@/gallery/lib/tokens"
+import {
+  FAMILIES,
+  STEPS,
+  contrast,
+  paletteHex,
+  semanticRoles,
+  spacingPrimitives,
+  spacingRoles,
+  typeRoles,
+} from "@/gallery/lib/tokens"
 
-function Section({ id, title, description, children }: {
+function Section({
+  id,
+  title,
+  description,
+  children,
+}: {
   id: string
   title: string
   description?: React.ReactNode
   children: React.ReactNode
 }) {
   return (
-    <section className="flex flex-col gap-4">
-      <div className="flex flex-col gap-1">
-        <h2 id={id} className="scroll-mt-20 font-heading text-xl font-medium tracking-tight">
+    <section className="flex flex-col gap-stack-md">
+      <div className="flex flex-col gap-stack-xs">
+        <h2
+          id={id}
+          className="scroll-mt-20 font-heading text-xl font-medium tracking-tight"
+        >
           {title}
         </h2>
-        {description && <p className="max-w-3xl text-sm text-muted-foreground">{description}</p>}
+        {description && (
+          <p className="max-w-3xl text-sm text-muted-foreground">
+            {description}
+          </p>
+        )}
       </div>
       {children}
     </section>
@@ -32,14 +54,14 @@ function Section({ id, title, description, children }: {
 
 function Palette() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-stack-md">
       {FAMILIES.map((family) => (
-        <div key={family.id} className="flex flex-col gap-2">
-          <div className="flex items-baseline gap-2 text-sm">
+        <div key={family.id} className="flex flex-col gap-stack-xs">
+          <div className="flex items-baseline gap-gap-sm text-sm">
             <span className="font-medium">{family.label}</span>
             <span className="text-muted-foreground">{family.role}</span>
           </div>
-          <div className="grid grid-cols-5 gap-2 sm:grid-cols-10">
+          <div className="grid grid-cols-5 gap-gap-sm sm:grid-cols-10">
             {STEPS.map((step) => {
               const hex = paletteHex(family.id, step)
               const token = `${family.id}-${step}`
@@ -48,7 +70,7 @@ function Palette() {
                   key={step}
                   type="button"
                   onClick={() => copyToClipboard(`bg-${token}`, `bg-${token}`)}
-                  className="group flex flex-col gap-1 rounded-control-md text-left outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+                  className="group flex flex-col gap-stack-xs rounded-control-md text-left outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
                   aria-label={`Copy class bg-${token} (${hex})`}
                 >
                   <span
@@ -59,7 +81,9 @@ function Palette() {
                     {family.code}
                     {step}
                   </span>
-                  <span className="font-mono text-[0.7rem] text-muted-foreground">{hex}</span>
+                  <span className="font-mono text-[0.7rem] text-muted-foreground">
+                    {hex}
+                  </span>
                 </button>
               )
             })}
@@ -73,7 +97,12 @@ function Palette() {
 /* ---------- Semantic roles (from the Figma export) ---------- */
 
 function Swatch({ hex }: { hex: string }) {
-  return <span className="size-4 shrink-0 rounded-control-2xs ring-1 ring-foreground/20" style={{ background: hex }} />
+  return (
+    <span
+      className="size-4 shrink-0 rounded-control-2xs ring-1 ring-foreground/20"
+      style={{ background: hex }}
+    />
+  )
 }
 
 function SemanticRoles() {
@@ -90,15 +119,19 @@ function SemanticRoles() {
         </thead>
         <tbody>
           {roles.map((role) => (
-            <tr key={`${role.group}.${role.name}`} className="border-b last:border-b-0">
+            <tr
+              key={`${role.group}.${role.name}`}
+              className="border-b last:border-b-0"
+            >
               <td className="px-4 py-3 font-mono text-xs">
                 {role.group}.{role.name}
               </td>
               {[role.light, role.dark].map((mode, i) => (
                 <td key={i} className="px-4 py-3">
-                  <span className="flex items-center gap-2 font-mono text-xs">
+                  <span className="flex items-center gap-gap-sm font-mono text-xs">
                     <Swatch hex={mode.hex} />
-                    {mode.alias} <span className="text-muted-foreground">{mode.hex}</span>
+                    {mode.alias}{" "}
+                    <span className="text-muted-foreground">{mode.hex}</span>
                   </span>
                 </td>
               ))}
@@ -117,7 +150,11 @@ const PAIRS = [
   { label: "Secondary text", fg: "muted-foreground", bg: "background" },
   { label: "Text on card", fg: "card-foreground", bg: "card" },
   { label: "Primary button label", fg: "primary-foreground", bg: "primary" },
-  { label: "Secondary button label", fg: "secondary-foreground", bg: "secondary" },
+  {
+    label: "Secondary button label",
+    fg: "secondary-foreground",
+    bg: "secondary",
+  },
   { label: "Link", fg: "link", bg: "background" },
   { label: "Link on card", fg: "link", bg: "card" },
   { label: "Highlight badge", fg: "highlight-foreground", bg: "highlight" },
@@ -146,23 +183,48 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
 
   React.useEffect(() => {
     const scope = ref.current!
-    setRatios(PAIRS.map((pair) => contrast(resolveColor(scope, pair.fg), resolveColor(scope, pair.bg))))
+    setRatios(
+      PAIRS.map((pair) =>
+        contrast(resolveColor(scope, pair.fg), resolveColor(scope, pair.bg))
+      )
+    )
   }, [])
 
   return (
-    <div ref={ref} className={cn(mode, "flex flex-col gap-3 rounded-xl border bg-background p-4 text-foreground")}>
-      <p className="font-mono text-xs tracking-wide text-muted-foreground uppercase">{mode === "light" ? "Chiaro" : "Scuro"}</p>
+    <div
+      ref={ref}
+      className={cn(
+        mode,
+        "flex flex-col gap-stack-sm rounded-xl border bg-background p-inset-md text-foreground"
+      )}
+    >
+      <p className="font-mono text-xs tracking-wide text-muted-foreground uppercase">
+        {mode === "light" ? "Chiaro" : "Scuro"}
+      </p>
       <ul className="flex flex-col">
         {PAIRS.map((pair, i) => {
           const ratio = ratios[i] ?? 0
           const pass = ratio >= ("ui" in pair ? 3 : 4.5)
           return (
-            <li key={pair.label} className="flex items-center gap-3 border-b py-2 last:border-b-0">
+            <li
+              key={pair.label}
+              className="flex items-center gap-gap-sm border-b py-2 last:border-b-0"
+            >
               <span
                 className="grid h-8 w-12 shrink-0 place-items-center rounded-control-md text-sm font-semibold ring-1 ring-foreground/10"
-                style={{ background: `var(--${pair.bg})`, color: `var(--${pair.fg})` }}
+                style={{
+                  background: `var(--${pair.bg})`,
+                  color: `var(--${pair.fg})`,
+                }}
               >
-                {"ui" in pair ? <span className="size-4 rounded-full border-3" style={{ borderColor: `var(--${pair.fg})` }} /> : "Aa"}
+                {"ui" in pair ? (
+                  <span
+                    className="size-4 rounded-full border-3"
+                    style={{ borderColor: `var(--${pair.fg})` }}
+                  />
+                ) : (
+                  "Aa"
+                )}
               </span>
               <span className="flex min-w-0 flex-1 flex-col">
                 <span className="text-sm">{pair.label}</span>
@@ -170,14 +232,22 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
                   --{pair.fg} / --{pair.bg}
                 </span>
               </span>
-              <span className="font-mono text-xs tabular-nums">{ratio.toFixed(2)}:1</span>
+              <span className="font-mono text-xs tabular-nums">
+                {ratio.toFixed(2)}:1
+              </span>
               <span
                 className={cn(
-                  "inline-flex items-center gap-1 rounded-control-xs px-2 py-1 text-xs font-medium",
-                  pass ? "bg-highlight text-highlight-foreground" : "bg-destructive/10 text-destructive"
+                  "inline-flex items-center gap-gap-xs rounded-control-xs px-2 py-1 text-xs font-medium",
+                  pass
+                    ? "bg-highlight text-highlight-foreground"
+                    : "bg-destructive/10 text-destructive"
                 )}
               >
-                {pass ? <CheckIcon className="size-3" /> : <XIcon className="size-3" />}
+                {pass ? (
+                  <CheckIcon className="size-3" />
+                ) : (
+                  <XIcon className="size-3" />
+                )}
                 {pass ? "Pass" : "Fail"}
               </span>
             </li>
@@ -192,24 +262,41 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
 
 function BrandSample({ mode }: { mode: "light" | "dark" }) {
   return (
-    <div className={cn(mode, "flex flex-col gap-4 rounded-xl border bg-card p-6 text-card-foreground")}>
-      <div className="flex items-center justify-between gap-2">
-        <span className="font-mono text-xs uppercase">{mode === "light" ? "Tema chiaro / S50" : "Tema scuro / N800"}</span>
-        <Badge variant="highlight">
-          <CheckIcon data-icon="inline-start" />
-          Biglietti disponibili
-        </Badge>
+    <div
+      className={cn(
+        mode,
+        "@container flex flex-col gap-stack-lg rounded-xl border bg-card p-inset-lg text-card-foreground"
+      )}
+    >
+      <div className="flex flex-col gap-stack-md">
+        <div className="flex items-center justify-between gap-gap-sm">
+          <span className="font-mono text-xs uppercase">
+            {mode === "light" ? "Tema chiaro / S50" : "Tema scuro / N800"}
+          </span>
+          <Badge variant="highlight">
+            <CheckIcon data-icon="inline-start" />
+            Biglietti disponibili
+          </Badge>
+        </div>
+        <div className="flex flex-col">
+          <h3 className="font-heading text-2xl font-bold tracking-tight">
+            Ci vediamo sotto cassa.
+          </h3>
+          <p className="text-muted-foreground">
+            Giovedì, dalle 23:00 · House e hardgroove. La notte LOCAMIMI
+            comincia qui.
+          </p>
+        </div>
       </div>
-      <h3 className="font-heading text-2xl font-bold tracking-tight">Ci vediamo sotto cassa.</h3>
-      <p className="text-muted-foreground">Giovedì, dalle 23:00 · House e hardgroove. La notte LOCAMIMI comincia qui.</p>
-      <div className="flex flex-wrap items-center gap-4">
+      {/* Stacks below 28rem of card width instead of wrapping, so the
+          distances stay on tokens: stack-sm stacked, gap-md side by side. */}
+      <div className="flex flex-col items-start gap-stack-sm @md:flex-row @md:items-center @md:gap-gap-md">
         <Button size="lg" data-force-focus="">
           Prendi il tuo posto
           <ArrowRightIcon data-icon="inline-end" />
         </Button>
         <Button variant="link">Scopri la line-up</Button>
       </div>
-      <p className="text-xs text-muted-foreground">The primary button is shown in its focus state.</p>
     </div>
   )
 }
@@ -225,7 +312,13 @@ const CONTROL_SIZES = [
 ] as const
 
 function readRatio() {
-  return parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--control-radius-ratio")) || 0.375
+  return (
+    parseFloat(
+      getComputedStyle(document.documentElement).getPropertyValue(
+        "--control-radius-ratio"
+      )
+    ) || 0.375
+  )
 }
 
 function RadiusScale() {
@@ -233,16 +326,23 @@ function RadiusScale() {
 
   const update = (value: number) => {
     setRatio(value)
-    document.documentElement.style.setProperty("--control-radius-ratio", String(value))
+    document.documentElement.style.setProperty(
+      "--control-radius-ratio",
+      String(value)
+    )
   }
 
   return (
-    <div className="flex flex-col gap-6">
-      <div className="flex flex-col gap-3 rounded-xl border p-4 sm:flex-row sm:items-center sm:gap-6">
-        <div className="flex flex-col gap-1">
-          <span className="text-sm font-medium">Radius ratio · {ratio.toFixed(3)}</span>
+    <div className="flex flex-col gap-stack-md">
+      <div className="flex flex-col gap-stack-sm rounded-xl border p-inset-md sm:flex-row sm:items-center sm:gap-stack-md">
+        <div className="flex flex-col gap-stack-xs">
+          <span className="text-sm font-medium">
+            Radius ratio · {ratio.toFixed(3)}
+          </span>
           <span className="text-xs text-muted-foreground">
-            Preview only — the whole gallery updates. Set <code className="font-mono">--control-radius-ratio</code> in index.css to keep a value.
+            Preview only — the whole gallery updates. Set{" "}
+            <code className="font-mono">--control-radius-ratio</code> in
+            index.css to keep a value.
           </span>
         </div>
         <Slider
@@ -251,7 +351,9 @@ function RadiusScale() {
           max={0.5}
           step={0.0625}
           value={ratio}
-          onValueChange={(value) => update(Array.isArray(value) ? value[0] : value)}
+          onValueChange={(value) =>
+            update(Array.isArray(value) ? value[0] : value)
+          }
           aria-label="Radius ratio"
         />
         <Button variant="outline" size="sm" onClick={() => update(0.375)}>
@@ -273,14 +375,21 @@ function RadiusScale() {
           <tbody>
             {CONTROL_SIZES.map((size) => (
               <tr key={size.name} className="border-b last:border-b-0">
-                <td className="px-4 py-3 font-mono text-xs">rounded-{size.name}</td>
+                <td className="px-4 py-3 font-mono text-xs">
+                  rounded-{size.name}
+                </td>
                 <td className="px-4 py-3 tabular-nums">{size.height}px</td>
-                <td className="px-4 py-3 tabular-nums">{(size.height * ratio).toFixed(1)}px</td>
+                <td className="px-4 py-3 tabular-nums">
+                  {(size.height * ratio).toFixed(1)}px
+                </td>
                 <td className="px-4 py-3 text-muted-foreground">{size.use}</td>
                 <td className="px-4 py-3">
                   <span
                     className="block w-24 border-2 border-primary bg-secondary"
-                    style={{ height: size.height, borderRadius: `var(--radius-${size.name})` }}
+                    style={{
+                      height: size.height,
+                      borderRadius: `var(--radius-${size.name})`,
+                    }}
                   />
                 </td>
               </tr>
@@ -289,7 +398,7 @@ function RadiusScale() {
         </table>
       </div>
 
-      <div className="preview-surface flex flex-wrap items-center gap-3 rounded-lg border p-6">
+      <div className="preview-surface flex flex-wrap items-center gap-gap-sm rounded-lg border p-inset-lg">
         <Button size="xs">Extra small</Button>
         <Button size="sm">Small</Button>
         <Button>Default</Button>
@@ -326,7 +435,13 @@ const SCALES = [
 ]
 
 function readTypeScale() {
-  return parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--type-scale")) || 0.5
+  return (
+    parseFloat(
+      getComputedStyle(document.documentElement).getPropertyValue(
+        "--type-scale"
+      )
+    ) || 0.5
+  )
 }
 
 function TypeScale() {
@@ -338,16 +453,24 @@ function TypeScale() {
   }
 
   return (
-    <div className="flex flex-col gap-6">
-      <div className="flex flex-col gap-3 rounded-xl border p-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-stack-md">
+      <div className="flex flex-col gap-stack-sm rounded-xl border p-inset-md sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-stack-xs">
           <span className="text-sm font-medium">Families</span>
           <span className="text-sm text-muted-foreground">
-            <span className="font-display text-base uppercase">DAMN</span> for display and titles 1–2 ·{" "}
-            <span className="font-semibold text-foreground">Bricolage Grotesque</span> for everything else, including all components.
+            <span className="font-display text-base uppercase">DAMN</span> for
+            display and titles 1–2 ·{" "}
+            <span className="font-semibold text-foreground">
+              Bricolage Grotesque
+            </span>{" "}
+            for everything else, including all components.
           </span>
         </div>
-        <div className="flex items-center gap-2" role="group" aria-label="Preview scale">
+        <div
+          className="flex items-center gap-gap-sm"
+          role="group"
+          aria-label="Preview scale"
+        >
           {SCALES.map((option) => (
             <Button
               key={option.value}
@@ -366,8 +489,11 @@ function TypeScale() {
         {typeRoles().map((role) => {
           const className = TYPE_CLASS[role.name]
           return (
-            <div key={role.name} className="grid gap-4 border-b py-6 last:border-b-0 lg:grid-cols-[14rem_1fr]">
-              <div className="flex flex-col gap-1 text-sm">
+            <div
+              key={role.name}
+              className="grid gap-stack-md border-b py-6 last:border-b-0 lg:grid-cols-[14rem_1fr]"
+            >
+              <div className="flex flex-col gap-stack-xs text-sm">
                 <span className="font-medium">{role.label}</span>
                 <button
                   type="button"
@@ -377,7 +503,8 @@ function TypeScale() {
                   {className}
                 </button>
                 <span className="text-xs text-muted-foreground">
-                  {role.family} {role.style} · {Math.round(role.size * scale * 10) / 10}px
+                  {role.family} {role.style} ·{" "}
+                  {Math.round(role.size * scale * 10) / 10}px
                 </span>
                 <span className="text-xs text-muted-foreground">
                   Line height {role.lineHeight} · tracking {role.letterSpacing}
@@ -385,7 +512,11 @@ function TypeScale() {
                 </span>
               </div>
               <p className={cn(className, "min-w-0 break-words")}>
-                {role.size >= 96 ? "Sotto cassa" : role.name === "info" ? "Giovedì · 23:00" : "Ci vediamo sotto cassa, la notte comincia qui."}
+                {role.size >= 96
+                  ? "Sotto cassa"
+                  : role.name === "info"
+                    ? "Giovedì · 23:00"
+                    : "Ci vediamo sotto cassa, la notte comincia qui."}
               </p>
             </div>
           )
@@ -397,17 +528,149 @@ function TypeScale() {
 
 /* ---------- Spacing ---------- */
 
-function SpacingScale() {
-  const steps = [1, 2, 3, 4, 5, 6, 8, 10, 12, 16]
+// Literal class names per role so Tailwind generates each utility.
+const SPACING_CLASS: Record<string, string> = {
+  inset: "p-inset-{name}",
+  gap: "gap-gap-{name}",
+  stack: "gap-stack-{name}",
+  section: "gap-section-{name}",
+}
+
+function ProximityExample() {
   return (
-    <div className="flex flex-col gap-2">
-      {steps.map((step) => (
-        <div key={step} className="flex items-center gap-4 text-sm">
-          <span className="w-16 font-mono text-xs">{step}</span>
-          <span className="w-12 text-xs text-muted-foreground tabular-nums">{step * 4}px</span>
-          <span className="h-4 rounded-sm bg-primary" style={{ width: `calc(var(--spacing) * ${step})` }} />
+    <div className="grid gap-gap-lg lg:grid-cols-[1fr_16rem]">
+      <div className="preview-surface rounded-lg border p-inset-lg">
+        <div className="flex max-w-sm flex-col gap-stack-lg rounded-xl bg-card p-inset-lg ring-1 ring-foreground/10">
+          <div className="flex flex-col gap-stack-md">
+            <div className="flex flex-col gap-stack-xs">
+              <h3 className="font-heading text-lg font-semibold">
+                Prenota il tuo tavolo
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Giovedì, dalle 23:00 · Sotto cassa
+              </p>
+            </div>
+            <div className="flex flex-col gap-stack-sm">
+              <div className="flex flex-col gap-stack-xs">
+                <Label htmlFor="proximity-name">Nome</Label>
+                <Input id="proximity-name" placeholder="Ada Lovelace" />
+              </div>
+              <div className="flex flex-col gap-stack-xs">
+                <Label htmlFor="proximity-guests">Ospiti</Label>
+                <Input id="proximity-guests" placeholder="2" />
+              </div>
+            </div>
+          </div>
+          <div className="flex gap-gap-sm">
+            <Button>Prenota</Button>
+            <Button variant="outline">Annulla</Button>
+          </div>
         </div>
-      ))}
+      </div>
+      <ol className="flex flex-col gap-stack-sm text-sm">
+        {[
+          [
+            "stack-xs · 4px",
+            "Title ↔ subtitle, label ↔ field: one piece of information.",
+          ],
+          ["stack-sm · 8px", "Field ↔ field: related, but separate items."],
+          [
+            "stack-md · 16px",
+            "Title ↔ fields: header and content of the same form.",
+          ],
+          [
+            "stack-lg · 24px",
+            "Form ↔ CTA: the actions come after the content.",
+          ],
+          ["gap-sm · 8px", "Actions side by side."],
+          ["inset-lg · 24px", "Padding of the container."],
+          [
+            "section-* · 48–128px",
+            "Only between page sections, never inside a component.",
+          ],
+        ].map(([token, rule]) => (
+          <li
+            key={token}
+            className="flex flex-col gap-gap-xs border-l-2 border-primary pl-inset-sm"
+          >
+            <code className="font-mono text-xs">{token}</code>
+            <span className="text-muted-foreground">{rule}</span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  )
+}
+
+function SpacingScale() {
+  return (
+    <div className="flex flex-col gap-stack-xl">
+      <ProximityExample />
+
+      <div className="grid gap-gap-lg md:grid-cols-2">
+        {spacingRoles().map(({ group, description, roles }) => (
+          <div
+            key={group}
+            className="flex flex-col gap-stack-sm rounded-xl border p-inset-md"
+          >
+            <div className="flex flex-col gap-stack-xs">
+              <span className="font-mono text-sm font-medium">{group}-*</span>
+              <span className="text-xs text-muted-foreground">
+                {description}
+              </span>
+            </div>
+            <ul className="flex flex-col gap-stack-xs">
+              {roles.map((role) => {
+                const className = SPACING_CLASS[group].replace(
+                  "{name}",
+                  role.name
+                )
+                return (
+                  <li
+                    key={role.name}
+                    className="flex items-center gap-gap-md text-sm"
+                  >
+                    <button
+                      type="button"
+                      onClick={() => copyToClipboard(className, className)}
+                      className="w-32 shrink-0 rounded-control-xs text-left font-mono text-xs text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+                    >
+                      {className}
+                    </button>
+                    <span className="w-12 shrink-0 text-xs text-muted-foreground tabular-nums">
+                      {role.px}px
+                    </span>
+                    <span
+                      className="h-3 rounded-sm bg-primary"
+                      style={{ width: Math.max(role.px, 1) }}
+                    />
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex flex-col gap-stack-sm">
+        <span className="text-sm font-medium">Primitives · space/*</span>
+        <div className="flex flex-wrap items-end gap-gap-md">
+          {spacingPrimitives().map((px) => (
+            <div key={px} className="flex flex-col items-center gap-stack-xs">
+              <span
+                className="bg-primary"
+                style={{
+                  width: Math.max(px / 2, 1),
+                  height: Math.max(px / 2, 1),
+                }}
+              />
+              <span className="font-mono text-xs text-muted-foreground">
+                {px}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
@@ -416,20 +679,33 @@ function SpacingScale() {
 
 export function FoundationsPage() {
   return (
-    <div className="flex flex-col gap-12">
-      <header className="flex flex-col gap-3">
+    <div className="flex flex-col gap-section-md">
+      <header className="flex flex-col gap-stack-sm">
         <Badge variant="outline">Foundations</Badge>
-        <h1 className="font-heading text-3xl font-semibold tracking-tight">Color, type, radius & spacing</h1>
+        <h1 className="font-heading text-3xl font-semibold tracking-tight">
+          Color, type, radius & spacing
+        </h1>
         <p className="max-w-2xl text-muted-foreground">
-          The LOCAMIMI tokens behind every component. Colors come straight from the Figma exports in{" "}
-          <code className="font-mono text-sm">tokens/</code>; contrast ratios are computed live from the rendered theme.
+          The LOCAMIMI tokens behind every component. Colors come straight from
+          the Figma exports in{" "}
+          <code className="font-mono text-sm">tokens/</code>; contrast ratios
+          are computed live from the rendered theme.
         </p>
       </header>
 
-      <Section id="sample" title="In context" description="The Figma application example, rebuilt with the components in both themes.">
-        <div className="grid gap-4 lg:grid-cols-2">
-          <BrandSample mode="light" />
-          <BrandSample mode="dark" />
+      <Section
+        id="sample"
+        title="In context"
+        description="The Figma application example, rebuilt with the components in both themes."
+      >
+        <div className="flex flex-col gap-stack-xs">
+          <div className="grid gap-gap-lg lg:grid-cols-2">
+            <BrandSample mode="light" />
+            <BrandSample mode="dark" />
+          </div>
+          <p className="text-xs text-muted-foreground">
+            The primary button is shown in its focus state.
+          </p>
         </div>
       </Section>
 
@@ -441,7 +717,11 @@ export function FoundationsPage() {
         <TypeScale />
       </Section>
 
-      <Section id="palette" title="Tonal scales" description="Five families, ten steps each. Click a swatch to copy its Tailwind class.">
+      <Section
+        id="palette"
+        title="Tonal scales"
+        description="Five families, ten steps each. Click a swatch to copy its Tailwind class."
+      >
         <Palette />
       </Section>
 
@@ -450,13 +730,17 @@ export function FoundationsPage() {
         title="Theme contrast"
         description="How the shadcn/ui variables map onto the roles, checked against WCAG AA: 4.5:1 for text, 3:1 for control borders and focus rings."
       >
-        <div className="grid gap-4 lg:grid-cols-2">
+        <div className="grid gap-gap-lg lg:grid-cols-2">
           <ContrastPanel mode="light" />
           <ContrastPanel mode="dark" />
         </div>
       </Section>
 
-      <Section id="roles" title="Semantic roles" description="As defined in Figma (LOCAMIMI — Ruoli semantici).">
+      <Section
+        id="roles"
+        title="Semantic roles"
+        description="As defined in Figma (LOCAMIMI — Ruoli semantici)."
+      >
         <SemanticRoles />
       </Section>
 
@@ -468,7 +752,11 @@ export function FoundationsPage() {
         <RadiusScale />
       </Section>
 
-      <Section id="spacing" title="Spacing · 4px grid" description="All component padding, gaps and heights are multiples of 4px (Tailwind spacing unit = 4px).">
+      <Section
+        id="spacing"
+        title="Spacing"
+        description="Distance expresses relationship: the more related two elements are, the closer they sit. Every value is on the 4px grid; use the role tokens, not raw numbers."
+      >
         <SpacingScale />
       </Section>
     </div>

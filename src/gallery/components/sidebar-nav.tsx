@@ -9,7 +9,7 @@ export function SidebarNav({ active, onNavigate }: { active: string; onNavigate?
   const matches = registry.filter((entry) => entry.name.toLowerCase().includes(query.trim().toLowerCase()))
 
   return (
-    <nav aria-label="Components" className="flex flex-col gap-5">
+    <nav aria-label="Components" className="flex flex-col gap-stack-md">
       <div className="relative">
         <SearchIcon className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-muted-foreground" />
         <Input
@@ -47,7 +47,7 @@ export function SidebarNav({ active, onNavigate }: { active: string; onNavigate?
         const items = matches.filter((entry) => entry.category === category)
         if (!items.length) return null
         return (
-          <div key={category} className="flex flex-col gap-1">
+          <div key={category} className="flex flex-col gap-stack-xs">
             <h4 className="px-2 pb-1 text-xs font-medium tracking-wide text-muted-foreground uppercase">
               {category}
             </h4>

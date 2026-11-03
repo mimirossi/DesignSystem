@@ -1,8 +1,8 @@
 import type * as React from "react"
 import { BoldIcon } from "lucide-react"
-import cuorePalpebre from "@/assets/covers/cuore-palpebre.svg"
+import cuorePalpebre from "@/assets/covers/cuore-palpebre.svg?raw"
 import { Button } from "@/components/ui/button"
-import { Card, CardDescription, CardMedia, CardOverlay, CardTitle } from "@/components/ui/card"
+import { Card, CardDescription, CardIllustration, CardOverlay, CardTitle } from "@/components/ui/card"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
@@ -462,9 +462,9 @@ const entries: (Omit<ComponentEntry, "sources"> & { files: string[] })[] = [
       ],
       render: (row, state) => (
         <Card variant="cover" size="sm" className={row.media ? "w-44" : "w-44 bg-rosa-chiaro-200"} {...state}>
-          {row.media && <CardMedia src={cuorePalpebre} alt="" />}
+          {row.media && <CardIllustration svg={cuorePalpebre} className="text-brand" />}
           <CardOverlay>
-            <div className="grid gap-1">
+            <div className="grid">
               <CardTitle>Sotto cassa</CardTitle>
               <CardDescription>Giovedì 23:00</CardDescription>
             </div>
@@ -475,9 +475,9 @@ const entries: (Omit<ComponentEntry, "sources"> & { files: string[] })[] = [
       code: (props) =>
         [
           props.media ? '<Card variant="cover">' : '<Card variant="cover" className="bg-rosa-chiaro-200">',
-          props.media && '  <CardMedia src={cover} alt="" />',
+          props.media && '  <CardIllustration svg={illustration} className="text-brand" />',
           "  <CardOverlay>",
-          '    <div className="grid gap-1">',
+          '    <div className="grid">',
           "      <CardTitle>Sotto cassa</CardTitle>",
           "      <CardDescription>Giovedì 23:00</CardDescription>",
           "    </div>",

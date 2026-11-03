@@ -3,12 +3,12 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 
 const cardVariants = cva(
-  "group/card overflow-hidden rounded-xl bg-card text-sm text-card-foreground ring-1 ring-foreground/10 [--card-spacing:--spacing(4)] data-[size=sm]:[--card-spacing:--spacing(3)]",
+  "group/card overflow-hidden rounded-xl bg-card text-sm text-card-foreground ring-1 ring-foreground/10 [--card-spacing:var(--spacing-inset-lg)] data-[size=sm]:[--card-spacing:var(--spacing-inset-md)]",
   {
     variants: {
       variant: {
         default:
-          "flex flex-col gap-(--card-spacing) py-(--card-spacing) has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
+          "flex flex-col gap-stack-md py-(--card-spacing) has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
         // Square, record-sleeve card: media or surface color fills it, details
         // appear on hover/focus.
         cover:
@@ -55,6 +55,39 @@ function CardMedia({ className, alt = "", ...props }: React.ComponentProps<"img"
 }
 
 /**
+ * Inline SVG artwork for a cover card. Shapes drawn in `currentColor` take
+ * the theme's text color (set it with a text-* class, e.g. text-brand), so
+ * illustrations follow the color tokens in light and dark mode.
+ */
+function CardIllustration({
+  svg,
+  label,
+  className,
+  ...props
+}: Omit<React.ComponentProps<"div">, "children"> & { svg: string; label?: string }) {
+  // Prefix ids (clip paths, gradients) so several copies can share a page.
+  const prefix = "art" + React.useId().replace(/[^a-zA-Z0-9]/g, "")
+  const markup = React.useMemo(
+    () => svg.replace(/id="([^"]+)"/g, `id="${prefix}-$1"`).replace(/url\(#([^)]+)\)/g, `url(#${prefix}-$1)`),
+    [svg, prefix]
+  )
+  return (
+    <div
+      data-slot="card-media"
+      role={label ? "img" : undefined}
+      aria-label={label}
+      aria-hidden={label ? undefined : true}
+      className={cn(
+        "absolute inset-0 -z-10 text-foreground transition-transform duration-300 group-hover/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 [&>svg]:size-full",
+        className
+      )}
+      dangerouslySetInnerHTML={{ __html: markup }}
+      {...props}
+    />
+  )
+}
+
+/**
  * Details layer of a cover card: title and subtitle at the top, CTA at the
  * bottom-left. Hidden until the card is hovered or something inside it has
  * keyboard focus; always visible on touch screens. It renders in the dark
@@ -65,7 +98,7 @@ function CardOverlay({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-overlay"
       className={cn(
-        "dark absolute inset-0 flex flex-col items-start justify-between gap-4 bg-linear-to-b from-nero-900/90 via-nero-900/40 to-nero-900/90 p-(--card-spacing) text-foreground translate-y-2 opacity-0 transition duration-200 group-hover/card:translate-y-0 group-hover/card:opacity-100 group-has-[:focus-visible]/card:translate-y-0 group-has-[:focus-visible]/card:opacity-100 motion-reduce:translate-y-0 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100",
+        "dark absolute inset-0 flex flex-col items-start justify-between gap-stack-md bg-linear-to-b from-nero-900/90 via-nero-900/40 to-nero-900/90 p-(--card-spacing) text-foreground translate-y-2 opacity-0 transition duration-200 group-hover/card:translate-y-0 group-hover/card:opacity-100 group-has-[:focus-visible]/card:translate-y-0 group-has-[:focus-visible]/card:opacity-100 motion-reduce:translate-y-0 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100",
         className
       )}
       {...props}
@@ -78,7 +111,7 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-header"
       className={cn(
-        "group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-(--card-spacing) has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-(--card-spacing)",
+        "group/card-header @container/card-header grid auto-rows-min items-start gap-x-gap-sm gap-y-0 rounded-t-xl px-(--card-spacing) has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-(--card-spacing)",
         className
       )}
       {...props}
@@ -138,6 +171,8 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
       data-slot="card-footer"
       className={cn(
         "flex items-center rounded-b-xl border-t bg-muted/50 p-(--card-spacing)",
+        // CTA sits stack-lg below the content (the card gap is stack-md).
+        "mt-[calc(var(--spacing-stack-lg)-var(--spacing-stack-md))]",
         className
       )}
       {...props}
@@ -148,6 +183,7 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
 export {
   Card,
   CardMedia,
+  CardIllustration,
   CardOverlay,
   cardVariants,
   CardHeader,

@@ -21,7 +21,7 @@ export function ToggleOutlineWithText() {
 
 export function ToggleSizes() {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-gap-sm">
       <Toggle size="sm" variant="outline" aria-label="Italic">
         <ItalicIcon />
       </Toggle>

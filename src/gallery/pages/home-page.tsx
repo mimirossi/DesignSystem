@@ -6,14 +6,14 @@ export function HomePage() {
   const stateCount = registry.filter((entry) => entry.states).length
 
   return (
-    <div className="flex flex-col gap-12">
-      <header className="flex flex-col gap-3">
+    <div className="flex flex-col gap-section-md">
+      <header className="flex flex-col gap-stack-sm">
         <h1 className="font-heading text-3xl font-semibold tracking-tight">Components</h1>
         <p className="max-w-2xl text-muted-foreground">
           Browse every component in the design system. Each page shows its variants, its interactive
           states side by side, and copy-ready code for every example.
         </p>
-        <div className="flex flex-wrap gap-2 pt-1">
+        <div className="flex flex-wrap gap-gap-sm">
           <Badge variant="secondary">{registry.length} components</Badge>
           <Badge variant="secondary">{registry.reduce((sum, entry) => sum + entry.examples.length, 0)} examples</Badge>
           <Badge variant="secondary">{stateCount} state matrices</Badge>
@@ -21,9 +21,9 @@ export function HomePage() {
       </header>
 
       {CATEGORIES.map((category) => (
-        <section key={category} className="flex flex-col gap-4">
+        <section key={category} className="flex flex-col gap-stack-md">
           <h2 className="font-heading text-lg font-medium">{category}</h2>
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-gap-lg sm:grid-cols-2 xl:grid-cols-3">
             {registry
               .filter((entry) => entry.category === category)
               .map((entry) => {
@@ -38,14 +38,14 @@ export function HomePage() {
                     <div
                       inert
                       aria-hidden
-                      className="preview-surface flex h-40 items-center justify-center overflow-hidden border-b p-4"
+                      className="preview-surface flex h-40 items-center justify-center overflow-hidden border-b p-inset-md"
                     >
                       <div className="pointer-events-none flex origin-center scale-[0.8] items-center justify-center">
                         <Preview />
                       </div>
                     </div>
-                    <div className="flex flex-col gap-1 p-4">
-                      <div className="flex items-center justify-between gap-2">
+                    <div className="flex flex-col p-inset-md">
+                      <div className="flex items-center justify-between gap-gap-sm">
                         <h3 className="font-medium">{entry.name}</h3>
                         <ArrowRightIcon className="size-4 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
                       </div>

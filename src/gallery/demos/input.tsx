@@ -10,7 +10,7 @@ export function InputDefault() {
 
 export function InputWithLabel() {
   return (
-    <div className="grid w-full max-w-xs gap-2">
+    <div className="grid w-full max-w-xs gap-stack-xs">
       <Label htmlFor="input-email">Email</Label>
       <Input id="input-email" type="email" placeholder="you@example.com" />
       <p className="text-xs text-muted-foreground">We'll never share your email.</p>
@@ -20,7 +20,7 @@ export function InputWithLabel() {
 
 export function InputInvalid() {
   return (
-    <div className="grid w-full max-w-xs gap-2">
+    <div className="grid w-full max-w-xs gap-stack-xs">
       <Label htmlFor="input-username">Username</Label>
       <Input id="input-username" defaultValue="a" aria-invalid aria-describedby="input-username-error" />
       <p id="input-username-error" className="text-xs text-destructive">
@@ -32,7 +32,7 @@ export function InputInvalid() {
 
 export function InputWithButton() {
   return (
-    <div className="flex w-full max-w-sm items-center gap-2">
+    <div className="flex w-full max-w-sm items-center gap-gap-sm">
       <div className="relative flex-1">
         <SearchIcon className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-muted-foreground" />
         <Input placeholder="Search…" className="pl-8" />
@@ -44,7 +44,7 @@ export function InputWithButton() {
 
 export function InputFile() {
   return (
-    <div className="grid w-full max-w-xs gap-2">
+    <div className="grid w-full max-w-xs gap-stack-xs">
       <Label htmlFor="input-file">Picture</Label>
       <Input id="input-file" type="file" />
     </div>
@@ -57,7 +57,7 @@ export function TextareaDefault() {
 
 export function TextareaWithLabel() {
   return (
-    <div className="grid w-full max-w-sm gap-2">
+    <div className="grid w-full max-w-sm gap-stack-xs">
       <Label htmlFor="textarea-message">Your message</Label>
       <Textarea id="textarea-message" placeholder="Type your message here." />
       <Button className="justify-self-end">Send message</Button>

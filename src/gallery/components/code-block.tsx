@@ -61,7 +61,7 @@ export function CodeBlock({
   return (
     <div className={cn("group/code relative rounded-lg border bg-muted/40", className)}>
       <CopyButton value={code} className="absolute top-2 right-2 z-10 bg-background/80" />
-      <div className="code-block overflow-auto p-4 pr-12 font-mono text-[0.8rem] leading-relaxed" style={{ maxHeight }}>
+      <div className="code-block overflow-auto p-inset-md pr-inset-2xl font-mono text-[0.8rem] leading-relaxed" style={{ maxHeight }}>
         {html ? (
           <div dangerouslySetInnerHTML={{ __html: html }} />
         ) : (

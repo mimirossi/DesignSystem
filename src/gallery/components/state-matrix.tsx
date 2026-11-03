@@ -18,7 +18,7 @@ export function StateMatrix({ matrix }: { matrix: StateMatrixConfig }) {
               const state = STATES[key]
               return (
                 <th key={key} className="px-4 py-2.5 text-left font-medium">
-                  <span className="inline-flex items-center gap-1">
+                  <span className="inline-flex items-center gap-gap-xs">
                     {state.label}
                     {state.hint && (
                       <Tooltip>
@@ -49,7 +49,7 @@ export function StateMatrix({ matrix }: { matrix: StateMatrixConfig }) {
                 const code = matrix.code({ ...rowProps, ...state.code })
                 return (
                   <td key={key} className="group/cell px-4 py-4 align-middle">
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-gap-xs">
                       {/* Forced states are visual only; keep them out of the tab order. */}
                       <div inert={key !== "default"} className="flex min-w-0 items-center">
                         {matrix.render(rowProps, state.render)}

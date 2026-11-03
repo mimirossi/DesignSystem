@@ -1,0 +1,183 @@
+{
+  "space": {
+    "0": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Spacing primitivo LOCAMIMI: 0 px = 0 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:984",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "4": {
+      "$type": "number",
+      "$value": 4,
+      "$description": "Spacing primitivo LOCAMIMI: 4 px = 1 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:985",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "8": {
+      "$type": "number",
+      "$value": 8,
+      "$description": "Spacing primitivo LOCAMIMI: 8 px = 2 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:986",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "12": {
+      "$type": "number",
+      "$value": 12,
+      "$description": "Spacing primitivo LOCAMIMI: 12 px = 3 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:987",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "16": {
+      "$type": "number",
+      "$value": 16,
+      "$description": "Spacing primitivo LOCAMIMI: 16 px = 4 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:988",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "20": {
+      "$type": "number",
+      "$value": 20,
+      "$description": "Spacing primitivo LOCAMIMI: 20 px = 5 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:989",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "24": {
+      "$type": "number",
+      "$value": 24,
+      "$description": "Spacing primitivo LOCAMIMI: 24 px = 6 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:990",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "32": {
+      "$type": "number",
+      "$value": 32,
+      "$description": "Spacing primitivo LOCAMIMI: 32 px = 8 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:991",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "40": {
+      "$type": "number",
+      "$value": 40,
+      "$description": "Spacing primitivo LOCAMIMI: 40 px = 10 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:992",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "48": {
+      "$type": "number",
+      "$value": 48,
+      "$description": "Spacing primitivo LOCAMIMI: 48 px = 12 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:993",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "64": {
+      "$type": "number",
+      "$value": 64,
+      "$description": "Spacing primitivo LOCAMIMI: 64 px = 16 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:994",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "80": {
+      "$type": "number",
+      "$value": 80,
+      "$description": "Spacing primitivo LOCAMIMI: 80 px = 20 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:995",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "96": {
+      "$type": "number",
+      "$value": 96,
+      "$description": "Spacing primitivo LOCAMIMI: 96 px = 24 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:996",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "128": {
+      "$type": "number",
+      "$value": 128,
+      "$description": "Spacing primitivo LOCAMIMI: 128 px = 32 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:997",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "160": {
+      "$type": "number",
+      "$value": 160,
+      "$description": "Spacing primitivo LOCAMIMI: 160 px = 40 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:998",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "192": {
+      "$type": "number",
+      "$value": 192,
+      "$description": "Spacing primitivo LOCAMIMI: 192 px = 48 × 4 px. Scala modulare a base 4 px; utilizzabile per padding e gap Auto Layout.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:999",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Base"
+  }
+}

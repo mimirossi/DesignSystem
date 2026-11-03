@@ -3,14 +3,19 @@ import { flushSync } from "react-dom"
 import { ArrowRightIcon, XIcon } from "lucide-react"
 import { cn } from "cn"
 import { Button } from "@/components/ui/button"
-import { Card, CardDescription, CardMedia, CardOverlay, CardTitle } from "@/components/ui/card"
+import { Card, CardDescription, CardIllustration, CardMedia, CardOverlay, CardTitle } from "@/components/ui/card"
 
 type CoverCarouselItem = {
   id: string
   title: string
   subtitle?: string
   description?: string
-  image: string
+  /** Photo URL… */
+  image?: string
+  /** …or inline SVG markup drawn in currentColor, tinted by `tone`. */
+  illustration?: string
+  /** Text color class for the illustration, e.g. "text-brand". */
+  tone?: string
   imageAlt?: string
   cta?: { label: string; href?: string; onClick?: () => void }
 }
@@ -27,6 +32,14 @@ function transition(update: () => void, afterCommit?: () => void) {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
   if (!document.startViewTransition || reduceMotion) run()
   else document.startViewTransition(run)
+}
+
+function CoverArt({ item }: { item: CoverCarouselItem }) {
+  return item.illustration ? (
+    <CardIllustration svg={item.illustration} label={item.imageAlt} className={item.tone} />
+  ) : (
+    <CardMedia src={item.image} alt={item.imageAlt ?? ""} />
+  )
 }
 
 /**
@@ -92,9 +105,9 @@ function CoverCarousel({
               }
             >
               <Card variant="cover" size="sm" className="shadow-lg">
-                <CardMedia src={item.image} alt={item.imageAlt ?? ""} />
+                <CoverArt item={item} />
                 <CardOverlay>
-                  <div className="grid gap-1">
+                  <div className="grid">
                     <CardTitle>{item.title}</CardTitle>
                     {item.subtitle && <CardDescription>{item.subtitle}</CardDescription>}
                   </div>
@@ -131,35 +144,41 @@ function CoverCarousel({
             ref={stripRef}
             tabIndex={0}
             onWheel={onWheel}
-            className="flex snap-x snap-mandatory gap-8 overflow-x-auto overscroll-x-contain scroll-smooth pt-12 pb-4 outline-none motion-reduce:scroll-auto [scrollbar-width:thin] focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+            className="flex snap-x snap-mandatory gap-gap-xl overflow-x-auto overscroll-x-contain scroll-smooth pt-stack-xl pb-stack-sm outline-none motion-reduce:scroll-auto [scrollbar-width:thin] focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
           >
             {items.map((item, i) => (
               <article
                 key={item.id}
                 data-id={item.id}
                 aria-label={`${i + 1} of ${items.length}: ${item.title}`}
-                className="flex w-[min(44rem,85%)] shrink-0 snap-start flex-col gap-6 sm:flex-row sm:items-end"
+                className="flex w-[min(44rem,85%)] shrink-0 snap-start flex-col gap-stack-md sm:flex-row sm:items-end sm:gap-gap-lg"
               >
                 <div
                   className="w-full max-w-80 shrink-0"
                   style={{ viewTransitionName: nameOf(item) }}
                 >
                   <Card variant="cover" className="pointer-events-none">
-                    <CardMedia src={item.image} alt={item.imageAlt ?? ""} />
+                    <CoverArt item={item} />
                   </Card>
                 </div>
-                <div className="flex min-w-0 flex-col gap-3 pb-2">
-                  <span className="font-mono text-xs text-muted-foreground">
-                    {String(i + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
-                  </span>
-                  <h3 className="font-display text-5xl leading-[0.9] tracking-[0.01em] uppercase">
-                    {item.title}
-                  </h3>
-                  {item.subtitle && <p className="type-info text-muted-foreground">{item.subtitle}</p>}
-                  {item.description && <p className="max-w-sm text-sm text-muted-foreground">{item.description}</p>}
+                <div className="flex min-w-0 flex-col gap-stack-lg pb-inset-sm">
+                  <div className="flex flex-col gap-stack-md">
+                    <div className="flex flex-col gap-stack-xs">
+                      <span className="font-mono text-xs text-muted-foreground">
+                        {String(i + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
+                      </span>
+                      <div className="flex flex-col">
+                        <h3 className="font-display text-5xl leading-[0.9] tracking-[0.01em] uppercase">
+                          {item.title}
+                        </h3>
+                        {item.subtitle && <p className="type-info text-muted-foreground">{item.subtitle}</p>}
+                      </div>
+                    </div>
+                    {item.description && <p className="max-w-sm text-sm text-muted-foreground">{item.description}</p>}
+                  </div>
                   {item.cta && (
                     <Button
-                      className="mt-2 w-fit"
+                      className="w-fit"
                       onClick={item.cta.onClick}
                       {...(item.cta.href ? { nativeButton: false, render: <a href={item.cta.href} /> } : {})}
                     >

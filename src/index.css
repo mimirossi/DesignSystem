@@ -115,6 +115,43 @@
   --color-crema-900: #2A251E;
 }
 
+/*
+ * LOCAMIMI spacing roles — generated from tokens/spacing.tokens.json
+ * (primitives in tokens/spacing-base.tokens.json = Tailwind's 4px scale).
+ * Distance expresses relationship: the more related two elements are,
+ * the closer they sit.
+ *   inset-*    padding inside components and containers   → p-inset-md
+ *   gap-*      between side-by-side items (inline, rows)   → gap-gap-sm
+ *   stack-*    vertical distance between related content   → gap-stack-xs
+ *   section-*  between sections and major blocks           → gap-section-md
+ */
+@theme {
+  --spacing-inset-none: calc(var(--spacing) * 0); /* 0px */
+  --spacing-inset-xs: calc(var(--spacing) * 1); /* 4px */
+  --spacing-inset-sm: calc(var(--spacing) * 2); /* 8px */
+  --spacing-inset-md: calc(var(--spacing) * 4); /* 16px */
+  --spacing-inset-lg: calc(var(--spacing) * 6); /* 24px */
+  --spacing-inset-xl: calc(var(--spacing) * 8); /* 32px */
+  --spacing-inset-2xl: calc(var(--spacing) * 12); /* 48px */
+  --spacing-gap-none: calc(var(--spacing) * 0); /* 0px */
+  --spacing-gap-xs: calc(var(--spacing) * 1); /* 4px */
+  --spacing-gap-sm: calc(var(--spacing) * 2); /* 8px */
+  --spacing-gap-md: calc(var(--spacing) * 4); /* 16px */
+  --spacing-gap-lg: calc(var(--spacing) * 6); /* 24px */
+  --spacing-gap-xl: calc(var(--spacing) * 8); /* 32px */
+  --spacing-gap-2xl: calc(var(--spacing) * 12); /* 48px */
+  --spacing-stack-xs: calc(var(--spacing) * 1); /* 4px */
+  --spacing-stack-sm: calc(var(--spacing) * 2); /* 8px */
+  --spacing-stack-md: calc(var(--spacing) * 4); /* 16px */
+  --spacing-stack-lg: calc(var(--spacing) * 6); /* 24px */
+  --spacing-stack-xl: calc(var(--spacing) * 10); /* 40px */
+  --spacing-stack-2xl: calc(var(--spacing) * 16); /* 64px */
+  --spacing-section-sm: calc(var(--spacing) * 12); /* 48px */
+  --spacing-section-md: calc(var(--spacing) * 16); /* 64px */
+  --spacing-section-lg: calc(var(--spacing) * 24); /* 96px */
+  --spacing-section-xl: calc(var(--spacing) * 32); /* 128px */
+}
+
 /* Tokens that are not colors */
 @theme inline {
   --color-link: var(--link);

@@ -32,6 +32,13 @@ const buttonVariants = cva(
         "icon-lg": "size-9 rounded-control-lg",
       },
     },
+    compoundVariants: [
+      // Links align with the surrounding text, so they carry no side padding.
+      {
+        variant: "link",
+        class: "px-0 has-data-[icon=inline-end]:pr-0 has-data-[icon=inline-start]:pl-0",
+      },
+    ],
     defaultVariants: {
       variant: "default",
       size: "default",

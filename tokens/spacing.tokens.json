@@ -1,0 +1,421 @@
+{
+  "inset": {
+    "none": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Padding interno di componenti e contenitori. 0 px, alias di LOCAMIMI — Spacing — Base / space/0. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1000",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:68fa6520d26a67ef428059ff1d720fa208e53bbd/-1:-1",
+          "targetVariableName": "space/0",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "xs": {
+      "$type": "number",
+      "$value": 4,
+      "$description": "Padding interno di componenti e contenitori. 4 px, alias di LOCAMIMI — Spacing — Base / space/4. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1001",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:9a261fb601a845192e6c0b800bb7455aa23ec8be/-1:-1",
+          "targetVariableName": "space/4",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "sm": {
+      "$type": "number",
+      "$value": 8,
+      "$description": "Padding interno di componenti e contenitori. 8 px, alias di LOCAMIMI — Spacing — Base / space/8. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1002",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:3d2b33e65b3d0fc9b2f9e4a2d29ebdb7a45dc498/-1:-1",
+          "targetVariableName": "space/8",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "md": {
+      "$type": "number",
+      "$value": 16,
+      "$description": "Padding interno di componenti e contenitori. 16 px, alias di LOCAMIMI — Spacing — Base / space/16. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1003",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a79623252ab2c775e1a2f296ded4c1b6f5879f53/-1:-1",
+          "targetVariableName": "space/16",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "lg": {
+      "$type": "number",
+      "$value": 24,
+      "$description": "Padding interno di componenti e contenitori. 24 px, alias di LOCAMIMI — Spacing — Base / space/24. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1004",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a822a4d766059298b8e3a2d518755e8a395acee6/-1:-1",
+          "targetVariableName": "space/24",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "xl": {
+      "$type": "number",
+      "$value": 32,
+      "$description": "Padding interno di componenti e contenitori. 32 px, alias di LOCAMIMI — Spacing — Base / space/32. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1005",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:c637ca2c3ab51ea6ddb74c521d58debd39f3c401/-1:-1",
+          "targetVariableName": "space/32",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "2xl": {
+      "$type": "number",
+      "$value": 48,
+      "$description": "Padding interno di componenti e contenitori. 48 px, alias di LOCAMIMI — Spacing — Base / space/48. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1006",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a09293a18cb1979966d07d9a487027f32dab9ea6/-1:-1",
+          "targetVariableName": "space/48",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    }
+  },
+  "gap": {
+    "none": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Distanza fra elementi affiancati o in un gruppo Auto Layout. 0 px, alias di LOCAMIMI — Spacing — Base / space/0. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1007",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:68fa6520d26a67ef428059ff1d720fa208e53bbd/-1:-1",
+          "targetVariableName": "space/0",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "xs": {
+      "$type": "number",
+      "$value": 4,
+      "$description": "Distanza fra elementi affiancati o in un gruppo Auto Layout. 4 px, alias di LOCAMIMI — Spacing — Base / space/4. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1008",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:9a261fb601a845192e6c0b800bb7455aa23ec8be/-1:-1",
+          "targetVariableName": "space/4",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "sm": {
+      "$type": "number",
+      "$value": 8,
+      "$description": "Distanza fra elementi affiancati o in un gruppo Auto Layout. 8 px, alias di LOCAMIMI — Spacing — Base / space/8. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1009",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:3d2b33e65b3d0fc9b2f9e4a2d29ebdb7a45dc498/-1:-1",
+          "targetVariableName": "space/8",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "md": {
+      "$type": "number",
+      "$value": 16,
+      "$description": "Distanza fra elementi affiancati o in un gruppo Auto Layout. 16 px, alias di LOCAMIMI — Spacing — Base / space/16. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1010",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a79623252ab2c775e1a2f296ded4c1b6f5879f53/-1:-1",
+          "targetVariableName": "space/16",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "lg": {
+      "$type": "number",
+      "$value": 24,
+      "$description": "Distanza fra elementi affiancati o in un gruppo Auto Layout. 24 px, alias di LOCAMIMI — Spacing — Base / space/24. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1011",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a822a4d766059298b8e3a2d518755e8a395acee6/-1:-1",
+          "targetVariableName": "space/24",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "xl": {
+      "$type": "number",
+      "$value": 32,
+      "$description": "Distanza fra elementi affiancati o in un gruppo Auto Layout. 32 px, alias di LOCAMIMI — Spacing — Base / space/32. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1012",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:c637ca2c3ab51ea6ddb74c521d58debd39f3c401/-1:-1",
+          "targetVariableName": "space/32",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "2xl": {
+      "$type": "number",
+      "$value": 48,
+      "$description": "Distanza fra elementi affiancati o in un gruppo Auto Layout. 48 px, alias di LOCAMIMI — Spacing — Base / space/48. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1013",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a09293a18cb1979966d07d9a487027f32dab9ea6/-1:-1",
+          "targetVariableName": "space/48",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    }
+  },
+  "stack": {
+    "xs": {
+      "$type": "number",
+      "$value": 4,
+      "$description": "Distanza verticale fra contenuti correlati; applicabile come gap Auto Layout. 4 px, alias di LOCAMIMI — Spacing — Base / space/4. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1014",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:9a261fb601a845192e6c0b800bb7455aa23ec8be/-1:-1",
+          "targetVariableName": "space/4",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "sm": {
+      "$type": "number",
+      "$value": 8,
+      "$description": "Distanza verticale fra contenuti correlati; applicabile come gap Auto Layout. 8 px, alias di LOCAMIMI — Spacing — Base / space/8. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1015",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:3d2b33e65b3d0fc9b2f9e4a2d29ebdb7a45dc498/-1:-1",
+          "targetVariableName": "space/8",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "md": {
+      "$type": "number",
+      "$value": 16,
+      "$description": "Distanza verticale fra contenuti correlati; applicabile come gap Auto Layout. 16 px, alias di LOCAMIMI — Spacing — Base / space/16. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1016",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a79623252ab2c775e1a2f296ded4c1b6f5879f53/-1:-1",
+          "targetVariableName": "space/16",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "lg": {
+      "$type": "number",
+      "$value": 24,
+      "$description": "Distanza verticale fra contenuti correlati; applicabile come gap Auto Layout. 24 px, alias di LOCAMIMI — Spacing — Base / space/24. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1017",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a822a4d766059298b8e3a2d518755e8a395acee6/-1:-1",
+          "targetVariableName": "space/24",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "xl": {
+      "$type": "number",
+      "$value": 40,
+      "$description": "Distanza verticale fra contenuti correlati; applicabile come gap Auto Layout. 40 px, alias di LOCAMIMI — Spacing — Base / space/40. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1018",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a09293a18cb1979966d07d9a487027f32dab9ea6/-1:-1",
+          "targetVariableName": "space/40",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "2xl": {
+      "$type": "number",
+      "$value": 64,
+      "$description": "Distanza verticale fra contenuti correlati; applicabile come gap Auto Layout. 64 px, alias di LOCAMIMI — Spacing — Base / space/64. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1019",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:1a053f13c5daf8ea2587fd9ef4c7063dc8067b26/-1:-1",
+          "targetVariableName": "space/64",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    }
+  },
+  "section": {
+    "sm": {
+      "$type": "number",
+      "$value": 48,
+      "$description": "Separazione verticale fra sezioni e blocchi principali; applicabile come gap o padding. 48 px, alias di LOCAMIMI — Spacing — Base / space/48. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1020",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a09293a18cb1979966d07d9a487027f32dab9ea6/-1:-1",
+          "targetVariableName": "space/48",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "md": {
+      "$type": "number",
+      "$value": 64,
+      "$description": "Separazione verticale fra sezioni e blocchi principali; applicabile come gap o padding. 64 px, alias di LOCAMIMI — Spacing — Base / space/64. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1021",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:1a053f13c5daf8ea2587fd9ef4c7063dc8067b26/-1:-1",
+          "targetVariableName": "space/64",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "lg": {
+      "$type": "number",
+      "$value": 96,
+      "$description": "Separazione verticale fra sezioni e blocchi principali; applicabile come gap o padding. 96 px, alias di LOCAMIMI — Spacing — Base / space/96. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1022",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:dace388af1e822283933207f35048f4cb6991da7/-1:-1",
+          "targetVariableName": "space/96",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "xl": {
+      "$type": "number",
+      "$value": 128,
+      "$description": "Separazione verticale fra sezioni e blocchi principali; applicabile come gap o padding. 128 px, alias di LOCAMIMI — Spacing — Base / space/128. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:408:1023",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a6a6c40255a54adfd61f7e893a2fb3551f76579d/-1:-1",
+          "targetVariableName": "space/128",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Base"
+  }
+}

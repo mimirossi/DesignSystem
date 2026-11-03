@@ -25,7 +25,7 @@ export function App() {
   return (
     <div className="min-h-svh">
       <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
-        <div className="mx-auto flex h-14 max-w-screen-2xl items-center gap-3 px-4 sm:px-6">
+        <div className="mx-auto flex h-14 max-w-screen-2xl items-center gap-gap-sm px-inset-md sm:px-inset-lg">
           <Button
             variant="ghost"
             size="icon"
@@ -36,7 +36,7 @@ export function App() {
           >
             {menuOpen ? <XIcon /> : <MenuIcon />}
           </Button>
-          <a href="#/" className="flex items-center gap-2 font-heading font-semibold">
+          <a href="#/" className="flex items-center gap-gap-sm font-heading font-semibold">
             <span className="grid size-6 place-items-center rounded-md bg-primary text-xs text-primary-foreground">
               DS
             </span>
@@ -52,20 +52,20 @@ export function App() {
         <aside
           className={
             menuOpen
-              ? "fixed inset-x-0 top-14 bottom-0 z-30 overflow-y-auto bg-background p-4 lg:hidden"
-              : "sticky top-14 hidden h-[calc(100svh-3.5rem)] w-60 shrink-0 overflow-y-auto border-r p-4 lg:block"
+              ? "fixed inset-x-0 top-14 bottom-0 z-30 overflow-y-auto bg-background p-inset-md lg:hidden"
+              : "sticky top-14 hidden h-[calc(100svh-3.5rem)] w-60 shrink-0 overflow-y-auto border-r p-inset-md lg:block"
           }
         >
           <SidebarNav active={entry ? entry.slug : route} onNavigate={() => setMenuOpen(false)} />
         </aside>
 
-        <main className="min-w-0 flex-1 px-4 py-8 sm:px-8 lg:py-10">
+        <main className="min-w-0 flex-1 px-inset-md py-inset-xl sm:px-inset-xl lg:py-inset-2xl">
           {entry ? (
             <ComponentPage key={entry.slug} entry={entry} />
           ) : route === "foundations" ? (
             <FoundationsPage />
           ) : route ? (
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-stack-xs">
               <h1 className="text-2xl font-semibold">Not found</h1>
               <p className="text-muted-foreground">
                 No component called “{route}”. <a href="#/" className="underline">Back to overview</a>

@@ -42,7 +42,7 @@ export function AlertWithAction() {
 
 export function ProgressValues() {
   return (
-    <div className="grid w-full max-w-sm gap-6">
+    <div className="grid w-full max-w-sm gap-stack-md">
       <Progress value={0} aria-label="Not started" />
       <Progress value={33} aria-label="In progress" />
       <Progress value={100} aria-label="Complete" />
@@ -61,9 +61,9 @@ export function ProgressWithLabel() {
 
 export function SkeletonCard() {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-gap-md">
       <Skeleton className="size-12 rounded-full" />
-      <div className="grid gap-2">
+      <div className="grid gap-stack-xs">
         <Skeleton className="h-4 w-56" />
         <Skeleton className="h-4 w-40" />
       </div>
@@ -73,7 +73,7 @@ export function SkeletonCard() {
 
 export function SkeletonMedia() {
   return (
-    <div className="grid w-64 gap-3">
+    <div className="grid w-64 gap-stack-sm">
       <Skeleton className="aspect-video w-full rounded-xl" />
       <Skeleton className="h-4 w-3/4" />
       <Skeleton className="h-4 w-1/2" />
@@ -83,7 +83,7 @@ export function SkeletonMedia() {
 
 export function ToastTypes() {
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-gap-sm">
       <Button variant="outline" onClick={() => toast("Event has been created")}>
         Default
       </Button>

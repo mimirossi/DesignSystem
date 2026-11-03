@@ -31,12 +31,12 @@ export function DialogBasic() {
           <DialogTitle>Edit profile</DialogTitle>
           <DialogDescription>Make changes to your profile here. Click save when you're done.</DialogDescription>
         </DialogHeader>
-        <div className="grid gap-4">
-          <div className="grid gap-2">
+        <div className="grid gap-stack-sm">
+          <div className="grid gap-stack-xs">
             <Label htmlFor="dialog-name">Name</Label>
             <Input id="dialog-name" defaultValue="Ada Lovelace" />
           </div>
-          <div className="grid gap-2">
+          <div className="grid gap-stack-xs">
             <Label htmlFor="dialog-username">Username</Label>
             <Input id="dialog-username" defaultValue="@ada" />
           </div>
@@ -77,12 +77,12 @@ export function PopoverBasic() {
           <PopoverTitle>Dimensions</PopoverTitle>
           <PopoverDescription>Set the dimensions for the layer.</PopoverDescription>
         </PopoverHeader>
-        <div className="grid gap-2">
-          <div className="grid grid-cols-3 items-center gap-2">
+        <div className="grid gap-stack-sm">
+          <div className="grid grid-cols-3 items-center gap-gap-sm">
             <Label htmlFor="popover-width">Width</Label>
             <Input id="popover-width" defaultValue="100%" className="col-span-2" />
           </div>
-          <div className="grid grid-cols-3 items-center gap-2">
+          <div className="grid grid-cols-3 items-center gap-gap-sm">
             <Label htmlFor="popover-height">Height</Label>
             <Input id="popover-height" defaultValue="25px" className="col-span-2" />
           </div>
@@ -105,7 +105,7 @@ export function TooltipBasic() {
 
 export function TooltipSides() {
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-gap-sm">
       {(["top", "right", "bottom", "left"] as const).map((side) => (
         <Tooltip key={side}>
           <TooltipTrigger render={<Button variant="outline" />}>{side}</TooltipTrigger>

@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge"
 
 export function BadgeVariants() {
   return (
-    <div className="flex flex-wrap items-center gap-2">
+    <div className="flex flex-wrap items-center gap-gap-sm">
       <Badge>Default</Badge>
       <Badge variant="secondary">Secondary</Badge>
       <Badge variant="outline">Outline</Badge>
@@ -17,7 +17,7 @@ export function BadgeVariants() {
 
 export function BadgeWithIcon() {
   return (
-    <div className="flex flex-wrap items-center gap-2">
+    <div className="flex flex-wrap items-center gap-gap-sm">
       <Badge variant="secondary">
         <BadgeCheckIcon data-icon="inline-start" />
         Verified

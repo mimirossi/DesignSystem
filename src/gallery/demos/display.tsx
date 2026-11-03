@@ -1,8 +1,8 @@
 import { ArrowRightIcon, MoreHorizontalIcon, PlayIcon } from "lucide-react"
-import coppa from "@/assets/covers/coppa.svg"
-import cuoreOcchiolino from "@/assets/covers/cuore-occhiolino.svg"
-import cuorePalpebre from "@/assets/covers/cuore-palpebre.svg"
-import cuoreSocchiuso from "@/assets/covers/cuore-socchiuso.svg"
+import coppa from "@/assets/covers/coppa.svg?raw"
+import cuoreOcchiolino from "@/assets/covers/cuore-occhiolino.svg?raw"
+import cuorePalpebre from "@/assets/covers/cuore-palpebre.svg?raw"
+import cuoreSocchiuso from "@/assets/covers/cuore-socchiuso.svg?raw"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import {
   Avatar,
@@ -20,7 +20,7 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
-  CardMedia,
+  CardIllustration,
   CardOverlay,
   CardTitle,
 } from "@/components/ui/card"
@@ -62,17 +62,17 @@ export function CardForm() {
         <CardTitle>Login to your account</CardTitle>
         <CardDescription>Enter your email below to login.</CardDescription>
       </CardHeader>
-      <CardContent className="grid gap-4">
-        <div className="grid gap-2">
+      <CardContent className="grid gap-stack-sm">
+        <div className="grid gap-stack-xs">
           <Label htmlFor="card-email">Email</Label>
           <Input id="card-email" type="email" placeholder="you@example.com" />
         </div>
-        <div className="grid gap-2">
+        <div className="grid gap-stack-xs">
           <Label htmlFor="card-password">Password</Label>
           <Input id="card-password" type="password" />
         </div>
       </CardContent>
-      <CardFooter className="flex-col gap-2">
+      <CardFooter className="flex-col gap-stack-sm">
         <Button className="w-full">Login</Button>
         <Button variant="outline" className="w-full">
           Create account
@@ -97,9 +97,9 @@ export function CardSmall() {
 export function CardCoverImage() {
   return (
     <Card variant="cover" className="w-72">
-      <CardMedia src={cuorePalpebre} alt="LOCAMIMI heart with lowered eyelids on pink" />
+      <CardIllustration svg={cuorePalpebre} label="LOCAMIMI heart with lowered eyelids" className="text-brand" />
       <CardOverlay>
-        <div className="grid gap-1">
+        <div className="grid">
           <CardTitle>Sotto cassa</CardTitle>
           <CardDescription>House e hardgroove · Giovedì 23:00</CardDescription>
         </div>
@@ -119,11 +119,11 @@ export function CardCoverSurface() {
         <span className="type-titolo-2 text-rosa-700">Vol. 3</span>
       </div>
       <CardOverlay>
-        <div className="grid gap-1">
+        <div className="grid">
           <CardTitle>Vol. 3 — Afterhours</CardTitle>
           <CardDescription>12 tracce · 54 min</CardDescription>
         </div>
-        <Button variant="link" className="w-fit px-0">
+        <Button variant="link" className="w-fit">
           Ascolta la tracklist
         </Button>
       </CardOverlay>
@@ -133,19 +133,19 @@ export function CardCoverSurface() {
 
 export function CardCoverGrid() {
   const releases = [
-    { title: "Sotto cassa", artist: "LOCAMIMI", cover: cuorePalpebre },
-    { title: "Socchiuso", artist: "Verde Club", cover: cuoreSocchiuso },
-    { title: "Occhiolino", artist: "N900 Sound", cover: cuoreOcchiolino },
-    { title: "Aperitivo", artist: "Coppa Records", cover: coppa },
+    { title: "Sotto cassa", artist: "LOCAMIMI", cover: cuorePalpebre, tone: "text-brand" },
+    { title: "Socchiuso", artist: "Verde Club", cover: cuoreSocchiuso, tone: "text-highlight-text" },
+    { title: "Occhiolino", artist: "N900 Sound", cover: cuoreOcchiolino, tone: "text-primary" },
+    { title: "Aperitivo", artist: "Coppa Records", cover: coppa, tone: "text-foreground" },
   ]
 
   return (
-    <div className="grid w-full max-w-3xl grid-cols-1 gap-8 sm:grid-cols-2">
+    <div className="grid w-full max-w-3xl grid-cols-1 gap-gap-xl sm:grid-cols-2">
       {releases.map((release) => (
         <Card key={release.title} variant="cover" size="sm">
-          <CardMedia src={release.cover} alt="" />
+          <CardIllustration svg={release.cover} className={release.tone} />
           <CardOverlay>
-            <div className="grid gap-1">
+            <div className="grid">
               <CardTitle>{release.title}</CardTitle>
               <CardDescription>{release.artist}</CardDescription>
             </div>
@@ -166,7 +166,8 @@ export function CardCoverCarousel() {
       title: "Sotto cassa",
       subtitle: "LOCAMIMI · Giovedì 23:00",
       description: "House e hardgroove fino all'alba. La notte LOCAMIMI comincia qui.",
-      image: cuorePalpebre,
+      illustration: cuorePalpebre,
+      tone: "text-brand",
       cta: { label: "Prendi il tuo posto" },
     },
     {
@@ -174,7 +175,8 @@ export function CardCoverCarousel() {
       title: "Socchiuso",
       subtitle: "Verde Club · Venerdì 22:00",
       description: "Un set lento e ipnotico, per chi arriva presto e resta tardi.",
-      image: cuoreSocchiuso,
+      illustration: cuoreSocchiuso,
+      tone: "text-highlight-text",
       cta: { label: "Scopri la line-up" },
     },
     {
@@ -182,7 +184,8 @@ export function CardCoverCarousel() {
       title: "Occhiolino",
       subtitle: "N900 Sound · Sabato 23:30",
       description: "Disco, edit e qualche sorpresa. Dress code: brillare.",
-      image: cuoreOcchiolino,
+      illustration: cuoreOcchiolino,
+      tone: "text-primary",
       cta: { label: "Biglietti" },
     },
     {
@@ -190,7 +193,8 @@ export function CardCoverCarousel() {
       title: "Aperitivo",
       subtitle: "Coppa Records · Domenica 18:00",
       description: "Vinili, spritz e tramonto in terrazza.",
-      image: coppa,
+      illustration: coppa,
+      tone: "text-foreground",
       cta: { label: "Prenota un tavolo" },
     },
     {
@@ -198,7 +202,8 @@ export function CardCoverCarousel() {
       title: "After",
       subtitle: "LOCAMIMI · Domenica 04:00",
       description: "Per chi non vuole ancora tornare a casa.",
-      image: cuorePalpebre,
+      illustration: cuorePalpebre,
+      tone: "text-foreground",
       cta: { label: "Mettiti in lista" },
     },
   ]
@@ -208,7 +213,7 @@ export function CardCoverCarousel() {
 
 export function AvatarBasic() {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-gap-md">
       <Avatar>
         <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
         <AvatarFallback>CN</AvatarFallback>
@@ -227,7 +232,7 @@ export function AvatarBasic() {
 
 export function AvatarSizes() {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-gap-md">
       <Avatar size="sm">
         <AvatarFallback>SM</AvatarFallback>
       </Avatar>
@@ -358,12 +363,12 @@ export function TabsVertical() {
 export function SeparatorDemo() {
   return (
     <div className="w-full max-w-xs">
-      <div className="space-y-1">
+      <div className="space-y-stack-xs">
         <h4 className="text-sm font-medium">Design System</h4>
         <p className="text-sm text-muted-foreground">Components built on shadcn/ui.</p>
       </div>
-      <Separator className="my-4" />
-      <div className="flex h-5 items-center gap-4 text-sm">
+      <Separator className="my-stack-sm" />
+      <div className="flex h-5 items-center gap-gap-md text-sm">
         <span>Docs</span>
         <Separator orientation="vertical" />
         <span>Source</span>
@@ -379,12 +384,12 @@ export function ScrollAreaVertical() {
 
   return (
     <ScrollArea className="h-64 w-48 rounded-md border">
-      <div className="p-4">
-        <h4 className="mb-4 text-sm font-medium">Tags</h4>
+      <div className="p-inset-md">
+        <h4 className="mb-stack-sm text-sm font-medium">Tags</h4>
         {tags.map((tag) => (
           <div key={tag}>
             <div className="text-sm">{tag}</div>
-            <Separator className="my-2" />
+            <Separator className="my-stack-xs" />
           </div>
         ))}
       </div>
@@ -397,9 +402,9 @@ export function ScrollAreaHorizontal() {
 
   return (
     <ScrollArea className="w-full max-w-sm rounded-md border whitespace-nowrap">
-      <div className="flex w-max gap-4 p-4">
+      <div className="flex w-max gap-gap-md p-inset-md">
         {colors.map((color) => (
-          <div key={color} className="flex h-24 w-32 items-end rounded-md bg-muted p-2 text-sm">
+          <div key={color} className="flex h-24 w-32 items-end rounded-md bg-muted p-inset-sm text-sm">
             {color}
           </div>
         ))}

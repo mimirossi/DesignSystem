@@ -111,3 +111,33 @@ export function typeRoles(): TypeRole[] {
       }
     })
 }
+
+type SpacingTokens = Record<string, Record<string, { $value: number; $description?: string }>>
+
+export type SpacingRole = { group: string; name: string; px: number; alias: string }
+
+/** Semantic spacing from tokens/spacing.tokens.json, grouped as in Figma. */
+export function spacingRoles(): { group: string; description: string; roles: SpacingRole[] }[] {
+  const tokens = files["../../../tokens/spacing.tokens.json"] as unknown as SpacingTokens
+  return Object.entries(tokens)
+    .filter(([group]) => !group.startsWith("$"))
+    .map(([group, steps]) => {
+      const first = Object.values(steps)[0]
+      return {
+        group,
+        description: (first.$description ?? "").split(".")[0],
+        roles: Object.entries(steps).map(([name, token]) => ({
+          group,
+          name,
+          px: token.$value,
+          alias: `space/${token.$value}`,
+        })),
+      }
+    })
+}
+
+/** Primitive 4px scale from tokens/spacing-base.tokens.json. */
+export function spacingPrimitives(): number[] {
+  const tokens = files["../../../tokens/spacing-base.tokens.json"] as unknown as SpacingTokens
+  return Object.values(tokens.space).map((token) => token.$value)
+}

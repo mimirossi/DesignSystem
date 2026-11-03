@@ -46,7 +46,7 @@ export function SelectGroups() {
   ]
 
   return (
-    <div className="grid gap-2">
+    <div className="grid gap-stack-xs">
       <Label>Timezone</Label>
       <Select items={timezones} defaultValue="cet">
         <SelectTrigger className="w-64">

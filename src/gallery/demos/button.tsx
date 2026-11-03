@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function ButtonVariants() {
   return (
-    <div className="flex flex-wrap items-center gap-3">
+    <div className="flex flex-wrap items-center gap-gap-sm">
       <Button>Default</Button>
       <Button variant="secondary">Secondary</Button>
       <Button variant="outline">Outline</Button>
@@ -16,7 +16,7 @@ export function ButtonVariants() {
 
 export function ButtonSizes() {
   return (
-    <div className="flex flex-wrap items-center gap-3">
+    <div className="flex flex-wrap items-center gap-gap-sm">
       <Button size="xs">Extra small</Button>
       <Button size="sm">Small</Button>
       <Button>Default</Button>
@@ -27,7 +27,7 @@ export function ButtonSizes() {
 
 export function ButtonWithIcon() {
   return (
-    <div className="flex flex-wrap items-center gap-3">
+    <div className="flex flex-wrap items-center gap-gap-sm">
       <Button>
         <MailIcon data-icon="inline-start" />
         Login with email
@@ -46,7 +46,7 @@ export function ButtonWithIcon() {
 
 export function ButtonIconOnly() {
   return (
-    <div className="flex flex-wrap items-center gap-3">
+    <div className="flex flex-wrap items-center gap-gap-sm">
       <Button size="icon-xs" variant="outline" aria-label="Add">
         <PlusIcon />
       </Button>
