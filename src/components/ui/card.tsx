@@ -10,9 +10,9 @@ const cardVariants = cva(
         default:
           "flex flex-col gap-(--card-spacing) py-(--card-spacing) has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
         // Square, record-sleeve card: media or surface color fills it, details
-        // appear on hover/focus. The green offset shadow sinks away on hover.
+        // appear on hover/focus.
         cover:
-          "relative isolate aspect-square shadow-[8px_8px_0_0_var(--color-highlight)] transition-shadow duration-200 hover:shadow-[0_0_0_0_var(--color-highlight)] has-[:focus-visible]:shadow-[0_0_0_0_var(--color-highlight)]",
+          "relative isolate aspect-square",
       },
     },
     defaultVariants: {

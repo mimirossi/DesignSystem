@@ -1,7 +1,8 @@
 import { ArrowRightIcon, MoreHorizontalIcon, PlayIcon } from "lucide-react"
-import shapesVerde from "@/assets/covers/shapes-verde.svg"
-import vinylRosa from "@/assets/covers/vinyl-rosa.svg"
-import wavesNero from "@/assets/covers/waves-nero.svg"
+import coppa from "@/assets/covers/coppa.svg"
+import cuoreOcchiolino from "@/assets/covers/cuore-occhiolino.svg"
+import cuorePalpebre from "@/assets/covers/cuore-palpebre.svg"
+import cuoreSocchiuso from "@/assets/covers/cuore-socchiuso.svg"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import {
   Avatar,
@@ -95,7 +96,7 @@ export function CardSmall() {
 export function CardCoverImage() {
   return (
     <Card variant="cover" className="w-72">
-      <CardMedia src={vinylRosa} alt="Pink sleeve with a black vinyl record" />
+      <CardMedia src={cuorePalpebre} alt="LOCAMIMI heart with lowered eyelids on pink" />
       <CardOverlay>
         <div className="grid gap-1">
           <CardTitle>Sotto cassa</CardTitle>
@@ -131,13 +132,14 @@ export function CardCoverSurface() {
 
 export function CardCoverGrid() {
   const releases = [
-    { title: "Sotto cassa", artist: "LOCAMIMI", cover: vinylRosa },
-    { title: "Forme", artist: "Verde Club", cover: shapesVerde },
-    { title: "Onde", artist: "N900 Sound", cover: wavesNero },
+    { title: "Sotto cassa", artist: "LOCAMIMI", cover: cuorePalpebre },
+    { title: "Socchiuso", artist: "Verde Club", cover: cuoreSocchiuso },
+    { title: "Occhiolino", artist: "N900 Sound", cover: cuoreOcchiolino },
+    { title: "Aperitivo", artist: "Coppa Records", cover: coppa },
   ]
 
   return (
-    <div className="grid w-full max-w-3xl grid-cols-1 gap-8 sm:grid-cols-3">
+    <div className="grid w-full max-w-3xl grid-cols-1 gap-8 sm:grid-cols-2">
       {releases.map((release) => (
         <Card key={release.title} variant="cover" size="sm">
           <CardMedia src={release.cover} alt="" />

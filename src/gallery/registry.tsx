@@ -1,6 +1,6 @@
 import type * as React from "react"
 import { BoldIcon } from "lucide-react"
-import vinylRosa from "@/assets/covers/vinyl-rosa.svg"
+import cuorePalpebre from "@/assets/covers/cuore-palpebre.svg"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardMedia, CardOverlay, CardTitle } from "@/components/ui/card"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -462,7 +462,7 @@ const entries: (Omit<ComponentEntry, "sources"> & { files: string[] })[] = [
       ],
       render: (row, state) => (
         <Card variant="cover" size="sm" className={row.media ? "w-44" : "w-44 bg-rosa-chiaro-200"} {...state}>
-          {row.media && <CardMedia src={vinylRosa} alt="" />}
+          {row.media && <CardMedia src={cuorePalpebre} alt="" />}
           <CardOverlay>
             <div className="grid gap-1">
               <CardTitle>Sotto cassa</CardTitle>
@@ -492,7 +492,7 @@ const entries: (Omit<ComponentEntry, "sources"> & { files: string[] })[] = [
       ["CardBasic", "With header action & footer"],
       ["CardForm", "Login form"],
       ["CardSmall", "Small"],
-      ["CardCoverImage", "Cover · image", "Square, record-sleeve card. Hover or focus reveals title and subtitle at the top and the CTA at the bottom-left; the green shadow sinks away. On touch screens the details are always visible."],
+      ["CardCoverImage", "Cover · image", "Square, record-sleeve card. Hover or focus reveals title and subtitle at the top and the CTA at the bottom-left. On touch screens the details are always visible."],
       ["CardCoverSurface", "Cover · surface color", "No media: any surface or palette color works as the background."],
       ["CardCoverGrid", "Cover · grid"],
     ]),
