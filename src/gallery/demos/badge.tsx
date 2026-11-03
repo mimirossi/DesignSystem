@@ -1,4 +1,4 @@
-import { BadgeCheckIcon, ExternalLinkIcon } from "lucide-react"
+import { BadgeCheckIcon, CheckIcon, ExternalLinkIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export function BadgeVariants() {
@@ -7,6 +7,7 @@ export function BadgeVariants() {
       <Badge>Default</Badge>
       <Badge variant="secondary">Secondary</Badge>
       <Badge variant="outline">Outline</Badge>
+      <Badge variant="highlight">Highlight</Badge>
       <Badge variant="ghost">Ghost</Badge>
       <Badge variant="destructive">Destructive</Badge>
       <Badge variant="link">Link</Badge>
@@ -26,6 +27,15 @@ export function BadgeWithIcon() {
         99+
       </Badge>
     </div>
+  )
+}
+
+export function BadgeHighlight() {
+  return (
+    <Badge variant="highlight">
+      <CheckIcon data-icon="inline-start" />
+      Tickets available
+    </Badge>
   )
 }
 

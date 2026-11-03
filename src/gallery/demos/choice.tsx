@@ -16,7 +16,7 @@ export function CheckboxWithDescription() {
   return (
     <div className="flex items-start gap-3">
       <Checkbox id="checkbox-notifications" defaultChecked />
-      <div className="grid gap-1.5">
+      <div className="grid gap-2">
         <Label htmlFor="checkbox-notifications">Enable notifications</Label>
         <p className="text-sm text-muted-foreground">You can change this at any time in settings.</p>
       </div>

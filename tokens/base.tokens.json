@@ -1,0 +1,1015 @@
+{
+  "rosa": {
+    "50": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9411764740943909,
+          0.9843137264251709
+        ],
+        "alpha": 1,
+        "hex": "#FFF0FB"
+      },
+      "$description": "R50 · #FFF0FB · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:983",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "100": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.8470588326454163,
+          0.9529411792755127
+        ],
+        "alpha": 1,
+        "hex": "#FFD8F3"
+      },
+      "$description": "R100 · #FFD8F3 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:984",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "200": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.6941176652908325,
+          0.9176470637321472
+        ],
+        "alpha": 1,
+        "hex": "#FFB1EA"
+      },
+      "$description": "R200 · #FFB1EA · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:985",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "300": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.529411792755127,
+          0.8745098114013672
+        ],
+        "alpha": 1,
+        "hex": "#FF87DF"
+      },
+      "$description": "R300 · #FF87DF · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:986",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "400": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.40784314274787903,
+          0.8470588326454163
+        ],
+        "alpha": 1,
+        "hex": "#FF68D8"
+      },
+      "$description": "R400 · #FF68D8 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:987",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "500": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9921568632125854,
+          0.29019609093666077,
+          0.8156862854957581
+        ],
+        "alpha": 1,
+        "hex": "#FD4AD0"
+      },
+      "$description": "R500 · #FD4AD0 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:988",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "600": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7882353067398071,
+          0.15294118225574493,
+          0.6235294342041016
+        ],
+        "alpha": 1,
+        "hex": "#C9279F"
+      },
+      "$description": "R600 · #C9279F · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:989",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "700": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6274510025978088,
+          0.0941176488995552,
+          0.48627451062202454
+        ],
+        "alpha": 1,
+        "hex": "#A0187C"
+      },
+      "$description": "R700 · #A0187C · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:990",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "800": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.45490196347236633,
+          0.07058823853731155,
+          0.3450980484485626
+        ],
+        "alpha": 1,
+        "hex": "#741258"
+      },
+      "$description": "R800 · #741258 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:991",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "900": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.27843138575553894,
+          0.04313725605607033,
+          0.21176470816135406
+        ],
+        "alpha": 1,
+        "hex": "#470B36"
+      },
+      "$description": "R900 · #470B36 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:992",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    }
+  },
+  "rosa-chiaro": {
+    "50": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.95686274766922,
+          0.9882352948188782
+        ],
+        "alpha": 1,
+        "hex": "#FFF4FC"
+      },
+      "$description": "S50 · #FFF4FC · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:993",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "100": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9803921580314636,
+          0.886274516582489,
+          0.9529411792755127
+        ],
+        "alpha": 1,
+        "hex": "#FAE2F3"
+      },
+      "$description": "S100 · #FAE2F3 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:994",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "200": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9529411792755127,
+          0.7647058963775635,
+          0.9019607901573181
+        ],
+        "alpha": 1,
+        "hex": "#F3C3E6"
+      },
+      "$description": "S200 · #F3C3E6 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:995",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "300": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8980392217636108,
+          0.6274510025978088,
+          0.8235294222831726
+        ],
+        "alpha": 1,
+        "hex": "#E5A0D2"
+      },
+      "$description": "S300 · #E5A0D2 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:996",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "400": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.800000011920929,
+          0.48627451062202454,
+          0.7137255072593689
+        ],
+        "alpha": 1,
+        "hex": "#CC7CB6"
+      },
+      "$description": "S400 · #CC7CB6 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:997",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "500": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6666666865348816,
+          0.3529411852359772,
+          0.5803921818733215
+        ],
+        "alpha": 1,
+        "hex": "#AA5A94"
+      },
+      "$description": "S500 · #AA5A94 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:998",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "600": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5333333611488342,
+          0.2549019753932953,
+          0.45098039507865906
+        ],
+        "alpha": 1,
+        "hex": "#884173"
+      },
+      "$description": "S600 · #884173 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:999",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "700": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.40784314274787903,
+          0.1882352977991104,
+          0.34117648005485535
+        ],
+        "alpha": 1,
+        "hex": "#683057"
+      },
+      "$description": "S700 · #683057 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1000",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "800": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2862745225429535,
+          0.13333334028720856,
+          0.239215686917305
+        ],
+        "alpha": 1,
+        "hex": "#49223D"
+      },
+      "$description": "S800 · #49223D · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1001",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "900": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.1764705926179886,
+          0.08235294371843338,
+          0.14901961386203766
+        ],
+        "alpha": 1,
+        "hex": "#2D1526"
+      },
+      "$description": "S900 · #2D1526 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1002",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    }
+  },
+  "verde": {
+    "50": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9725490212440491,
+          1,
+          0.8980392217636108
+        ],
+        "alpha": 1,
+        "hex": "#F8FFE5"
+      },
+      "$description": "V50 · #F8FFE5 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1003",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "100": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9333333373069763,
+          1,
+          0.7098039388656616
+        ],
+        "alpha": 1,
+        "hex": "#EEFFB5"
+      },
+      "$description": "V100 · #EEFFB5 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1004",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "200": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8745098114013672,
+          1,
+          0.4588235318660736
+        ],
+        "alpha": 1,
+        "hex": "#DFFF75"
+      },
+      "$description": "V200 · #DFFF75 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1005",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "300": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8078431487083435,
+          1,
+          0.19607843458652496
+        ],
+        "alpha": 1,
+        "hex": "#CEFF32"
+      },
+      "$description": "V300 · #CEFF32 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1006",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "400": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6745098233222961,
+          0.8509804010391235,
+          0.10588235408067703
+        ],
+        "alpha": 1,
+        "hex": "#ACD91B"
+      },
+      "$description": "V400 · #ACD91B · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1007",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "500": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5333333611488342,
+          0.6823529601097107,
+          0.062745101749897
+        ],
+        "alpha": 1,
+        "hex": "#88AE10"
+      },
+      "$description": "V500 · #88AE10 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1008",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "600": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3960784375667572,
+          0.5098039507865906,
+          0.03529411926865578
+        ],
+        "alpha": 1,
+        "hex": "#658209"
+      },
+      "$description": "V600 · #658209 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1009",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "700": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2862745225429535,
+          0.3764705955982208,
+          0.0235294122248888
+        ],
+        "alpha": 1,
+        "hex": "#496006"
+      },
+      "$description": "V700 · #496006 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1010",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "800": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.20000000298023224,
+          0.26274511218070984,
+          0.019607843831181526
+        ],
+        "alpha": 1,
+        "hex": "#334305"
+      },
+      "$description": "V800 · #334305 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1011",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "900": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.125490203499794,
+          0.16862745583057404,
+          0.0117647061124444
+        ],
+        "alpha": 1,
+        "hex": "#202B03"
+      },
+      "$description": "V900 · #202B03 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1012",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    }
+  },
+  "nero": {
+    "50": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9607843160629272,
+          0.9607843160629272,
+          0.9607843160629272
+        ],
+        "alpha": 1,
+        "hex": "#F5F5F5"
+      },
+      "$description": "N50 · #F5F5F5 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1013",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "100": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8980392217636108,
+          0.8980392217636108,
+          0.8980392217636108
+        ],
+        "alpha": 1,
+        "hex": "#E5E5E5"
+      },
+      "$description": "N100 · #E5E5E5 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1014",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "200": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "alpha": 1,
+        "hex": "#CCCCCC"
+      },
+      "$description": "N200 · #CCCCCC · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1015",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "300": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6901960968971252,
+          0.6901960968971252,
+          0.6901960968971252
+        ],
+        "alpha": 1,
+        "hex": "#B0B0B0"
+      },
+      "$description": "N300 · #B0B0B0 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1016",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "400": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.572549045085907,
+          0.572549045085907,
+          0.572549045085907
+        ],
+        "alpha": 1,
+        "hex": "#929292"
+      },
+      "$description": "N400 · #929292 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1017",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "500": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4627451002597809,
+          0.4627451002597809,
+          0.4627451002597809
+        ],
+        "alpha": 1,
+        "hex": "#767676"
+      },
+      "$description": "N500 · #767676 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1018",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "600": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3490196168422699,
+          0.3490196168422699,
+          0.3490196168422699
+        ],
+        "alpha": 1,
+        "hex": "#595959"
+      },
+      "$description": "N600 · #595959 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1019",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "700": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2549019753932953,
+          0.2549019753932953,
+          0.2549019753932953
+        ],
+        "alpha": 1,
+        "hex": "#414141"
+      },
+      "$description": "N700 · #414141 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1020",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "800": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16862745583057404,
+          0.16862745583057404,
+          0.16862745583057404
+        ],
+        "alpha": 1,
+        "hex": "#2B2B2B"
+      },
+      "$description": "N800 · #2B2B2B · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1021",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "900": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.10980392247438431,
+          0.10980392247438431,
+          0.10980392247438431
+        ],
+        "alpha": 1,
+        "hex": "#1C1C1C"
+      },
+      "$description": "N900 · #1C1C1C · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1022",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    }
+  },
+  "crema": {
+    "50": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9921568632125854,
+          0.9686274528503418
+        ],
+        "alpha": 1,
+        "hex": "#FFFDF7"
+      },
+      "$description": "C50 · #FFFDF7 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1023",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "100": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9607843160629272,
+          0.9450980424880981,
+          0.9058823585510254
+        ],
+        "alpha": 1,
+        "hex": "#F5F1E7"
+      },
+      "$description": "C100 · #F5F1E7 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1024",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "200": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9098039269447327,
+          0.8823529481887817,
+          0.8235294222831726
+        ],
+        "alpha": 1,
+        "hex": "#E8E1D2"
+      },
+      "$description": "C200 · #E8E1D2 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1025",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "300": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8352941274642944,
+          0.7960784435272217,
+          0.7176470756530762
+        ],
+        "alpha": 1,
+        "hex": "#D5CBB7"
+      },
+      "$description": "C300 · #D5CBB7 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1026",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "400": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7215686440467834,
+          0.6666666865348816,
+          0.5686274766921997
+        ],
+        "alpha": 1,
+        "hex": "#B8AA91"
+      },
+      "$description": "C400 · #B8AA91 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1027",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "500": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5921568870544434,
+          0.5254902243614197,
+          0.42352941632270813
+        ],
+        "alpha": 1,
+        "hex": "#97866C"
+      },
+      "$description": "C500 · #97866C · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1028",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "600": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.47058823704719543,
+          0.4117647111415863,
+          0.3137255012989044
+        ],
+        "alpha": 1,
+        "hex": "#786950"
+      },
+      "$description": "C600 · #786950 · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1029",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "700": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3607843220233917,
+          0.3137255012989044,
+          0.24313725531101227
+        ],
+        "alpha": 1,
+        "hex": "#5C503E"
+      },
+      "$description": "C700 · #5C503E · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1030",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "800": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2549019753932953,
+          0.2235294133424759,
+          0.1764705926179886
+        ],
+        "alpha": 1,
+        "hex": "#41392D"
+      },
+      "$description": "C800 · #41392D · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1031",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "900": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16470588743686676,
+          0.14509804546833038,
+          0.11764705926179886
+        ],
+        "alpha": 1,
+        "hex": "#2A251E"
+      },
+      "$description": "C900 · #2A251E · scala della tavola LOCAMIMI",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:344:1032",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Base"
+  }
+}

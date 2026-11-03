@@ -79,7 +79,7 @@ export function ComponentPage({ entry }: { entry: ComponentEntry }) {
 
       <aside className="sticky top-20 hidden h-fit w-44 shrink-0 xl:block">
         <p className="mb-2 text-xs font-medium tracking-wide text-muted-foreground uppercase">On this page</p>
-        <ul className="flex flex-col gap-1.5 text-sm">
+        <ul className="flex flex-col gap-2 text-sm">
           {toc.map((item) => (
             <li key={item.id} className={item.nested ? "pl-3" : undefined}>
               <button

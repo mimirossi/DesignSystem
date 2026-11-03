@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { SidebarNav } from "@/gallery/components/sidebar-nav"
 import { ThemeToggle } from "@/gallery/components/theme-toggle"
 import { ComponentPage } from "@/gallery/pages/component-page"
+import { FoundationsPage } from "@/gallery/pages/foundations-page"
 import { HomePage } from "@/gallery/pages/home-page"
 import { findComponent } from "@/gallery/registry"
 import { useHashRoute } from "@/gallery/use-hash-route"
@@ -14,8 +15,12 @@ export function App() {
   const [menuOpen, setMenuOpen] = React.useState(false)
 
   React.useEffect(() => {
-    document.title = entry ? `${entry.name} · Design System` : "Design System"
-  }, [entry])
+    document.title = entry
+      ? `${entry.name} · Design System`
+      : route === "foundations"
+        ? "Foundations · Design System"
+        : "Design System"
+  }, [entry, route])
 
   return (
     <div className="min-h-svh">
@@ -51,12 +56,14 @@ export function App() {
               : "sticky top-14 hidden h-[calc(100svh-3.5rem)] w-60 shrink-0 overflow-y-auto border-r p-4 lg:block"
           }
         >
-          <SidebarNav active={entry ? entry.slug : ""} onNavigate={() => setMenuOpen(false)} />
+          <SidebarNav active={entry ? entry.slug : route} onNavigate={() => setMenuOpen(false)} />
         </aside>
 
         <main className="min-w-0 flex-1 px-4 py-8 sm:px-8 lg:py-10">
           {entry ? (
             <ComponentPage key={entry.slug} entry={entry} />
+          ) : route === "foundations" ? (
+            <FoundationsPage />
           ) : route ? (
             <div className="flex flex-col gap-2">
               <h1 className="text-2xl font-semibold">Not found</h1>

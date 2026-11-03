@@ -115,6 +115,7 @@ const entries: (Omit<ComponentEntry, "sources"> & { files: string[] })[] = [
     examples: examples("badge", [
       ["BadgeVariants", "Variants"],
       ["BadgeWithIcon", "With icon & counters"],
+      ["BadgeHighlight", "Highlight", "Green V300 with N900 text. Always pair it with an icon or label — never color alone."],
       ["BadgeAsLink", "As link"],
     ]),
   },
