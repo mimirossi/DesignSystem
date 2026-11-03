@@ -1,4 +1,7 @@
-import { MoreHorizontalIcon } from "lucide-react"
+import { ArrowRightIcon, MoreHorizontalIcon, PlayIcon } from "lucide-react"
+import shapesVerde from "@/assets/covers/shapes-verde.svg"
+import vinylRosa from "@/assets/covers/vinyl-rosa.svg"
+import wavesNero from "@/assets/covers/waves-nero.svg"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import {
   Avatar,
@@ -16,6 +19,8 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
+  CardMedia,
+  CardOverlay,
   CardTitle,
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -84,6 +89,70 @@ export function CardSmall() {
       </CardHeader>
       <CardContent>Content goes here.</CardContent>
     </Card>
+  )
+}
+
+export function CardCoverImage() {
+  return (
+    <Card variant="cover" className="w-72">
+      <CardMedia src={vinylRosa} alt="Pink sleeve with a black vinyl record" />
+      <CardOverlay>
+        <div className="grid gap-1">
+          <CardTitle>Sotto cassa</CardTitle>
+          <CardDescription>House e hardgroove · Giovedì 23:00</CardDescription>
+        </div>
+        <Button className="w-fit">
+          Prendi il tuo posto
+          <ArrowRightIcon data-icon="inline-end" />
+        </Button>
+      </CardOverlay>
+    </Card>
+  )
+}
+
+export function CardCoverSurface() {
+  return (
+    <Card variant="cover" className="w-72 bg-rosa-chiaro-200">
+      <div className="absolute inset-0 -z-10 grid place-items-center">
+        <span className="type-titolo-2 text-rosa-700">Vol. 3</span>
+      </div>
+      <CardOverlay>
+        <div className="grid gap-1">
+          <CardTitle>Vol. 3 — Afterhours</CardTitle>
+          <CardDescription>12 tracce · 54 min</CardDescription>
+        </div>
+        <Button variant="link" className="w-fit px-0">
+          Ascolta la tracklist
+        </Button>
+      </CardOverlay>
+    </Card>
+  )
+}
+
+export function CardCoverGrid() {
+  const releases = [
+    { title: "Sotto cassa", artist: "LOCAMIMI", cover: vinylRosa },
+    { title: "Forme", artist: "Verde Club", cover: shapesVerde },
+    { title: "Onde", artist: "N900 Sound", cover: wavesNero },
+  ]
+
+  return (
+    <div className="grid w-full max-w-3xl grid-cols-1 gap-8 sm:grid-cols-3">
+      {releases.map((release) => (
+        <Card key={release.title} variant="cover" size="sm">
+          <CardMedia src={release.cover} alt="" />
+          <CardOverlay>
+            <div className="grid gap-1">
+              <CardTitle>{release.title}</CardTitle>
+              <CardDescription>{release.artist}</CardDescription>
+            </div>
+            <Button size="icon" aria-label={`Play ${release.title}`}>
+              <PlayIcon />
+            </Button>
+          </CardOverlay>
+        </Card>
+      ))}
+    </div>
   )
 }
 
