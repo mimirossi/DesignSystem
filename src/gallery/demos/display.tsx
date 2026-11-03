@@ -1,0 +1,291 @@
+import { MoreHorizontalIcon } from "lucide-react"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import {
+  Avatar,
+  AvatarBadge,
+  AvatarFallback,
+  AvatarGroup,
+  AvatarGroupCount,
+  AvatarImage,
+} from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { Separator } from "@/components/ui/separator"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+export function CardBasic() {
+  return (
+    <Card className="w-full max-w-sm">
+      <CardHeader>
+        <CardTitle>Team plan</CardTitle>
+        <CardDescription>Everything your team needs to ship faster.</CardDescription>
+        <CardAction>
+          <Button variant="ghost" size="icon-sm" aria-label="More options">
+            <MoreHorizontalIcon />
+          </Button>
+        </CardAction>
+      </CardHeader>
+      <CardContent>
+        <p className="text-2xl font-semibold">
+          $24<span className="text-sm font-normal text-muted-foreground">/user/month</span>
+        </p>
+      </CardContent>
+      <CardFooter>
+        <Button className="w-full">Upgrade</Button>
+      </CardFooter>
+    </Card>
+  )
+}
+
+export function CardForm() {
+  return (
+    <Card className="w-full max-w-sm">
+      <CardHeader>
+        <CardTitle>Login to your account</CardTitle>
+        <CardDescription>Enter your email below to login.</CardDescription>
+      </CardHeader>
+      <CardContent className="grid gap-4">
+        <div className="grid gap-2">
+          <Label htmlFor="card-email">Email</Label>
+          <Input id="card-email" type="email" placeholder="you@example.com" />
+        </div>
+        <div className="grid gap-2">
+          <Label htmlFor="card-password">Password</Label>
+          <Input id="card-password" type="password" />
+        </div>
+      </CardContent>
+      <CardFooter className="flex-col gap-2">
+        <Button className="w-full">Login</Button>
+        <Button variant="outline" className="w-full">
+          Create account
+        </Button>
+      </CardFooter>
+    </Card>
+  )
+}
+
+export function CardSmall() {
+  return (
+    <Card size="sm" className="w-full max-w-xs">
+      <CardHeader>
+        <CardTitle>Small card</CardTitle>
+        <CardDescription>Uses tighter spacing for dense layouts.</CardDescription>
+      </CardHeader>
+      <CardContent>Content goes here.</CardContent>
+    </Card>
+  )
+}
+
+export function AvatarBasic() {
+  return (
+    <div className="flex items-center gap-4">
+      <Avatar>
+        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+        <AvatarFallback>CN</AvatarFallback>
+      </Avatar>
+      <Avatar>
+        <AvatarFallback>AL</AvatarFallback>
+      </Avatar>
+      <Avatar>
+        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+        <AvatarFallback>CN</AvatarFallback>
+        <AvatarBadge className="bg-green-600 dark:bg-green-500" />
+      </Avatar>
+    </div>
+  )
+}
+
+export function AvatarSizes() {
+  return (
+    <div className="flex items-center gap-4">
+      <Avatar size="sm">
+        <AvatarFallback>SM</AvatarFallback>
+      </Avatar>
+      <Avatar>
+        <AvatarFallback>MD</AvatarFallback>
+      </Avatar>
+      <Avatar size="lg">
+        <AvatarFallback>LG</AvatarFallback>
+      </Avatar>
+    </div>
+  )
+}
+
+export function AvatarGroupDemo() {
+  return (
+    <AvatarGroup>
+      <Avatar>
+        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+        <AvatarFallback>CN</AvatarFallback>
+      </Avatar>
+      <Avatar>
+        <AvatarFallback>AL</AvatarFallback>
+      </Avatar>
+      <Avatar>
+        <AvatarFallback>GH</AvatarFallback>
+      </Avatar>
+      <AvatarGroupCount>+4</AvatarGroupCount>
+    </AvatarGroup>
+  )
+}
+
+export function AccordionBasic() {
+  return (
+    <Accordion defaultValue={["item-1"]} className="w-full max-w-md">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionContent>Yes. It follows the WAI-ARIA design pattern.</AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>Is it styled?</AccordionTrigger>
+        <AccordionContent>Yes. It uses the design system tokens by default.</AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3" disabled>
+        <AccordionTrigger>Is it disabled?</AccordionTrigger>
+        <AccordionContent>This item can't be opened.</AccordionContent>
+      </AccordionItem>
+    </Accordion>
+  )
+}
+
+export function AccordionMultiple() {
+  return (
+    <Accordion multiple defaultValue={["shipping", "returns"]} className="w-full max-w-md">
+      <AccordionItem value="shipping">
+        <AccordionTrigger>Shipping</AccordionTrigger>
+        <AccordionContent>We ship worldwide within 3–5 business days.</AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="returns">
+        <AccordionTrigger>Returns</AccordionTrigger>
+        <AccordionContent>Returns are free for 30 days after delivery.</AccordionContent>
+      </AccordionItem>
+    </Accordion>
+  )
+}
+
+export function TabsDefault() {
+  return (
+    <Tabs defaultValue="account" className="w-full max-w-sm">
+      <TabsList>
+        <TabsTrigger value="account">Account</TabsTrigger>
+        <TabsTrigger value="password">Password</TabsTrigger>
+        <TabsTrigger value="billing" disabled>
+          Billing
+        </TabsTrigger>
+      </TabsList>
+      <TabsContent value="account" className="text-sm text-muted-foreground">
+        Manage your account details.
+      </TabsContent>
+      <TabsContent value="password" className="text-sm text-muted-foreground">
+        Change your password.
+      </TabsContent>
+    </Tabs>
+  )
+}
+
+export function TabsLine() {
+  return (
+    <Tabs defaultValue="overview" className="w-full max-w-sm">
+      <TabsList variant="line">
+        <TabsTrigger value="overview">Overview</TabsTrigger>
+        <TabsTrigger value="analytics">Analytics</TabsTrigger>
+        <TabsTrigger value="reports">Reports</TabsTrigger>
+      </TabsList>
+      <TabsContent value="overview" className="text-sm text-muted-foreground">
+        Overview content.
+      </TabsContent>
+      <TabsContent value="analytics" className="text-sm text-muted-foreground">
+        Analytics content.
+      </TabsContent>
+      <TabsContent value="reports" className="text-sm text-muted-foreground">
+        Reports content.
+      </TabsContent>
+    </Tabs>
+  )
+}
+
+export function TabsVertical() {
+  return (
+    <Tabs defaultValue="general" orientation="vertical" className="w-full max-w-sm">
+      <TabsList>
+        <TabsTrigger value="general">General</TabsTrigger>
+        <TabsTrigger value="security">Security</TabsTrigger>
+        <TabsTrigger value="team">Team</TabsTrigger>
+      </TabsList>
+      <TabsContent value="general" className="text-sm text-muted-foreground">
+        General settings.
+      </TabsContent>
+      <TabsContent value="security" className="text-sm text-muted-foreground">
+        Security settings.
+      </TabsContent>
+      <TabsContent value="team" className="text-sm text-muted-foreground">
+        Team settings.
+      </TabsContent>
+    </Tabs>
+  )
+}
+
+export function SeparatorDemo() {
+  return (
+    <div className="w-full max-w-xs">
+      <div className="space-y-1">
+        <h4 className="text-sm font-medium">Design System</h4>
+        <p className="text-sm text-muted-foreground">Components built on shadcn/ui.</p>
+      </div>
+      <Separator className="my-4" />
+      <div className="flex h-5 items-center gap-4 text-sm">
+        <span>Docs</span>
+        <Separator orientation="vertical" />
+        <span>Source</span>
+        <Separator orientation="vertical" />
+        <span>Changelog</span>
+      </div>
+    </div>
+  )
+}
+
+export function ScrollAreaVertical() {
+  const tags = Array.from({ length: 40 }, (_, i) => `v1.2.0-beta.${40 - i}`)
+
+  return (
+    <ScrollArea className="h-64 w-48 rounded-md border">
+      <div className="p-4">
+        <h4 className="mb-4 text-sm font-medium">Tags</h4>
+        {tags.map((tag) => (
+          <div key={tag}>
+            <div className="text-sm">{tag}</div>
+            <Separator className="my-2" />
+          </div>
+        ))}
+      </div>
+    </ScrollArea>
+  )
+}
+
+export function ScrollAreaHorizontal() {
+  const colors = ["Slate", "Red", "Orange", "Amber", "Lime", "Emerald", "Cyan", "Blue", "Violet", "Pink"]
+
+  return (
+    <ScrollArea className="w-full max-w-sm rounded-md border whitespace-nowrap">
+      <div className="flex w-max gap-4 p-4">
+        {colors.map((color) => (
+          <div key={color} className="flex h-24 w-32 items-end rounded-md bg-muted p-2 text-sm">
+            {color}
+          </div>
+        ))}
+      </div>
+      <ScrollBar orientation="horizontal" />
+    </ScrollArea>
+  )
+}
