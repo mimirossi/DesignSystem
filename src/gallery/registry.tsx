@@ -453,7 +453,7 @@ const entries: (Omit<ComponentEntry, "sources"> & { files: string[] })[] = [
     name: "Card",
     category: "Display & layout",
     description: "Groups related content and actions in a container. The cover variant is a square, record-sleeve card for images.",
-    files: ["card"],
+    files: ["card", "cover-carousel"],
     states: {
       columns: ["default", "hover"],
       rows: [
@@ -495,6 +495,7 @@ const entries: (Omit<ComponentEntry, "sources"> & { files: string[] })[] = [
       ["CardCoverImage", "Cover · image", "Square, record-sleeve card. Hover or focus reveals title and subtitle at the top and the CTA at the bottom-left. On touch screens the details are always visible."],
       ["CardCoverSurface", "Cover · surface color", "No media: any surface or palette color works as the background."],
       ["CardCoverGrid", "Cover · grid"],
+      ["CardCoverCarousel", "Cover · carousel", "Covers stacked on a diagonal. Hover lifts a card; click straightens and enlarges them into a strip you scroll horizontally, with more details. Esc or × goes back."],
     ]),
   },
   {

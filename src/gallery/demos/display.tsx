@@ -24,6 +24,7 @@ import {
   CardOverlay,
   CardTitle,
 } from "@/components/ui/card"
+import { CoverCarousel } from "@/components/ui/cover-carousel"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
@@ -156,6 +157,53 @@ export function CardCoverGrid() {
       ))}
     </div>
   )
+}
+
+export function CardCoverCarousel() {
+  const items = [
+    {
+      id: "sotto-cassa",
+      title: "Sotto cassa",
+      subtitle: "LOCAMIMI · Giovedì 23:00",
+      description: "House e hardgroove fino all'alba. La notte LOCAMIMI comincia qui.",
+      image: cuorePalpebre,
+      cta: { label: "Prendi il tuo posto" },
+    },
+    {
+      id: "socchiuso",
+      title: "Socchiuso",
+      subtitle: "Verde Club · Venerdì 22:00",
+      description: "Un set lento e ipnotico, per chi arriva presto e resta tardi.",
+      image: cuoreSocchiuso,
+      cta: { label: "Scopri la line-up" },
+    },
+    {
+      id: "occhiolino",
+      title: "Occhiolino",
+      subtitle: "N900 Sound · Sabato 23:30",
+      description: "Disco, edit e qualche sorpresa. Dress code: brillare.",
+      image: cuoreOcchiolino,
+      cta: { label: "Biglietti" },
+    },
+    {
+      id: "aperitivo",
+      title: "Aperitivo",
+      subtitle: "Coppa Records · Domenica 18:00",
+      description: "Vinili, spritz e tramonto in terrazza.",
+      image: coppa,
+      cta: { label: "Prenota un tavolo" },
+    },
+    {
+      id: "after",
+      title: "After",
+      subtitle: "LOCAMIMI · Domenica 04:00",
+      description: "Per chi non vuole ancora tornare a casa.",
+      image: cuorePalpebre,
+      cta: { label: "Mettiti in lista" },
+    },
+  ]
+
+  return <CoverCarousel items={items} />
 }
 
 export function AvatarBasic() {
