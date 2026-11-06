@@ -7,10 +7,10 @@ export function StateMatrix({ matrix }: { matrix: StateMatrixConfig }) {
   const { columns, rows } = matrix
 
   return (
-    <div className="overflow-x-auto rounded-lg border">
+    <div className="overflow-x-auto rounded-lg border-thin">
       <table className="preview-surface w-full border-collapse text-sm">
         <thead>
-          <tr className="border-b bg-muted/40">
+          <tr className="border-b-thin bg-muted/40">
             <th className="w-36 px-4 py-2.5 text-left font-medium text-muted-foreground">
               Variant
             </th>
@@ -39,7 +39,7 @@ export function StateMatrix({ matrix }: { matrix: StateMatrixConfig }) {
         </thead>
         <tbody>
           {rows.map((row) => (
-            <tr key={row.label} className="border-b last:border-b-0">
+            <tr key={row.label} className="border-b-thin last:border-b-0">
               <th scope="row" className="px-4 py-4 text-left align-middle font-normal text-muted-foreground">
                 {row.label}
               </th>

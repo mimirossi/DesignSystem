@@ -24,7 +24,7 @@ export function App() {
 
   return (
     <div className="min-h-svh">
-      <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b-thin bg-background/80 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-screen-2xl items-center gap-gap-sm px-inset-md sm:px-inset-lg">
           <Button
             variant="ghost"
@@ -53,7 +53,7 @@ export function App() {
           className={
             menuOpen
               ? "fixed inset-x-0 top-14 bottom-0 z-30 overflow-y-auto bg-background p-inset-md lg:hidden"
-              : "sticky top-14 hidden h-[calc(100svh-3.5rem)] w-60 shrink-0 overflow-y-auto border-r p-inset-md lg:block"
+              : "sticky top-14 hidden h-[calc(100svh-3.5rem)] w-60 shrink-0 overflow-y-auto border-r-thin p-inset-md lg:block"
           }
         >
           <SidebarNav active={entry ? entry.slug : route} onNavigate={() => setMenuOpen(false)} />

@@ -153,6 +153,26 @@
   --spacing-section-xl: calc(var(--spacing) * 32); /* 128px */
 }
 
+/*
+ * LOCAMIMI stroke — tokens/spacing.tokens.json stroke/* (Figma).
+ * Same names for borders, rings and outlines:
+ *   border-thin · border-b-thin · ring-thin · outline-thin …
+ * stroke/none = Tailwind -0 (border-0, border-b-0, ring-0): a "none" key would
+ * clash with border-none / outline-none, which set the style, not the width.
+ * Exception: the focus ring stays ring-3 (3px + 3px gap, accessibility rule).
+ */
+@theme {
+  --border-width-thin: 1px;
+  --border-width-default: 2px;
+  --border-width-strong: 4px;
+  --ring-width-thin: 1px;
+  --ring-width-default: 2px;
+  --ring-width-strong: 4px;
+  --outline-width-thin: 1px;
+  --outline-width-default: 2px;
+  --outline-width-strong: 4px;
+}
+
 /* Tokens that are not colors */
 @theme inline {
   --color-link: var(--link);

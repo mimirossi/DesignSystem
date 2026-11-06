@@ -32,13 +32,13 @@ export function HomePage() {
                   <a
                     key={entry.slug}
                     href={`#/${entry.slug}`}
-                    className="group flex flex-col overflow-hidden rounded-xl border bg-card transition-colors hover:border-foreground/20"
+                    className="group flex flex-col overflow-hidden rounded-xl border-thin bg-card transition-colors hover:border-foreground/20"
                   >
                     {/* Thumbnails are decorative; the link itself is the interactive element. */}
                     <div
                       inert
                       aria-hidden
-                      className="preview-surface flex h-40 items-center justify-center overflow-hidden border-b p-inset-md"
+                      className="preview-surface flex h-40 items-center justify-center overflow-hidden border-b-thin p-inset-md"
                     >
                       <div className="pointer-events-none flex origin-center scale-[0.8] items-center justify-center">
                         <Preview />

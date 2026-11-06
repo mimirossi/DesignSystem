@@ -74,7 +74,7 @@ function Palette() {
                   aria-label={`Copy class bg-${token} (${hex})`}
                 >
                   <span
-                    className="h-12 w-full rounded-md ring-1 ring-foreground/10 ring-inset"
+                    className="h-12 w-full rounded-md ring-thin ring-foreground/10 ring-inset"
                     style={{ background: `var(--color-${token})` }}
                   />
                   <span className="font-mono text-xs">
@@ -99,7 +99,7 @@ function Palette() {
 function Swatch({ hex }: { hex: string }) {
   return (
     <span
-      className="size-4 shrink-0 rounded-xs ring-1 ring-foreground/20"
+      className="size-4 shrink-0 rounded-xs ring-thin ring-foreground/20"
       style={{ background: hex }}
     />
   )
@@ -108,10 +108,10 @@ function Swatch({ hex }: { hex: string }) {
 function SemanticRoles() {
   const roles = semanticRoles()
   return (
-    <div className="overflow-x-auto rounded-lg border">
+    <div className="overflow-x-auto rounded-lg border-thin">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b bg-muted/40 text-left">
+          <tr className="border-b-thin bg-muted/40 text-left">
             <th className="px-4 py-3 font-medium">Role</th>
             <th className="px-4 py-3 font-medium">Light · Chiaro</th>
             <th className="px-4 py-3 font-medium">Dark · Scuro</th>
@@ -121,7 +121,7 @@ function SemanticRoles() {
           {roles.map((role) => (
             <tr
               key={`${role.group}.${role.name}`}
-              className="border-b last:border-b-0"
+              className="border-b-thin last:border-b-0"
             >
               <td className="px-4 py-3 font-mono text-xs">
                 {role.group}.{role.name}
@@ -159,7 +159,7 @@ const PAIRS = [
   { label: "Link on card", fg: "link", bg: "card" },
   { label: "Highlight badge", fg: "highlight-foreground", bg: "highlight" },
   { label: "Green message text", fg: "highlight-text", bg: "background" },
-  { label: "Control border (≥3:1)", fg: "input", bg: "background", ui: true },
+  { label: "Control border-thin (≥3:1)", fg: "input", bg: "background", ui: true },
   { label: "Focus ring (≥3:1)", fg: "ring", bg: "focus-gap", ui: true },
 ] as const
 
@@ -195,7 +195,7 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
       ref={ref}
       className={cn(
         mode,
-        "flex flex-col gap-stack-sm rounded-xl border bg-background p-inset-md text-foreground"
+        "flex flex-col gap-stack-sm rounded-xl border-thin bg-background p-inset-md text-foreground"
       )}
     >
       <p className="font-mono text-xs tracking-wide text-muted-foreground uppercase">
@@ -208,10 +208,10 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
           return (
             <li
               key={pair.label}
-              className="flex items-center gap-gap-sm border-b py-2 last:border-b-0"
+              className="flex items-center gap-gap-sm border-b-thin py-2 last:border-b-0"
             >
               <span
-                className="grid h-8 w-12 shrink-0 place-items-center rounded-md text-sm font-semibold ring-1 ring-foreground/10"
+                className="grid h-8 w-12 shrink-0 place-items-center rounded-md text-sm font-semibold ring-thin ring-foreground/10"
                 style={{
                   background: `var(--${pair.bg})`,
                   color: `var(--${pair.fg})`,
@@ -265,7 +265,7 @@ function BrandSample({ mode }: { mode: "light" | "dark" }) {
     <div
       className={cn(
         mode,
-        "@container flex flex-col gap-stack-lg rounded-xl border bg-card p-inset-lg text-card-foreground"
+        "@container flex flex-col gap-stack-lg rounded-xl border-thin bg-card p-inset-lg text-card-foreground"
       )}
     >
       <div className="flex flex-col gap-stack-md">
@@ -330,10 +330,10 @@ const RADIUS_USE: Record<string, { className: string; use: string }> = {
 function RadiusScale() {
   return (
     <div className="flex flex-col gap-stack-md">
-      <div className="overflow-x-auto rounded-lg border">
+      <div className="overflow-x-auto rounded-lg border-thin">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b bg-muted/40 text-left">
+            <tr className="border-b-thin bg-muted/40 text-left">
               <th className="px-4 py-3 font-medium">Class</th>
               <th className="px-4 py-3 font-medium">Value</th>
               <th className="px-4 py-3 font-medium">Figma</th>
@@ -345,7 +345,7 @@ function RadiusScale() {
             {radiusTokens().map((token) => {
               const role = RADIUS_USE[token.name]
               return (
-                <tr key={token.name} className="border-b last:border-b-0">
+                <tr key={token.name} className="border-b-thin last:border-b-0">
                   <td className="px-4 py-3">
                     <button
                       type="button"
@@ -369,7 +369,7 @@ function RadiusScale() {
                   <td className="px-4 py-3">
                     <span
                       className={cn(
-                        "block h-10 w-24 border-2 border-primary bg-secondary",
+                        "block h-10 w-24 border-default border-primary bg-secondary",
                         role.className
                       )}
                     />
@@ -381,7 +381,7 @@ function RadiusScale() {
         </table>
       </div>
 
-      <div className="preview-surface flex flex-wrap items-center gap-gap-sm rounded-lg border p-inset-lg">
+      <div className="preview-surface flex flex-wrap items-center gap-gap-sm rounded-lg border-thin p-inset-lg">
         <Button size="xs">Extra small</Button>
         <Button size="sm">Small</Button>
         <Button>Default</Button>
@@ -437,7 +437,7 @@ function TypeScale() {
 
   return (
     <div className="flex flex-col gap-stack-md">
-      <div className="flex flex-col gap-stack-sm rounded-xl border p-inset-md sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-stack-sm rounded-xl border-thin p-inset-md sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-col gap-stack-xs">
           <span className="text-sm font-medium">Families</span>
           <span className="text-sm text-muted-foreground">
@@ -474,7 +474,7 @@ function TypeScale() {
           return (
             <div
               key={role.name}
-              className="grid gap-stack-md border-b py-6 last:border-b-0 lg:grid-cols-[14rem_1fr]"
+              className="grid gap-stack-md border-b-thin py-6 last:border-b-0 lg:grid-cols-[14rem_1fr]"
             >
               <div className="flex flex-col gap-stack-xs text-sm">
                 <span className="font-medium">{role.label}</span>
@@ -522,8 +522,8 @@ const SPACING_CLASS: Record<string, string> = {
 function ProximityExample() {
   return (
     <div className="grid gap-gap-lg lg:grid-cols-[1fr_16rem]">
-      <div className="preview-surface rounded-lg border p-inset-lg">
-        <div className="flex max-w-sm flex-col gap-stack-lg rounded-xl bg-card p-inset-lg ring-1 ring-foreground/10">
+      <div className="preview-surface rounded-lg border-thin p-inset-lg">
+        <div className="flex max-w-sm flex-col gap-stack-lg rounded-xl bg-card p-inset-lg ring-thin ring-foreground/10">
           <div className="flex flex-col gap-stack-md">
             <div className="flex flex-col gap-stack-xs">
               <h3 className="font-heading text-lg font-semibold">
@@ -574,7 +574,7 @@ function ProximityExample() {
         ].map(([token, rule]) => (
           <li
             key={token}
-            className="flex flex-col gap-gap-xs border-l-2 border-primary pl-inset-sm"
+            className="flex flex-col gap-gap-xs border-l-default border-primary pl-inset-sm"
           >
             <code className="font-mono text-xs">{token}</code>
             <span className="text-muted-foreground">{rule}</span>
@@ -594,7 +594,7 @@ function SpacingScale() {
         {spacingRoles().map(({ group, description, roles }) => (
           <div
             key={group}
-            className="flex flex-col gap-stack-sm rounded-xl border p-inset-md"
+            className="flex flex-col gap-stack-sm rounded-xl border-thin p-inset-md"
           >
             <div className="flex flex-col gap-stack-xs">
               <span className="font-mono text-sm font-medium">{group}-*</span>

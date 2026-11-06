@@ -62,7 +62,7 @@ export function RadioGroupCards() {
         <Label
           key={plan.value}
           htmlFor={`plan-${plan.value}`}
-          className="flex items-start gap-gap-sm rounded-lg border p-inset-md has-data-checked:border-primary has-data-checked:bg-muted/50"
+          className="flex items-start gap-gap-sm rounded-lg border-thin p-inset-md has-data-checked:border-primary has-data-checked:bg-muted/50"
         >
           <RadioGroupItem value={plan.value} id={`plan-${plan.value}`} />
           <div className="grid gap-stack-xs">

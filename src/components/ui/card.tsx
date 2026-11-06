@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 
 const cardVariants = cva(
-  "group/card overflow-hidden rounded-xl bg-card text-sm text-card-foreground ring-1 ring-foreground/10 [--card-spacing:var(--spacing-inset-lg)] data-[size=sm]:[--card-spacing:var(--spacing-inset-md)]",
+  "group/card overflow-hidden rounded-xl bg-card text-sm text-card-foreground ring-thin ring-foreground/10 [--card-spacing:var(--spacing-inset-lg)] data-[size=sm]:[--card-spacing:var(--spacing-inset-md)]",
   {
     variants: {
       variant: {
@@ -170,7 +170,7 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-footer"
       className={cn(
-        "flex items-center rounded-b-xl border-t bg-muted/50 p-(--card-spacing)",
+        "flex items-center rounded-b-xl border-t-thin bg-muted/50 p-(--card-spacing)",
         // CTA sits stack-lg below the content (the card gap is stack-md).
         "mt-[calc(var(--spacing-stack-lg)-var(--spacing-stack-md))]",
         className

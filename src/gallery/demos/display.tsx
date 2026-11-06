@@ -383,7 +383,7 @@ export function ScrollAreaVertical() {
   const tags = Array.from({ length: 40 }, (_, i) => `v1.2.0-beta.${40 - i}`)
 
   return (
-    <ScrollArea className="h-64 w-48 rounded-md border">
+    <ScrollArea className="h-64 w-48 rounded-md border-thin">
       <div className="p-inset-md">
         <h4 className="mb-stack-sm text-sm font-medium">Tags</h4>
         {tags.map((tag) => (
@@ -401,7 +401,7 @@ export function ScrollAreaHorizontal() {
   const colors = ["Slate", "Red", "Orange", "Amber", "Lime", "Emerald", "Cyan", "Blue", "Violet", "Pink"]
 
   return (
-    <ScrollArea className="w-full max-w-sm rounded-md border whitespace-nowrap">
+    <ScrollArea className="w-full max-w-sm rounded-md border-thin whitespace-nowrap">
       <div className="flex w-max gap-gap-md p-inset-md">
         {colors.map((color) => (
           <div key={color} className="flex h-24 w-32 items-end rounded-md bg-muted p-inset-sm text-sm">
