@@ -2,6 +2,10 @@ import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { CodeBlock } from "@/gallery/components/code-block"
 import utilsSource from "@/lib/utils.ts?raw"
+import { Button } from "@/components/ui/button"
+import { copyToClipboard } from "@/gallery/lib/copy"
+import { buildCodeLayer } from "@/gallery/lib/figma-layer"
+import { registry } from "@/gallery/registry"
 import { ExampleCard } from "@/gallery/components/example-card"
 import { StateMatrix } from "@/gallery/components/state-matrix"
 import type { ComponentEntry } from "@/gallery/registry"
@@ -57,6 +61,7 @@ export function ComponentPage({ entry }: { entry: ComponentEntry }) {
           <SectionHeading id="source" title="Source">
             Copy the component into your project, e.g. <code className="font-mono text-xs">src/{entry.sources[0].file}</code>.
           </SectionHeading>
+          <FigmaLayerCopy entry={entry} />
           <SetupSteps />
           {entry.sources.length === 1 ? (
             <CodeBlock code={entry.sources[0].code} maxHeight="32rem" />
@@ -144,5 +149,34 @@ function SetupSteps() {
         </li>
       </ol>
     </details>
+  )
+}
+
+function figmaLayerFor(entry: ComponentEntry) {
+  return buildCodeLayer(
+    entry.name,
+    entry.sources.map((s) => s.file.replace(/^components\/ui\/|\.tsx$/g, "")),
+    entry.examples.map((e) => ({ id: e.id, code: e.code })),
+  )
+}
+
+// Lets scripts export every code layer at once (used to test the output).
+;(window as unknown as Record<string, unknown>).__locamimiFigmaLayers = () =>
+  Object.fromEntries(registry.map((e) => [e.slug, figmaLayerFor(e)]))
+
+/** One file to paste into a Figma Sites code layer: theme, component, examples. */
+function FigmaLayerCopy({ entry }: { entry: ComponentEntry }) {
+  return (
+    <div className="flex flex-col gap-stack-sm rounded-lg border-thin border-action-primary bg-action-secondary-surface p-inset-md tablet:flex-row tablet:items-center tablet:justify-between">
+      <div className="flex flex-col gap-stack-xs">
+        <span className="type-body-strong">Figma Sites code layer</span>
+        <span className="type-body text-text-secondary">
+          One file with the theme, the component and its examples. Paste it into the code layer as is — nothing else to copy.
+        </span>
+      </div>
+      <Button className="shrink-0" onClick={() => copyToClipboard(figmaLayerFor(entry), `${entry.name} for Figma`)}>
+        Copy for Figma code layer
+      </Button>
+    </div>
   )
 }
