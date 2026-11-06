@@ -22,8 +22,8 @@ export function BadgeWithIcon() {
         <BadgeCheckIcon data-icon="inline-start" />
         Verified
       </Badge>
-      <Badge className="h-5 min-w-5 rounded-full px-1 tabular-nums">8</Badge>
-      <Badge variant="destructive" className="h-5 min-w-5 rounded-full px-1 tabular-nums">
+      <Badge className="h-5 min-w-5 rounded-full px-inset-xs tabular-nums">8</Badge>
+      <Badge variant="destructive" className="h-5 min-w-5 rounded-full px-inset-xs tabular-nums">
         99+
       </Badge>
     </div>

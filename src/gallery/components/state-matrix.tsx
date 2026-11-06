@@ -11,13 +11,13 @@ export function StateMatrix({ matrix }: { matrix: StateMatrixConfig }) {
       <table className="preview-surface w-full border-collapse text-sm">
         <thead>
           <tr className="border-b-thin bg-muted/40">
-            <th className="w-36 px-4 py-2.5 text-left font-medium text-muted-foreground">
+            <th className="w-36 px-inset-md py-inset-sm-md text-left font-medium text-muted-foreground">
               Variant
             </th>
             {columns.map((key) => {
               const state = STATES[key]
               return (
-                <th key={key} className="px-4 py-2.5 text-left font-medium">
+                <th key={key} className="px-inset-md py-inset-sm-md text-left font-medium">
                   <span className="inline-flex items-center gap-gap-xs">
                     {state.label}
                     {state.hint && (
@@ -40,7 +40,7 @@ export function StateMatrix({ matrix }: { matrix: StateMatrixConfig }) {
         <tbody>
           {rows.map((row) => (
             <tr key={row.label} className="border-b-thin last:border-b-0">
-              <th scope="row" className="px-4 py-4 text-left align-middle font-normal text-muted-foreground">
+              <th scope="row" className="px-inset-md py-inset-md text-left align-middle font-normal text-muted-foreground">
                 {row.label}
               </th>
               {columns.map((key) => {
@@ -48,7 +48,7 @@ export function StateMatrix({ matrix }: { matrix: StateMatrixConfig }) {
                 const rowProps = row.props ?? {}
                 const code = matrix.code({ ...rowProps, ...state.code })
                 return (
-                  <td key={key} className="group/cell px-4 py-4 align-middle">
+                  <td key={key} className="group/cell px-inset-md py-inset-md align-middle">
                     <div className="flex items-center gap-gap-xs">
                       {/* Forced states are visual only; keep them out of the tab order. */}
                       <div inert={key !== "default"} className="flex min-w-0 items-center">

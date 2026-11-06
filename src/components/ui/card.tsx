@@ -8,7 +8,7 @@ const cardVariants = cva(
     variants: {
       variant: {
         default:
-          "flex flex-col gap-stack-md py-(--card-spacing) has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
+          "flex flex-col gap-stack-md py-(--card-spacing) has-data-[slot=card-footer]:pb-inset-none has-[>img:first-child]:pt-inset-none data-[size=sm]:has-data-[slot=card-footer]:pb-inset-none *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
         // Square, record-sleeve card: media or surface color fills it, details
         // appear on hover/focus.
         cover:
@@ -111,7 +111,7 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-header"
       className={cn(
-        "group/card-header @container/card-header grid auto-rows-min items-start gap-x-gap-sm gap-y-0 rounded-t-xl px-(--card-spacing) has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-(--card-spacing)",
+        "group/card-header @container/card-header grid auto-rows-min items-start gap-x-gap-sm gap-y-stack-none rounded-t-xl px-(--card-spacing) has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-(--card-spacing)",
         className
       )}
       {...props}

@@ -78,10 +78,10 @@ export function ComponentPage({ entry }: { entry: ComponentEntry }) {
       </article>
 
       <aside className="sticky top-20 hidden h-fit w-44 shrink-0 xl:block">
-        <p className="mb-2 text-xs font-medium tracking-wide text-muted-foreground uppercase">On this page</p>
+        <p className="mb-stack-sm text-xs font-medium tracking-wide text-muted-foreground uppercase">On this page</p>
         <ul className="flex flex-col gap-stack-xs text-sm">
           {toc.map((item) => (
-            <li key={item.id} className={item.nested ? "pl-3" : undefined}>
+            <li key={item.id} className={item.nested ? "pl-inset-sm-md" : undefined}>
               <button
                 type="button"
                 onClick={() => document.getElementById(item.id)?.scrollIntoView({ behavior: "smooth" })}

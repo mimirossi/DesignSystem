@@ -51,6 +51,23 @@
         }
       }
     },
+    "sm-md": {
+      "$type": "number",
+      "$value": 12,
+      "$description": "Padding interno di componenti e contenitori. 12 px, alias di LOCAMIMI — Spacing — Base / space/12. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:567:632",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:408:987",
+          "targetVariableName": "space/12",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
     "md": {
       "$type": "number",
       "$value": 16,
@@ -172,6 +189,23 @@
         }
       }
     },
+    "sm-md": {
+      "$type": "number",
+      "$value": 12,
+      "$description": "Distanza fra elementi affiancati o in un gruppo Auto Layout. 12 px, alias di LOCAMIMI — Spacing — Base / space/12. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:567:633",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:408:987",
+          "targetVariableName": "space/12",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
     "md": {
       "$type": "number",
       "$value": 16,
@@ -242,6 +276,23 @@
     }
   },
   "stack": {
+    "none": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Distanza verticale fra contenuti correlati; applicabile come gap Auto Layout. 0 px, alias di LOCAMIMI — Spacing — Base / space/0. Mappatura iniziale modificabile; sistema 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:567:634",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:68fa6520d26a67ef428059ff1d720fa208e53bbd/-1:-1",
+          "targetVariableName": "space/0",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
     "xs": {
       "$type": "number",
       "$value": 4,

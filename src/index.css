@@ -130,6 +130,7 @@
   --spacing-inset-none: calc(var(--spacing) * 0); /* 0px */
   --spacing-inset-xs: calc(var(--spacing) * 1); /* 4px */
   --spacing-inset-sm: calc(var(--spacing) * 2); /* 8px */
+  --spacing-inset-sm-md: calc(var(--spacing) * 3); /* 12px */
   --spacing-inset-md: calc(var(--spacing) * 4); /* 16px */
   --spacing-inset-lg: calc(var(--spacing) * 6); /* 24px */
   --spacing-inset-xl: calc(var(--spacing) * 8); /* 32px */
@@ -137,10 +138,12 @@
   --spacing-gap-none: calc(var(--spacing) * 0); /* 0px */
   --spacing-gap-xs: calc(var(--spacing) * 1); /* 4px */
   --spacing-gap-sm: calc(var(--spacing) * 2); /* 8px */
+  --spacing-gap-sm-md: calc(var(--spacing) * 3); /* 12px */
   --spacing-gap-md: calc(var(--spacing) * 4); /* 16px */
   --spacing-gap-lg: calc(var(--spacing) * 6); /* 24px */
   --spacing-gap-xl: calc(var(--spacing) * 8); /* 32px */
   --spacing-gap-2xl: calc(var(--spacing) * 12); /* 48px */
+  --spacing-stack-none: calc(var(--spacing) * 0); /* 0px */
   --spacing-stack-xs: calc(var(--spacing) * 1); /* 4px */
   --spacing-stack-sm: calc(var(--spacing) * 2); /* 8px */
   --spacing-stack-md: calc(var(--spacing) * 4); /* 16px */

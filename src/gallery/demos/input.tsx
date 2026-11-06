@@ -35,7 +35,7 @@ export function InputWithButton() {
     <div className="flex w-full max-w-sm items-center gap-gap-sm">
       <div className="relative flex-1">
         <SearchIcon className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-muted-foreground" />
-        <Input placeholder="Search…" className="pl-8" />
+        <Input placeholder="Search…" className="pl-inset-xl" />
       </div>
       <Button>Search</Button>
     </div>

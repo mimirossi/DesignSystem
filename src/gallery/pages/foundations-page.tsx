@@ -112,9 +112,9 @@ function SemanticRoles() {
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b-thin bg-muted/40 text-left">
-            <th className="px-4 py-3 font-medium">Role</th>
-            <th className="px-4 py-3 font-medium">Light · Chiaro</th>
-            <th className="px-4 py-3 font-medium">Dark · Scuro</th>
+            <th className="px-inset-md py-inset-sm-md font-medium">Role</th>
+            <th className="px-inset-md py-inset-sm-md font-medium">Light · Chiaro</th>
+            <th className="px-inset-md py-inset-sm-md font-medium">Dark · Scuro</th>
           </tr>
         </thead>
         <tbody>
@@ -123,11 +123,11 @@ function SemanticRoles() {
               key={`${role.group}.${role.name}`}
               className="border-b-thin last:border-b-0"
             >
-              <td className="px-4 py-3 font-mono text-xs">
+              <td className="px-inset-md py-inset-sm-md font-mono text-xs">
                 {role.group}.{role.name}
               </td>
               {[role.light, role.dark].map((mode, i) => (
-                <td key={i} className="px-4 py-3">
+                <td key={i} className="px-inset-md py-inset-sm-md">
                   <span className="flex items-center gap-gap-sm font-mono text-xs">
                     <Swatch hex={mode.hex} />
                     {mode.alias}{" "}
@@ -208,7 +208,7 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
           return (
             <li
               key={pair.label}
-              className="flex items-center gap-gap-sm border-b-thin py-2 last:border-b-0"
+              className="flex items-center gap-gap-sm border-b-thin py-inset-sm last:border-b-0"
             >
               <span
                 className="grid h-8 w-12 shrink-0 place-items-center rounded-md text-sm font-semibold ring-thin ring-foreground/10"
@@ -237,7 +237,7 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
               </span>
               <span
                 className={cn(
-                  "inline-flex items-center gap-gap-xs rounded-sm px-2 py-1 text-xs font-medium",
+                  "inline-flex items-center gap-gap-xs rounded-sm px-inset-sm py-inset-xs text-xs font-medium",
                   pass
                     ? "bg-highlight text-highlight-foreground"
                     : "bg-destructive/10 text-destructive"
@@ -334,11 +334,11 @@ function RadiusScale() {
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b-thin bg-muted/40 text-left">
-              <th className="px-4 py-3 font-medium">Class</th>
-              <th className="px-4 py-3 font-medium">Value</th>
-              <th className="px-4 py-3 font-medium">Figma</th>
-              <th className="px-4 py-3 font-medium">Used by</th>
-              <th className="px-4 py-3 font-medium">Shape</th>
+              <th className="px-inset-md py-inset-sm-md font-medium">Class</th>
+              <th className="px-inset-md py-inset-sm-md font-medium">Value</th>
+              <th className="px-inset-md py-inset-sm-md font-medium">Figma</th>
+              <th className="px-inset-md py-inset-sm-md font-medium">Used by</th>
+              <th className="px-inset-md py-inset-sm-md font-medium">Shape</th>
             </tr>
           </thead>
           <tbody>
@@ -346,7 +346,7 @@ function RadiusScale() {
               const role = RADIUS_USE[token.name]
               return (
                 <tr key={token.name} className="border-b-thin last:border-b-0">
-                  <td className="px-4 py-3">
+                  <td className="px-inset-md py-inset-sm-md">
                     <button
                       type="button"
                       onClick={() =>
@@ -357,16 +357,16 @@ function RadiusScale() {
                       {role.className}
                     </button>
                   </td>
-                  <td className="px-4 py-3 tabular-nums">
+                  <td className="px-inset-md py-inset-sm-md tabular-nums">
                     {token.px >= 9999 ? "pill" : `${token.px}px`}
                   </td>
-                  <td className="px-4 py-3 font-mono text-xs text-muted-foreground">
+                  <td className="px-inset-md py-inset-sm-md font-mono text-xs text-muted-foreground">
                     {token.alias}
                   </td>
-                  <td className="px-4 py-3 text-muted-foreground">
+                  <td className="px-inset-md py-inset-sm-md text-muted-foreground">
                     {role.use}
                   </td>
-                  <td className="px-4 py-3">
+                  <td className="px-inset-md py-inset-sm-md">
                     <span
                       className={cn(
                         "block h-10 w-24 border-default border-primary bg-secondary",
@@ -474,7 +474,7 @@ function TypeScale() {
           return (
             <div
               key={role.name}
-              className="grid gap-stack-md border-b-thin py-6 last:border-b-0 lg:grid-cols-[14rem_1fr]"
+              className="grid gap-stack-md border-b-thin py-inset-lg last:border-b-0 lg:grid-cols-[14rem_1fr]"
             >
               <div className="flex flex-col gap-stack-xs text-sm">
                 <span className="font-medium">{role.label}</span>

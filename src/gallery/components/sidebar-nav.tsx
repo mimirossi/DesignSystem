@@ -18,7 +18,7 @@ export function SidebarNav({ active, onNavigate }: { active: string; onNavigate?
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Search components"
           aria-label="Search components"
-          className="pl-8"
+          className="pl-inset-xl"
         />
       </div>
 
@@ -26,7 +26,7 @@ export function SidebarNav({ active, onNavigate }: { active: string; onNavigate?
         href="#/"
         onClick={onNavigate}
         className={cn(
-          "rounded-md px-2 py-2 text-sm font-medium hover:bg-muted",
+          "rounded-md px-inset-sm py-inset-sm text-sm font-medium hover:bg-muted",
           active === "" && "bg-muted"
         )}
       >
@@ -36,7 +36,7 @@ export function SidebarNav({ active, onNavigate }: { active: string; onNavigate?
         href="#/foundations"
         onClick={onNavigate}
         className={cn(
-          "-mt-4 rounded-md px-2 py-2 text-sm font-medium hover:bg-muted",
+          "-mt-stack-md rounded-md px-inset-sm py-inset-sm text-sm font-medium hover:bg-muted",
           active === "foundations" && "bg-muted"
         )}
       >
@@ -48,7 +48,7 @@ export function SidebarNav({ active, onNavigate }: { active: string; onNavigate?
         if (!items.length) return null
         return (
           <div key={category} className="flex flex-col gap-stack-xs">
-            <h4 className="px-2 pb-1 text-xs font-medium tracking-wide text-muted-foreground uppercase">
+            <h4 className="px-inset-sm pb-inset-xs text-xs font-medium tracking-wide text-muted-foreground uppercase">
               {category}
             </h4>
             {items.map((entry) => (
@@ -58,7 +58,7 @@ export function SidebarNav({ active, onNavigate }: { active: string; onNavigate?
                 onClick={onNavigate}
                 aria-current={active === entry.slug ? "page" : undefined}
                 className={cn(
-                  "rounded-md px-2 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground",
+                  "rounded-md px-inset-sm py-inset-sm text-sm text-muted-foreground hover:bg-muted hover:text-foreground",
                   active === entry.slug && "bg-muted font-medium text-foreground"
                 )}
               >
@@ -69,7 +69,7 @@ export function SidebarNav({ active, onNavigate }: { active: string; onNavigate?
         )
       })}
 
-      {!matches.length && <p className="px-2 text-sm text-muted-foreground">No components found.</p>}
+      {!matches.length && <p className="px-inset-sm text-sm text-muted-foreground">No components found.</p>}
     </nav>
   )
 }

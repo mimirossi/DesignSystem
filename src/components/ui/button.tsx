@@ -20,10 +20,10 @@ const buttonVariants = cva(
       },
       size: {
         default:
-          "h-8 gap-2 px-3 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
-        xs: "h-6 gap-1 rounded-sm px-2 text-xs in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 [&_svg:not([class*='size-'])]:size-3",
-        sm: "h-7 gap-1 rounded-sm px-3 text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 [&_svg:not([class*='size-'])]:size-3.5",
-        lg: "h-9 rounded-md gap-2 px-3 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+          "h-8 gap-gap-sm px-inset-sm-md has-data-[icon=inline-end]:pr-inset-sm has-data-[icon=inline-start]:pl-inset-sm",
+        xs: "h-6 gap-gap-xs rounded-sm px-inset-sm text-xs in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-inset-sm has-data-[icon=inline-start]:pl-inset-sm [&_svg:not([class*='size-'])]:size-3",
+        sm: "h-7 gap-gap-xs rounded-sm px-inset-sm-md text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-inset-sm has-data-[icon=inline-start]:pl-inset-sm [&_svg:not([class*='size-'])]:size-3.5",
+        lg: "h-9 rounded-md gap-gap-sm px-inset-sm-md has-data-[icon=inline-end]:pr-inset-sm has-data-[icon=inline-start]:pl-inset-sm",
         icon: "size-8",
         "icon-xs":
           "size-6 rounded-sm in-data-[slot=button-group]:rounded-lg [&_svg:not([class*='size-'])]:size-3",
@@ -36,7 +36,7 @@ const buttonVariants = cva(
       // Links align with the surrounding text, so they carry no side padding.
       {
         variant: "link",
-        class: "px-0 has-data-[icon=inline-end]:pr-0 has-data-[icon=inline-start]:pl-0",
+        class: "px-inset-none has-data-[icon=inline-end]:pr-inset-none has-data-[icon=inline-start]:pl-inset-none",
       },
     ],
     defaultVariants: {
