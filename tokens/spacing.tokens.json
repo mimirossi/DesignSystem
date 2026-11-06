@@ -320,7 +320,7 @@
           "GAP"
         ],
         "com.figma.aliasData": {
-          "targetVariableId": "VariableID:a09293a18cb1979966d07d9a487027f32dab9ea6/-1:-1",
+          "targetVariableId": "VariableID:ec3380119e654fcb1a2ab9a93ec97bc558c5c8e7/-1:-1",
           "targetVariableName": "space/40",
           "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
           "targetVariableSetName": "LOCAMIMI — Spacing — Base"
@@ -409,6 +409,214 @@
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:a6a6c40255a54adfd61f7e893a2fb3551f76579d/-1:-1",
           "targetVariableName": "space/128",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    }
+  },
+  "radius": {
+    "none": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Alias di LOCAMIMI — Spacing — Base / radius/0.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1653",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:1c12b598befa884d56bda09b3ed49bed24d0ee36/-1:-1",
+          "targetVariableName": "radius/0",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "xs": {
+      "$type": "number",
+      "$value": 4,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Alias di LOCAMIMI — Spacing — Base / radius/4.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1655",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:800a6c68b589df6ffc7327d3914e76a026bc8cdc/-1:-1",
+          "targetVariableName": "radius/4",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "sm": {
+      "$type": "number",
+      "$value": 8,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Alias di LOCAMIMI — Spacing — Base / radius/8.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1657",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:38686b87933a627448d8deeec1903cfbfe42881d/-1:-1",
+          "targetVariableName": "radius/8",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "md": {
+      "$type": "number",
+      "$value": 12,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Alias di LOCAMIMI — Spacing — Base / radius/12.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1659",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:ccd4e7f0d387f5d932c615906385e8ef0ad63d2e/-1:-1",
+          "targetVariableName": "radius/12",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "lg": {
+      "$type": "number",
+      "$value": 16,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Alias di LOCAMIMI — Spacing — Base / radius/16.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1661",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:991e0c49e0cb867d65d67b5b08e95518c8d30c97/-1:-1",
+          "targetVariableName": "radius/16",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "xl": {
+      "$type": "number",
+      "$value": 24,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Alias di LOCAMIMI — Spacing — Base / radius/24.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1663",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:58aad7d7d74af191fabee9fb1f74fe3b281abb1d/-1:-1",
+          "targetVariableName": "radius/24",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "2xl": {
+      "$type": "number",
+      "$value": 32,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Alias di LOCAMIMI — Spacing — Base / radius/32.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1665",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:60f5070d2bbd76950ac524ef8c26efb89c02c94c/-1:-1",
+          "targetVariableName": "radius/32",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "full": {
+      "$type": "number",
+      "$value": 9999,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Alias di LOCAMIMI — Spacing — Base / radius/9999.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1667",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:147b1403ef8d39ffa8a027df8f752fd17b252da3/-1:-1",
+          "targetVariableName": "radius/9999",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    }
+  },
+  "stroke": {
+    "none": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Spessore bordo in px. I valori 1 e 2 px sono intenzionali: il modulo 4 px si applica allo spacing, non obbliga gli spessori dei bordi. Alias di LOCAMIMI — Spacing — Base / stroke/0.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1669",
+        "com.figma.scopes": [
+          "STROKE_FLOAT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:b217e0f3240e6fa109f46a47a18aaa2b7b175608/-1:-1",
+          "targetVariableName": "stroke/0",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "thin": {
+      "$type": "number",
+      "$value": 1,
+      "$description": "Spessore bordo in px. I valori 1 e 2 px sono intenzionali: il modulo 4 px si applica allo spacing, non obbliga gli spessori dei bordi. Alias di LOCAMIMI — Spacing — Base / stroke/1.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1671",
+        "com.figma.scopes": [
+          "STROKE_FLOAT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a2240239931203f8f1b09dd39a2035f79f7e1b98/-1:-1",
+          "targetVariableName": "stroke/1",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "default": {
+      "$type": "number",
+      "$value": 2,
+      "$description": "Spessore bordo in px. I valori 1 e 2 px sono intenzionali: il modulo 4 px si applica allo spacing, non obbliga gli spessori dei bordi. Alias di LOCAMIMI — Spacing — Base / stroke/2.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1673",
+        "com.figma.scopes": [
+          "STROKE_FLOAT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:1bdce1155b9dfdb95ec9acae5532f0b0f75a3137/-1:-1",
+          "targetVariableName": "stroke/2",
+          "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Spacing — Base"
+        }
+      }
+    },
+    "strong": {
+      "$type": "number",
+      "$value": 4,
+      "$description": "Spessore bordo in px. I valori 1 e 2 px sono intenzionali: il modulo 4 px si applica allo spacing, non obbliga gli spessori dei bordi. Alias di LOCAMIMI — Spacing — Base / stroke/4.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1675",
+        "com.figma.scopes": [
+          "STROKE_FLOAT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:993e7aadc86f97046bac9c58276363ff729d2c03/-1:-1",
+          "targetVariableName": "stroke/4",
           "targetVariableSetId": "VariableCollectionId:872d75ed8e063a7a9710c9f7e16e0999b3678349/-1:-1",
           "targetVariableSetName": "LOCAMIMI — Spacing — Base"
         }

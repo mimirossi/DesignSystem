@@ -177,6 +177,142 @@
       }
     }
   },
+  "radius": {
+    "0": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Valore base: 0 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1652",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "4": {
+      "$type": "number",
+      "$value": 4,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Valore base: 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1654",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "8": {
+      "$type": "number",
+      "$value": 8,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Valore base: 8 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1656",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "12": {
+      "$type": "number",
+      "$value": 12,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Valore base: 12 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1658",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "16": {
+      "$type": "number",
+      "$value": 16,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Valore base: 16 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1660",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "24": {
+      "$type": "number",
+      "$value": 24,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Valore base: 24 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1662",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "32": {
+      "$type": "number",
+      "$value": 32,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Valore base: 32 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1664",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "9999": {
+      "$type": "number",
+      "$value": 9999,
+      "$description": "Raggio angoli in px. Scala proposta per componenti e contenitori; full usa 9999 px per forme pill. Valore base: 9999 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1666",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    }
+  },
+  "stroke": {
+    "0": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Spessore bordo in px. I valori 1 e 2 px sono intenzionali: il modulo 4 px si applica allo spacing, non obbliga gli spessori dei bordi. Valore base: 0 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1668",
+        "com.figma.scopes": [
+          "STROKE_FLOAT"
+        ]
+      }
+    },
+    "1": {
+      "$type": "number",
+      "$value": 1,
+      "$description": "Spessore bordo in px. I valori 1 e 2 px sono intenzionali: il modulo 4 px si applica allo spacing, non obbliga gli spessori dei bordi. Valore base: 1 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1670",
+        "com.figma.scopes": [
+          "STROKE_FLOAT"
+        ]
+      }
+    },
+    "2": {
+      "$type": "number",
+      "$value": 2,
+      "$description": "Spessore bordo in px. I valori 1 e 2 px sono intenzionali: il modulo 4 px si applica allo spacing, non obbliga gli spessori dei bordi. Valore base: 2 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1672",
+        "com.figma.scopes": [
+          "STROKE_FLOAT"
+        ]
+      }
+    },
+    "4": {
+      "$type": "number",
+      "$value": 4,
+      "$description": "Spessore bordo in px. I valori 1 e 2 px sono intenzionali: il modulo 4 px si applica allo spacing, non obbliga gli spessori dei bordi. Valore base: 4 px.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:562:1674",
+        "com.figma.scopes": [
+          "STROKE_FLOAT"
+        ]
+      }
+    }
+  },
   "$extensions": {
     "com.figma.modeName": "Base"
   }

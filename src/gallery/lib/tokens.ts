@@ -116,11 +116,14 @@ type SpacingTokens = Record<string, Record<string, { $value: number; $descriptio
 
 export type SpacingRole = { group: string; name: string; px: number; alias: string }
 
+/** Spacing groups in tokens/spacing.tokens.json; radius and stroke live there too. */
+const SPACING_GROUPS = ["inset", "gap", "stack", "section"]
+
 /** Semantic spacing from tokens/spacing.tokens.json, grouped as in Figma. */
 export function spacingRoles(): { group: string; description: string; roles: SpacingRole[] }[] {
   const tokens = files["../../../tokens/spacing.tokens.json"] as unknown as SpacingTokens
   return Object.entries(tokens)
-    .filter(([group]) => !group.startsWith("$"))
+    .filter(([group]) => SPACING_GROUPS.includes(group))
     .map(([group, steps]) => {
       const first = Object.values(steps)[0]
       return {
