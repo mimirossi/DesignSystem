@@ -23,7 +23,18 @@ export const FAMILIES = [
   { id: "crema", label: "Crema", code: "C", role: "Neutral · warm" },
 ] as const
 
-export const STEPS = ["50", "100", "200", "300", "400", "500", "600", "700", "800", "900"] as const
+export const STEPS = [
+  "50",
+  "100",
+  "200",
+  "300",
+  "400",
+  "500",
+  "600",
+  "700",
+  "800",
+  "900",
+] as const
 
 export function paletteHex(family: string, step: string) {
   return load("base")[family][step].$value.hex
@@ -50,7 +61,10 @@ export function semanticRoles(): SemanticRole[] {
         group,
         name,
         light: { hex: token.$value.hex, alias: alias(token) },
-        dark: { hex: dark[group][name].$value.hex, alias: alias(dark[group][name]) },
+        dark: {
+          hex: dark[group][name].$value.hex,
+          alias: alias(dark[group][name]),
+        },
       }))
     )
 }
@@ -94,7 +108,9 @@ export type TypeRole = {
 
 /** Type roles from tokens/typography.tokens.json, with the percentages from their descriptions. */
 export function typeRoles(): TypeRole[] {
-  const roles = files["../../../tokens/typography.tokens.json"] as unknown as TypeRoleTokens
+  const roles = files[
+    "../../../tokens/typography.tokens.json"
+  ] as unknown as TypeRoleTokens
   return Object.entries(roles)
     .filter(([name]) => !name.startsWith("$"))
     .map(([name, role]) => {
@@ -112,16 +128,30 @@ export function typeRoles(): TypeRole[] {
     })
 }
 
-type SpacingTokens = Record<string, Record<string, { $value: number; $description?: string }>>
+type SpacingTokens = Record<
+  string,
+  Record<string, { $value: number; $description?: string }>
+>
 
-export type SpacingRole = { group: string; name: string; px: number; alias: string }
+export type SpacingRole = {
+  group: string
+  name: string
+  px: number
+  alias: string
+}
 
 /** Spacing groups in tokens/spacing.tokens.json; radius and stroke live there too. */
 const SPACING_GROUPS = ["inset", "gap", "stack", "section"]
 
 /** Semantic spacing from tokens/spacing.tokens.json, grouped as in Figma. */
-export function spacingRoles(): { group: string; description: string; roles: SpacingRole[] }[] {
-  const tokens = files["../../../tokens/spacing.tokens.json"] as unknown as SpacingTokens
+export function spacingRoles(): {
+  group: string
+  description: string
+  roles: SpacingRole[]
+}[] {
+  const tokens = files[
+    "../../../tokens/spacing.tokens.json"
+  ] as unknown as SpacingTokens
   return Object.entries(tokens)
     .filter(([group]) => SPACING_GROUPS.includes(group))
     .map(([group, steps]) => {
@@ -141,6 +171,33 @@ export function spacingRoles(): { group: string; description: string; roles: Spa
 
 /** Primitive 4px scale from tokens/spacing-base.tokens.json. */
 export function spacingPrimitives(): number[] {
-  const tokens = files["../../../tokens/spacing-base.tokens.json"] as unknown as SpacingTokens
+  const tokens = files[
+    "../../../tokens/spacing-base.tokens.json"
+  ] as unknown as SpacingTokens
   return Object.values(tokens.space).map((token) => token.$value)
+}
+
+export type RadiusToken = { name: string; px: number; alias: string }
+
+/** Corner radius scale from tokens/spacing.tokens.json (radius/*). */
+export function radiusTokens(): RadiusToken[] {
+  const tokens = files[
+    "../../../tokens/spacing.tokens.json"
+  ] as unknown as Record<
+    string,
+    Record<
+      string,
+      {
+        $value: number
+        $extensions?: {
+          "com.figma.aliasData"?: { targetVariableName?: string }
+        }
+      }
+    >
+  >
+  return Object.entries(tokens.radius).map(([name, token]) => ({
+    name,
+    px: token.$value,
+    alias: token.$extensions?.["com.figma.aliasData"]?.targetVariableName ?? "",
+  }))
 }

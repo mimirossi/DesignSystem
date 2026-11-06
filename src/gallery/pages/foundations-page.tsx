@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Slider } from "@/components/ui/slider"
 import { copyToClipboard } from "@/gallery/lib/copy"
 import {
   FAMILIES,
@@ -14,6 +13,7 @@ import {
   contrast,
   paletteHex,
   semanticRoles,
+  radiusTokens,
   spacingPrimitives,
   spacingRoles,
   typeRoles,
@@ -70,11 +70,11 @@ function Palette() {
                   key={step}
                   type="button"
                   onClick={() => copyToClipboard(`bg-${token}`, `bg-${token}`)}
-                  className="group flex flex-col gap-stack-xs rounded-control-md text-left outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+                  className="group flex flex-col gap-stack-xs rounded-md text-left outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
                   aria-label={`Copy class bg-${token} (${hex})`}
                 >
                   <span
-                    className="h-12 w-full rounded-control-md ring-1 ring-foreground/10 ring-inset"
+                    className="h-12 w-full rounded-md ring-1 ring-foreground/10 ring-inset"
                     style={{ background: `var(--color-${token})` }}
                   />
                   <span className="font-mono text-xs">
@@ -99,7 +99,7 @@ function Palette() {
 function Swatch({ hex }: { hex: string }) {
   return (
     <span
-      className="size-4 shrink-0 rounded-control-2xs ring-1 ring-foreground/20"
+      className="size-4 shrink-0 rounded-xs ring-1 ring-foreground/20"
       style={{ background: hex }}
     />
   )
@@ -211,7 +211,7 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
               className="flex items-center gap-gap-sm border-b py-2 last:border-b-0"
             >
               <span
-                className="grid h-8 w-12 shrink-0 place-items-center rounded-control-md text-sm font-semibold ring-1 ring-foreground/10"
+                className="grid h-8 w-12 shrink-0 place-items-center rounded-md text-sm font-semibold ring-1 ring-foreground/10"
                 style={{
                   background: `var(--${pair.bg})`,
                   color: `var(--${pair.fg})`,
@@ -237,7 +237,7 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
               </span>
               <span
                 className={cn(
-                  "inline-flex items-center gap-gap-xs rounded-control-xs px-2 py-1 text-xs font-medium",
+                  "inline-flex items-center gap-gap-xs rounded-sm px-2 py-1 text-xs font-medium",
                   pass
                     ? "bg-highlight text-highlight-foreground"
                     : "bg-destructive/10 text-destructive"
@@ -303,97 +303,80 @@ function BrandSample({ mode }: { mode: "light" | "dark" }) {
 
 /* ---------- Radius ---------- */
 
-const CONTROL_SIZES = [
-  { name: "control-2xs", height: 16, use: "Checkbox" },
-  { name: "control-xs", height: 24, use: "Button xs, tooltip" },
-  { name: "control-sm", height: 28, use: "Button sm, menu items, select sm" },
-  { name: "control-md", height: 32, use: "Button, input, select, toggle" },
-  { name: "control-lg", height: 36, use: "Button lg, tabs list" },
-] as const
-
-function readRatio() {
-  return (
-    parseFloat(
-      getComputedStyle(document.documentElement).getPropertyValue(
-        "--control-radius-ratio"
-      )
-    ) || 0.375
-  )
+// Which components use each step. Literal class names so Tailwind generates them.
+const RADIUS_USE: Record<string, { className: string; use: string }> = {
+  none: {
+    className: "rounded-none",
+    use: "Joined edges (toggle group, tabs line)",
+  },
+  xs: { className: "rounded-xs", use: "Checkbox, tooltip arrow" },
+  sm: {
+    className: "rounded-sm",
+    use: "Button xs/sm, menu and select items, tabs trigger, tooltip",
+  },
+  md: {
+    className: "rounded-md",
+    use: "Button, input, select, textarea, toggle, menus, tabs list",
+  },
+  lg: { className: "rounded-lg", use: "Popover, alert, small panels" },
+  xl: { className: "rounded-xl", use: "Card, dialog" },
+  "2xl": { className: "rounded-2xl", use: "Large surfaces" },
+  full: {
+    className: "rounded-full",
+    use: "Badge, avatar, switch, slider, radio",
+  },
 }
 
 function RadiusScale() {
-  const [ratio, setRatio] = React.useState(readRatio)
-
-  const update = (value: number) => {
-    setRatio(value)
-    document.documentElement.style.setProperty(
-      "--control-radius-ratio",
-      String(value)
-    )
-  }
-
   return (
     <div className="flex flex-col gap-stack-md">
-      <div className="flex flex-col gap-stack-sm rounded-xl border p-inset-md sm:flex-row sm:items-center sm:gap-stack-md">
-        <div className="flex flex-col gap-stack-xs">
-          <span className="text-sm font-medium">
-            Radius ratio · {ratio.toFixed(3)}
-          </span>
-          <span className="text-xs text-muted-foreground">
-            Preview only — the whole gallery updates. Set{" "}
-            <code className="font-mono">--control-radius-ratio</code> in
-            index.css to keep a value.
-          </span>
-        </div>
-        <Slider
-          className="w-full sm:max-w-xs"
-          min={0.125}
-          max={0.5}
-          step={0.0625}
-          value={ratio}
-          onValueChange={(value) =>
-            update(Array.isArray(value) ? value[0] : value)
-          }
-          aria-label="Radius ratio"
-        />
-        <Button variant="outline" size="sm" onClick={() => update(0.375)}>
-          Reset
-        </Button>
-      </div>
-
       <div className="overflow-x-auto rounded-lg border">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b bg-muted/40 text-left">
-              <th className="px-4 py-3 font-medium">Token</th>
-              <th className="px-4 py-3 font-medium">Height</th>
-              <th className="px-4 py-3 font-medium">Radius</th>
+              <th className="px-4 py-3 font-medium">Class</th>
+              <th className="px-4 py-3 font-medium">Value</th>
+              <th className="px-4 py-3 font-medium">Figma</th>
               <th className="px-4 py-3 font-medium">Used by</th>
               <th className="px-4 py-3 font-medium">Shape</th>
             </tr>
           </thead>
           <tbody>
-            {CONTROL_SIZES.map((size) => (
-              <tr key={size.name} className="border-b last:border-b-0">
-                <td className="px-4 py-3 font-mono text-xs">
-                  rounded-{size.name}
-                </td>
-                <td className="px-4 py-3 tabular-nums">{size.height}px</td>
-                <td className="px-4 py-3 tabular-nums">
-                  {(size.height * ratio).toFixed(1)}px
-                </td>
-                <td className="px-4 py-3 text-muted-foreground">{size.use}</td>
-                <td className="px-4 py-3">
-                  <span
-                    className="block w-24 border-2 border-primary bg-secondary"
-                    style={{
-                      height: size.height,
-                      borderRadius: `var(--radius-${size.name})`,
-                    }}
-                  />
-                </td>
-              </tr>
-            ))}
+            {radiusTokens().map((token) => {
+              const role = RADIUS_USE[token.name]
+              return (
+                <tr key={token.name} className="border-b last:border-b-0">
+                  <td className="px-4 py-3">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        copyToClipboard(role.className, role.className)
+                      }
+                      className="rounded-sm text-left font-mono text-xs text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+                    >
+                      {role.className}
+                    </button>
+                  </td>
+                  <td className="px-4 py-3 tabular-nums">
+                    {token.px >= 9999 ? "pill" : `${token.px}px`}
+                  </td>
+                  <td className="px-4 py-3 font-mono text-xs text-muted-foreground">
+                    {token.alias}
+                  </td>
+                  <td className="px-4 py-3 text-muted-foreground">
+                    {role.use}
+                  </td>
+                  <td className="px-4 py-3">
+                    <span
+                      className={cn(
+                        "block h-10 w-24 border-2 border-primary bg-secondary",
+                        role.className
+                      )}
+                    />
+                  </td>
+                </tr>
+              )
+            })}
           </tbody>
         </table>
       </div>
@@ -498,7 +481,7 @@ function TypeScale() {
                 <button
                   type="button"
                   onClick={() => copyToClipboard(className, className)}
-                  className="w-fit rounded-control-xs font-mono text-xs text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+                  className="w-fit rounded-sm font-mono text-xs text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
                 >
                   {className}
                 </button>
@@ -633,7 +616,7 @@ function SpacingScale() {
                     <button
                       type="button"
                       onClick={() => copyToClipboard(className, className)}
-                      className="w-32 shrink-0 rounded-control-xs text-left font-mono text-xs text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+                      className="w-32 shrink-0 rounded-sm text-left font-mono text-xs text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
                     >
                       {className}
                     </button>
@@ -746,8 +729,8 @@ export function FoundationsPage() {
 
       <Section
         id="radius"
-        title="Radius scales with height"
-        description="Every control's corner radius is its height × one ratio, so small and large controls keep the same shape."
+        title="Radius"
+        description="One fixed scale from Figma (radius/*) for every component. Nested surfaces stay concentric: outer radius = inner radius + padding."
       >
         <RadiusScale />
       </Section>

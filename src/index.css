@@ -162,16 +162,6 @@
   --color-highlight-text: var(--highlight-text);
   --color-brand: var(--brand);
   --color-brand-soft: var(--brand-soft);
-
-  /*
-   * Control radius scales with control height: radius = height × ratio.
-   * One ratio drives every size; heights follow the 4px grid.
-   */
-  --radius-control-2xs: calc(16px * var(--control-radius-ratio)); /* checkbox */
-  --radius-control-xs: calc(24px * var(--control-radius-ratio));
-  --radius-control-sm: calc(28px * var(--control-radius-ratio));
-  --radius-control-md: calc(32px * var(--control-radius-ratio));
-  --radius-control-lg: calc(36px * var(--control-radius-ratio));
 }
 
 /*
@@ -184,8 +174,6 @@
  *  - Green V300 only with N900 text; never the only signal of success.
  */
 :root {
-  /* Control radius = height × ratio (0.5 would be fully pill-shaped). */
-  --control-radius-ratio: 0.375;
   /* Multiplier for the type roles below. 1 = the Figma "Social" sizes;
      0.5 is the web scale (body 14px, matching the components). */
   --type-scale: 0.5;
@@ -224,7 +212,6 @@
   --chart-3: var(--color-verde-600);
   --chart-4: var(--color-crema-500);
   --chart-5: var(--color-nero-500);
-  --radius: 0.75rem;
   --sidebar: var(--color-rosa-chiaro-50);
   --sidebar-foreground: var(--color-nero-900);
   --sidebar-primary: var(--color-rosa-700);
