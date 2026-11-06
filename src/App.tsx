@@ -24,7 +24,7 @@ export function App() {
 
   return (
     <div className="min-h-svh">
-      <header className="sticky top-0 z-40 border-b-thin bg-background/80 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b-thin bg-background-default/80 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-screen-2xl items-center gap-gap-sm px-inset-md sm:px-inset-lg">
           <Button
             variant="ghost"
@@ -37,7 +37,7 @@ export function App() {
             {menuOpen ? <XIcon /> : <MenuIcon />}
           </Button>
           <a href="#/" className="flex items-center gap-gap-sm font-heading font-semibold">
-            <span className="grid size-6 place-items-center rounded-md bg-primary text-xs text-primary-foreground">
+            <span className="grid size-6 place-items-center rounded-md bg-action-primary text-xs text-action-on-primary">
               DS
             </span>
             Design System
@@ -52,7 +52,7 @@ export function App() {
         <aside
           className={
             menuOpen
-              ? "fixed inset-x-0 top-14 bottom-0 z-30 overflow-y-auto bg-background p-inset-md lg:hidden"
+              ? "fixed inset-x-0 top-14 bottom-0 z-30 overflow-y-auto bg-background-default p-inset-md lg:hidden"
               : "sticky top-14 hidden h-[calc(100svh-3.5rem)] w-60 shrink-0 overflow-y-auto border-r-thin p-inset-md lg:block"
           }
         >
@@ -67,7 +67,7 @@ export function App() {
           ) : route ? (
             <div className="flex flex-col gap-stack-xs">
               <h1 className="text-2xl font-semibold">Not found</h1>
-              <p className="text-muted-foreground">
+              <p className="text-text-secondary">
                 No component called “{route}”. <a href="#/" className="underline">Back to overview</a>
               </p>
             </div>

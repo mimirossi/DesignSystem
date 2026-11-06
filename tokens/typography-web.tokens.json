@@ -1,0 +1,1073 @@
+{
+  "display-xl": {
+    "font-family": {
+      "$type": "string",
+      "$value": "DAMN",
+      "$description": "Display XL · Web · 100 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:636",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:c006e9cffba65719ae9c19e0f4d7fad3035e4bf1/-1:-1",
+          "targetVariableName": "font-family/damn",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "Regular",
+      "$description": "Display XL · Web · 100 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:637",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:16c7d717675c4a0ad5c7553e0504a32eec111f39/-1:-1",
+          "targetVariableName": "font-style/regular",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 100,
+      "$description": "Display XL · Web · 100 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:638",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:301ac45884cf52e35336a2814603e2d915d2d042/-1:-1",
+          "targetVariableName": "font-size/100",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 90,
+      "$description": "Display XL · Web · 100 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:639",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:0ac4155b057334c8c73097bb6505bbebe376b3a2/-1:-1",
+          "targetVariableName": "line-height-px/90",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": 1,
+      "$description": "Display XL · Web · 100 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:640",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:1b1a7b88b527e17c64210aaead260a430d95c882/-1:-1",
+          "targetVariableName": "letter-spacing-px/1",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "display-l": {
+    "font-family": {
+      "$type": "string",
+      "$value": "DAMN",
+      "$description": "Display L · Web · 80 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:644",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:c006e9cffba65719ae9c19e0f4d7fad3035e4bf1/-1:-1",
+          "targetVariableName": "font-family/damn",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "Regular",
+      "$description": "Display L · Web · 80 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:645",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:16c7d717675c4a0ad5c7553e0504a32eec111f39/-1:-1",
+          "targetVariableName": "font-style/regular",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 80,
+      "$description": "Display L · Web · 80 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:646",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:271cbe1fd811019f345e52348751945851b93aa3/-1:-1",
+          "targetVariableName": "font-size/80",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 72,
+      "$description": "Display L · Web · 80 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:647",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:9d9f8869eead9146d4ec5b4c5b9db4b59ff1517a/-1:-1",
+          "targetVariableName": "line-height-px/72",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": 0.8,
+      "$description": "Display L · Web · 80 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:648",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:020e9f44dc6478eca48326eb784adc60181a34c9/-1:-1",
+          "targetVariableName": "letter-spacing-px/0-8",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "titolo-1": {
+    "font-family": {
+      "$type": "string",
+      "$value": "DAMN",
+      "$description": "Titolo 1 · Web · 64 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:650",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:c006e9cffba65719ae9c19e0f4d7fad3035e4bf1/-1:-1",
+          "targetVariableName": "font-family/damn",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "Regular",
+      "$description": "Titolo 1 · Web · 64 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:651",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:16c7d717675c4a0ad5c7553e0504a32eec111f39/-1:-1",
+          "targetVariableName": "font-style/regular",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 64,
+      "$description": "Titolo 1 · Web · 64 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:652",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a50f83f32c7fb93e3f5f128f5a0ff662685db532/-1:-1",
+          "targetVariableName": "font-size/64",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 57.6,
+      "$description": "Titolo 1 · Web · 64 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:653",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:15aa0d8be3d81db1f7ec06096f44870a1df94930/-1:-1",
+          "targetVariableName": "line-height-px/57-6",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": 0.64,
+      "$description": "Titolo 1 · Web · 64 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:654",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:eec374907288cb5f0f4f57f2656ee871700ca39c/-1:-1",
+          "targetVariableName": "letter-spacing-px/0-64",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "titolo-2": {
+    "font-family": {
+      "$type": "string",
+      "$value": "DAMN",
+      "$description": "Titolo 2 · Web · 48 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:658",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:c006e9cffba65719ae9c19e0f4d7fad3035e4bf1/-1:-1",
+          "targetVariableName": "font-family/damn",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "Regular",
+      "$description": "Titolo 2 · Web · 48 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:659",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:16c7d717675c4a0ad5c7553e0504a32eec111f39/-1:-1",
+          "targetVariableName": "font-style/regular",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 48,
+      "$description": "Titolo 2 · Web · 48 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:660",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:8dcc586900a443bc6caad36467a5fb44d71e2491/-1:-1",
+          "targetVariableName": "font-size/48",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 43.2,
+      "$description": "Titolo 2 · Web · 48 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:661",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:0741e7c7167e34c3055fcb475d1ed92ec1b22436/-1:-1",
+          "targetVariableName": "line-height-px/43-2",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": 0.48,
+      "$description": "Titolo 2 · Web · 48 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:662",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:fcd717654308158b68645261b40284fbb0209d78/-1:-1",
+          "targetVariableName": "letter-spacing-px/0-48",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "titolo-3": {
+    "font-family": {
+      "$type": "string",
+      "$value": "Bricolage Grotesque",
+      "$description": "Titolo 3 · Web · 32 px · interlinea 110% · spaziatura -1%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:666",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:bb229bcc2fc3e5ac1ab7e9a734ab8ebd08365244/-1:-1",
+          "targetVariableName": "font-family/bricolage-grotesque",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "Bold",
+      "$description": "Titolo 3 · Web · 32 px · interlinea 110% · spaziatura -1%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:667",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:929f1aea846ff9a1a0e6bbf52556e4d23be7a9d3/-1:-1",
+          "targetVariableName": "font-style/bold",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 32,
+      "$description": "Titolo 3 · Web · 32 px · interlinea 110% · spaziatura -1%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:668",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:5a751c6ef83431afbe670ac8b1c2994de918ca5e/-1:-1",
+          "targetVariableName": "font-size/32",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 35.2,
+      "$description": "Titolo 3 · Web · 32 px · interlinea 110% · spaziatura -1%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:669",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:2bbb4284a1e960bb81e22b1e0859bb57361c4981/-1:-1",
+          "targetVariableName": "line-height-px/35-2",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": -0.32,
+      "$description": "Titolo 3 · Web · 32 px · interlinea 110% · spaziatura -1%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:670",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:4228290231415f3685e594a4bd59c888e23cef30/-1:-1",
+          "targetVariableName": "letter-spacing-px/minus-0-32",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "sottotitolo": {
+    "font-family": {
+      "$type": "string",
+      "$value": "Bricolage Grotesque",
+      "$description": "Sottotitolo · Web · 22 px · interlinea 120% · spaziatura -0.5%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:672",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:bb229bcc2fc3e5ac1ab7e9a734ab8ebd08365244/-1:-1",
+          "targetVariableName": "font-family/bricolage-grotesque",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "SemiBold",
+      "$description": "Sottotitolo · Web · 22 px · interlinea 120% · spaziatura -0.5%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:673",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:b71260f1f163c002911dc46134aecc21094aa5f5/-1:-1",
+          "targetVariableName": "font-style/semibold",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 22,
+      "$description": "Sottotitolo · Web · 22 px · interlinea 120% · spaziatura -0.5%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:674",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:ac6048aab4978efee97a06baeb452326bebcb52d/-1:-1",
+          "targetVariableName": "font-size/22",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 26.4,
+      "$description": "Sottotitolo · Web · 22 px · interlinea 120% · spaziatura -0.5%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:675",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:53557748e68854620c4d76614047413c362b8587/-1:-1",
+          "targetVariableName": "line-height-px/26-4",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": -0.11,
+      "$description": "Sottotitolo · Web · 22 px · interlinea 120% · spaziatura -0.5%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:676",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:5f12797d8387b5aacfcde2afc77c6ea3f3aea4b5/-1:-1",
+          "targetVariableName": "letter-spacing-px/minus-0-11",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "lead": {
+    "font-family": {
+      "$type": "string",
+      "$value": "Bricolage Grotesque",
+      "$description": "Lead · Web · 16 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:679",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:bb229bcc2fc3e5ac1ab7e9a734ab8ebd08365244/-1:-1",
+          "targetVariableName": "font-family/bricolage-grotesque",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "Regular",
+      "$description": "Lead · Web · 16 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:680",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:16c7d717675c4a0ad5c7553e0504a32eec111f39/-1:-1",
+          "targetVariableName": "font-style/regular",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 16,
+      "$description": "Lead · Web · 16 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:681",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:fb8b3eab5c2deff233c6fc9036c0ce9c5546a7bf/-1:-1",
+          "targetVariableName": "font-size/16",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 22.4,
+      "$description": "Lead · Web · 16 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:682",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:1707e0becc318b14c9e64d427e723b7089b0c33e/-1:-1",
+          "targetVariableName": "line-height-px/22-4",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Lead · Web · 16 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:683",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:48f1a37943ffa53a3e81a9511921477f9c8ef8dd/-1:-1",
+          "targetVariableName": "letter-spacing-px/0",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "body": {
+    "font-family": {
+      "$type": "string",
+      "$value": "Bricolage Grotesque",
+      "$description": "Body · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:686",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:bb229bcc2fc3e5ac1ab7e9a734ab8ebd08365244/-1:-1",
+          "targetVariableName": "font-family/bricolage-grotesque",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "Regular",
+      "$description": "Body · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:687",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:16c7d717675c4a0ad5c7553e0504a32eec111f39/-1:-1",
+          "targetVariableName": "font-style/regular",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 14,
+      "$description": "Body · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:688",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:e8b55f82c6937fa60831419b73f96616fd580f5e/-1:-1",
+          "targetVariableName": "font-size/14",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 20.3,
+      "$description": "Body · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:689",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:cac53b4fc9c0e064411a727a9ee594b412324182/-1:-1",
+          "targetVariableName": "line-height-px/20-3",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Body · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:690",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:48f1a37943ffa53a3e81a9511921477f9c8ef8dd/-1:-1",
+          "targetVariableName": "letter-spacing-px/0",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "body-strong": {
+    "font-family": {
+      "$type": "string",
+      "$value": "Bricolage Grotesque",
+      "$description": "Body strong · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:691",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:bb229bcc2fc3e5ac1ab7e9a734ab8ebd08365244/-1:-1",
+          "targetVariableName": "font-family/bricolage-grotesque",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "SemiBold",
+      "$description": "Body strong · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:692",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:b71260f1f163c002911dc46134aecc21094aa5f5/-1:-1",
+          "targetVariableName": "font-style/semibold",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 14,
+      "$description": "Body strong · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:693",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:e8b55f82c6937fa60831419b73f96616fd580f5e/-1:-1",
+          "targetVariableName": "font-size/14",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 20.3,
+      "$description": "Body strong · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:694",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:cac53b4fc9c0e064411a727a9ee594b412324182/-1:-1",
+          "targetVariableName": "line-height-px/20-3",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Body strong · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:695",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:48f1a37943ffa53a3e81a9511921477f9c8ef8dd/-1:-1",
+          "targetVariableName": "letter-spacing-px/0",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "caption": {
+    "font-family": {
+      "$type": "string",
+      "$value": "Bricolage Grotesque",
+      "$description": "Caption · Web · 12 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:698",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:bb229bcc2fc3e5ac1ab7e9a734ab8ebd08365244/-1:-1",
+          "targetVariableName": "font-family/bricolage-grotesque",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "Regular",
+      "$description": "Caption · Web · 12 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:699",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:16c7d717675c4a0ad5c7553e0504a32eec111f39/-1:-1",
+          "targetVariableName": "font-style/regular",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 12,
+      "$description": "Caption · Web · 12 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:700",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:9ba5e9bdc45ef3c14ee092acd2a875ef5f583fde/-1:-1",
+          "targetVariableName": "font-size/12",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 16.8,
+      "$description": "Caption · Web · 12 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:701",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:115c1226a55bdb0d34a9a480a0e1bb8d84e7ed78/-1:-1",
+          "targetVariableName": "line-height-px/16-8",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Caption · Web · 12 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:702",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:48f1a37943ffa53a3e81a9511921477f9c8ef8dd/-1:-1",
+          "targetVariableName": "letter-spacing-px/0",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "info": {
+    "font-family": {
+      "$type": "string",
+      "$value": "Bricolage Grotesque",
+      "$description": "Info · Web · 12 px · interlinea 120% · spaziatura 8% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:704",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:bb229bcc2fc3e5ac1ab7e9a734ab8ebd08365244/-1:-1",
+          "targetVariableName": "font-family/bricolage-grotesque",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "Medium",
+      "$description": "Info · Web · 12 px · interlinea 120% · spaziatura 8% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:705",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:befeeccaba94a257e08cd4f09ea4e83135e69f2f/-1:-1",
+          "targetVariableName": "font-style/medium",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 12,
+      "$description": "Info · Web · 12 px · interlinea 120% · spaziatura 8% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:706",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:9ba5e9bdc45ef3c14ee092acd2a875ef5f583fde/-1:-1",
+          "targetVariableName": "font-size/12",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 14.4,
+      "$description": "Info · Web · 12 px · interlinea 120% · spaziatura 8% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:707",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:e62a10d52e30a2f2a9e32bc15811a42761b72ff5/-1:-1",
+          "targetVariableName": "line-height-px/14-4",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": 0.96,
+      "$description": "Info · Web · 12 px · interlinea 120% · spaziatura 8% · uso maiuscolo. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:708",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:8181844d895afe7462c6ae9c322d2bd582e19cf4/-1:-1",
+          "targetVariableName": "letter-spacing-px/0-96",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "label": {
+    "font-family": {
+      "$type": "string",
+      "$value": "Bricolage Grotesque",
+      "$description": "Label · Web · 14 px · interlinea 100% · spaziatura 2%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:711",
+        "com.figma.scopes": [
+          "FONT_FAMILY"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:bb229bcc2fc3e5ac1ab7e9a734ab8ebd08365244/-1:-1",
+          "targetVariableName": "font-family/bricolage-grotesque",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-style": {
+      "$type": "string",
+      "$value": "SemiBold",
+      "$description": "Label · Web · 14 px · interlinea 100% · spaziatura 2%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:712",
+        "com.figma.scopes": [
+          "FONT_STYLE"
+        ],
+        "com.figma.type": "string",
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:b71260f1f163c002911dc46134aecc21094aa5f5/-1:-1",
+          "targetVariableName": "font-style/semibold",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "font-size": {
+      "$type": "number",
+      "$value": 14,
+      "$description": "Label · Web · 14 px · interlinea 100% · spaziatura 2%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:713",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:e8b55f82c6937fa60831419b73f96616fd580f5e/-1:-1",
+          "targetVariableName": "font-size/14",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "$value": 14,
+      "$description": "Label · Web · 14 px · interlinea 100% · spaziatura 2%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:714",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:eb823bab95739d38bf9b458a8b8f51944c86e496/-1:-1",
+          "targetVariableName": "line-height-px/14",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$value": 0.28,
+      "$description": "Label · Web · 14 px · interlinea 100% · spaziatura 2%. Scala per interfacce e componenti.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:715",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:0be81945e32f1e71d0a9a382e7a1cb9a4a3f436c/-1:-1",
+          "targetVariableName": "letter-spacing-px/0-28",
+          "targetVariableSetId": "VariableCollectionId:5a9fc4de3be3feebd0006d6c9ae8475b9c2e8e6f/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Tipografia — Base"
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Base"
+  }
+}

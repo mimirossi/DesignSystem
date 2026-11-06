@@ -251,6 +251,83 @@
           "FONT_SIZE"
         ]
       }
+    },
+    "100": {
+      "$type": "number",
+      "$value": 100,
+      "$description": "Dimensione numerica: px in Social; pt nel Print a 72 dpi, come nella tavola.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:633",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ]
+      }
+    },
+    "80": {
+      "$type": "number",
+      "$value": 80,
+      "$description": "Dimensione numerica: px in Social; pt nel Print a 72 dpi, come nella tavola.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:641",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ]
+      }
+    },
+    "48": {
+      "$type": "number",
+      "$value": 48,
+      "$description": "Dimensione numerica: px in Social; pt nel Print a 72 dpi, come nella tavola.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:655",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ]
+      }
+    },
+    "32": {
+      "$type": "number",
+      "$value": 32,
+      "$description": "Dimensione numerica: px in Social; pt nel Print a 72 dpi, come nella tavola.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:663",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ]
+      }
+    },
+    "16": {
+      "$type": "number",
+      "$value": 16,
+      "$description": "Dimensione numerica: px in Social; pt nel Print a 72 dpi, come nella tavola.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:677",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ]
+      }
+    },
+    "14": {
+      "$type": "number",
+      "$value": 14,
+      "$description": "Dimensione numerica: px in Social; pt nel Print a 72 dpi, come nella tavola.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:684",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ]
+      }
+    },
+    "12": {
+      "$type": "number",
+      "$value": 12,
+      "$description": "Dimensione numerica: px in Social; pt nel Print a 72 dpi, come nella tavola.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:696",
+        "com.figma.scopes": [
+          "FONT_SIZE"
+        ]
+      }
     }
   },
   "line-height-px": {
@@ -473,6 +550,116 @@
           "LINE_HEIGHT"
         ]
       }
+    },
+    "90": {
+      "$type": "number",
+      "$value": 90,
+      "$description": "Interlinea assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:634",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ]
+      }
+    },
+    "72": {
+      "$type": "number",
+      "$value": 72,
+      "$description": "Interlinea assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:642",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ]
+      }
+    },
+    "57-6": {
+      "$type": "number",
+      "$value": 57.6,
+      "$description": "Interlinea assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:649",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ]
+      }
+    },
+    "43-2": {
+      "$type": "number",
+      "$value": 43.2,
+      "$description": "Interlinea assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:656",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ]
+      }
+    },
+    "35-2": {
+      "$type": "number",
+      "$value": 35.2,
+      "$description": "Interlinea assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:664",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ]
+      }
+    },
+    "22-4": {
+      "$type": "number",
+      "$value": 22.4,
+      "$description": "Interlinea assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:678",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ]
+      }
+    },
+    "20-3": {
+      "$type": "number",
+      "$value": 20.3,
+      "$description": "Interlinea assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:685",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ]
+      }
+    },
+    "16-8": {
+      "$type": "number",
+      "$value": 16.8,
+      "$description": "Interlinea assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:697",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ]
+      }
+    },
+    "14-4": {
+      "$type": "number",
+      "$value": 14.4,
+      "$description": "Interlinea assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:703",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ]
+      }
+    },
+    "14": {
+      "$type": "number",
+      "$value": 14,
+      "$description": "Interlinea assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:709",
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ]
+      }
     }
   },
   "letter-spacing-px": {
@@ -636,6 +823,72 @@
       "$description": "Spaziatura assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
       "$extensions": {
         "com.figma.variableId": "VariableID:350:1156",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ]
+      }
+    },
+    "1": {
+      "$type": "number",
+      "$value": 1,
+      "$description": "Spaziatura assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:635",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ]
+      }
+    },
+    "0-8": {
+      "$type": "number",
+      "$value": 0.8,
+      "$description": "Spaziatura assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:643",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ]
+      }
+    },
+    "0-48": {
+      "$type": "number",
+      "$value": 0.48,
+      "$description": "Spaziatura assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:657",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ]
+      }
+    },
+    "minus-0-32": {
+      "$type": "number",
+      "$value": -0.32,
+      "$description": "Spaziatura assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:665",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ]
+      }
+    },
+    "minus-0-11": {
+      "$type": "number",
+      "$value": -0.11,
+      "$description": "Spaziatura assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:671",
+        "com.figma.scopes": [
+          "LETTER_SPACING"
+        ]
+      }
+    },
+    "0-28": {
+      "$type": "number",
+      "$value": 0.28,
+      "$description": "Spaziatura assoluta per il collegamento Figma; le percentuali originali sono descritte nei ruoli.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:571:710",
         "com.figma.scopes": [
           "LETTER_SPACING"
         ]

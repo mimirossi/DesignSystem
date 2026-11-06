@@ -14,7 +14,7 @@ type CoverCarouselItem = {
   image?: string
   /** …or inline SVG markup drawn in currentColor, tinted by `tone`. */
   illustration?: string
-  /** Text color class for the illustration, e.g. "text-brand". */
+  /** Text color class for the illustration, e.g. "text-brand-primary". */
   tone?: string
   imageAlt?: string
   cta?: { label: string; href?: string; onClick?: () => void }
@@ -117,7 +117,7 @@ function CoverCarousel({
                   data-cover-trigger={`${viewName}-${item.id}`}
                   aria-label={`Open ${item.title}`}
                   onClick={() => open(item.id)}
-                  className="absolute inset-0 z-10 cursor-pointer rounded-xl outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-inset"
+                  className="absolute inset-0 z-10 cursor-pointer rounded-xl outline-none focus-visible:ring-3 focus-visible:ring-focus-ring focus-visible:ring-inset"
                 />
               </Card>
             </li>
@@ -144,7 +144,7 @@ function CoverCarousel({
             ref={stripRef}
             tabIndex={0}
             onWheel={onWheel}
-            className="flex snap-x snap-mandatory gap-gap-xl overflow-x-auto overscroll-x-contain scroll-smooth pt-stack-xl pb-stack-sm outline-none motion-reduce:scroll-auto [scrollbar-width:thin] focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+            className="flex snap-x snap-mandatory gap-gap-xl overflow-x-auto overscroll-x-contain scroll-smooth pt-stack-xl pb-stack-sm outline-none motion-reduce:scroll-auto [scrollbar-width:thin] focus-visible:ring-3 focus-visible:ring-focus-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
           >
             {items.map((item, i) => (
               <article
@@ -164,17 +164,17 @@ function CoverCarousel({
                 <div className="flex min-w-0 flex-col gap-stack-lg pb-inset-sm">
                   <div className="flex flex-col gap-stack-md">
                     <div className="flex flex-col gap-stack-xs">
-                      <span className="font-mono text-xs text-muted-foreground">
+                      <span className="font-mono type-caption text-text-secondary">
                         {String(i + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
                       </span>
                       <div className="flex flex-col">
-                        <h3 className="font-display text-5xl leading-[0.9] tracking-[0.01em] uppercase">
+                        <h3 className="type-titolo-2">
                           {item.title}
                         </h3>
-                        {item.subtitle && <p className="type-info text-muted-foreground">{item.subtitle}</p>}
+                        {item.subtitle && <p className="type-info text-text-secondary">{item.subtitle}</p>}
                       </div>
                     </div>
-                    {item.description && <p className="max-w-sm text-sm text-muted-foreground">{item.description}</p>}
+                    {item.description && <p className="max-w-sm type-body text-text-secondary">{item.description}</p>}
                   </div>
                   {item.cta && (
                     <Button

@@ -20,7 +20,7 @@ export function ExampleCard({
       <div className="mb-stack-sm flex items-end justify-between gap-gap-md">
         <div className="flex flex-col gap-stack-xs">
           <h3 className="font-heading text-base font-medium">{title}</h3>
-          {description && <p className="text-sm text-muted-foreground">{description}</p>}
+          {description && <p className="text-sm text-text-secondary">{description}</p>}
         </div>
       </div>
       <Tabs defaultValue="preview">

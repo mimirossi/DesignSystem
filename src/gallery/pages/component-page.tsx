@@ -11,7 +11,7 @@ function SectionHeading({ id, title, children }: { id: string; title: string; ch
       <h2 id={id} className="scroll-mt-20 font-heading text-xl font-medium tracking-tight">
         {title}
       </h2>
-      {children && <p className="text-sm text-muted-foreground">{children}</p>}
+      {children && <p className="text-sm text-text-secondary">{children}</p>}
     </div>
   )
 }
@@ -30,7 +30,7 @@ export function ComponentPage({ entry }: { entry: ComponentEntry }) {
         <header className="flex flex-col gap-stack-sm">
           <Badge variant="outline">{entry.category}</Badge>
           <h1 className="font-heading text-3xl font-semibold tracking-tight">{entry.name}</h1>
-          <p className="max-w-2xl text-muted-foreground">{entry.description}</p>
+          <p className="max-w-2xl text-text-secondary">{entry.description}</p>
         </header>
 
         {entry.states && (
@@ -78,14 +78,14 @@ export function ComponentPage({ entry }: { entry: ComponentEntry }) {
       </article>
 
       <aside className="sticky top-20 hidden h-fit w-44 shrink-0 xl:block">
-        <p className="mb-stack-sm text-xs font-medium tracking-wide text-muted-foreground uppercase">On this page</p>
+        <p className="mb-stack-sm text-xs font-medium tracking-wide text-text-secondary uppercase">On this page</p>
         <ul className="flex flex-col gap-stack-xs text-sm">
           {toc.map((item) => (
             <li key={item.id} className={item.nested ? "pl-inset-sm-md" : undefined}>
               <button
                 type="button"
                 onClick={() => document.getElementById(item.id)?.scrollIntoView({ behavior: "smooth" })}
-                className="text-left text-muted-foreground hover:text-foreground"
+                className="text-left text-text-secondary hover:text-text-primary"
               >
                 {item.title}
               </button>

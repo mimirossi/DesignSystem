@@ -13,7 +13,7 @@ export function InputWithLabel() {
     <div className="grid w-full max-w-xs gap-stack-xs">
       <Label htmlFor="input-email">Email</Label>
       <Input id="input-email" type="email" placeholder="you@example.com" />
-      <p className="text-xs text-muted-foreground">We'll never share your email.</p>
+      <p className="type-caption text-text-secondary">We'll never share your email.</p>
     </div>
   )
 }
@@ -23,7 +23,7 @@ export function InputInvalid() {
     <div className="grid w-full max-w-xs gap-stack-xs">
       <Label htmlFor="input-username">Username</Label>
       <Input id="input-username" defaultValue="a" aria-invalid aria-describedby="input-username-error" />
-      <p id="input-username-error" className="text-xs text-destructive">
+      <p id="input-username-error" className="type-caption text-feedback-error">
         Username must be at least 3 characters.
       </p>
     </div>
@@ -34,7 +34,7 @@ export function InputWithButton() {
   return (
     <div className="flex w-full max-w-sm items-center gap-gap-sm">
       <div className="relative flex-1">
-        <SearchIcon className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-muted-foreground" />
+        <SearchIcon className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-text-secondary" />
         <Input placeholder="Search…" className="pl-inset-xl" />
       </div>
       <Button>Search</Button>

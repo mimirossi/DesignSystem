@@ -40,7 +40,7 @@ function Section({
           {title}
         </h2>
         {description && (
-          <p className="max-w-3xl text-sm text-muted-foreground">
+          <p className="max-w-3xl text-sm text-text-secondary">
             {description}
           </p>
         )}
@@ -59,7 +59,7 @@ function Palette() {
         <div key={family.id} className="flex flex-col gap-stack-xs">
           <div className="flex items-baseline gap-gap-sm text-sm">
             <span className="font-medium">{family.label}</span>
-            <span className="text-muted-foreground">{family.role}</span>
+            <span className="text-text-secondary">{family.role}</span>
           </div>
           <div className="grid grid-cols-5 gap-gap-sm sm:grid-cols-10">
             {STEPS.map((step) => {
@@ -70,18 +70,18 @@ function Palette() {
                   key={step}
                   type="button"
                   onClick={() => copyToClipboard(`bg-${token}`, `bg-${token}`)}
-                  className="group flex flex-col gap-stack-xs rounded-md text-left outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+                  className="group flex flex-col gap-stack-xs rounded-md text-left outline-none focus-visible:ring-3 focus-visible:ring-focus-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
                   aria-label={`Copy class bg-${token} (${hex})`}
                 >
                   <span
-                    className="h-12 w-full rounded-md ring-thin ring-foreground/10 ring-inset"
+                    className="h-12 w-full rounded-md ring-thin ring-text-primary/10 ring-inset"
                     style={{ background: `var(--color-${token})` }}
                   />
                   <span className="font-mono text-xs">
                     {family.code}
                     {step}
                   </span>
-                  <span className="font-mono text-[0.7rem] text-muted-foreground">
+                  <span className="font-mono text-[0.7rem] text-text-secondary">
                     {hex}
                   </span>
                 </button>
@@ -99,7 +99,7 @@ function Palette() {
 function Swatch({ hex }: { hex: string }) {
   return (
     <span
-      className="size-4 shrink-0 rounded-xs ring-thin ring-foreground/20"
+      className="size-4 shrink-0 rounded-xs ring-thin ring-text-primary/20"
       style={{ background: hex }}
     />
   )
@@ -111,7 +111,7 @@ function SemanticRoles() {
     <div className="overflow-x-auto rounded-lg border-thin">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b-thin bg-muted/40 text-left">
+          <tr className="border-b-thin bg-surface-muted/40 text-left">
             <th className="px-inset-md py-inset-sm-md font-medium">Role</th>
             <th className="px-inset-md py-inset-sm-md font-medium">Light · Chiaro</th>
             <th className="px-inset-md py-inset-sm-md font-medium">Dark · Scuro</th>
@@ -131,7 +131,7 @@ function SemanticRoles() {
                   <span className="flex items-center gap-gap-sm font-mono text-xs">
                     <Swatch hex={mode.hex} />
                     {mode.alias}{" "}
-                    <span className="text-muted-foreground">{mode.hex}</span>
+                    <span className="text-text-secondary">{mode.hex}</span>
                   </span>
                 </td>
               ))}
@@ -195,10 +195,10 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
       ref={ref}
       className={cn(
         mode,
-        "flex flex-col gap-stack-sm rounded-xl border-thin bg-background p-inset-md text-foreground"
+        "flex flex-col gap-stack-sm rounded-xl border-thin bg-background-default p-inset-md text-text-primary"
       )}
     >
-      <p className="font-mono text-xs tracking-wide text-muted-foreground uppercase">
+      <p className="font-mono text-xs tracking-wide text-text-secondary uppercase">
         {mode === "light" ? "Chiaro" : "Scuro"}
       </p>
       <ul className="flex flex-col">
@@ -211,7 +211,7 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
               className="flex items-center gap-gap-sm border-b-thin py-inset-sm last:border-b-0"
             >
               <span
-                className="grid h-8 w-12 shrink-0 place-items-center rounded-md text-sm font-semibold ring-thin ring-foreground/10"
+                className="grid h-8 w-12 shrink-0 place-items-center rounded-md text-sm font-semibold ring-thin ring-text-primary/10"
                 style={{
                   background: `var(--${pair.bg})`,
                   color: `var(--${pair.fg})`,
@@ -228,7 +228,7 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
               </span>
               <span className="flex min-w-0 flex-1 flex-col">
                 <span className="text-sm">{pair.label}</span>
-                <span className="truncate font-mono text-xs text-muted-foreground">
+                <span className="truncate font-mono text-xs text-text-secondary">
                   --{pair.fg} / --{pair.bg}
                 </span>
               </span>
@@ -239,8 +239,8 @@ function ContrastPanel({ mode }: { mode: "light" | "dark" }) {
                 className={cn(
                   "inline-flex items-center gap-gap-xs rounded-sm px-inset-sm py-inset-xs text-xs font-medium",
                   pass
-                    ? "bg-highlight text-highlight-foreground"
-                    : "bg-destructive/10 text-destructive"
+                    ? "bg-accent-default text-accent-on-accent"
+                    : "bg-feedback-error/10 text-feedback-error"
                 )}
               >
                 {pass ? (
@@ -265,7 +265,7 @@ function BrandSample({ mode }: { mode: "light" | "dark" }) {
     <div
       className={cn(
         mode,
-        "@container flex flex-col gap-stack-lg rounded-xl border-thin bg-card p-inset-lg text-card-foreground"
+        "@container flex flex-col gap-stack-lg rounded-xl border-thin bg-surface-default p-inset-lg text-text-primary"
       )}
     >
       <div className="flex flex-col gap-stack-md">
@@ -282,7 +282,7 @@ function BrandSample({ mode }: { mode: "light" | "dark" }) {
           <h3 className="font-heading text-2xl font-bold tracking-tight">
             Ci vediamo sotto cassa.
           </h3>
-          <p className="text-muted-foreground">
+          <p className="text-text-secondary">
             Giovedì, dalle 23:00 · House e hardgroove. La notte LOCAMIMI
             comincia qui.
           </p>
@@ -333,7 +333,7 @@ function RadiusScale() {
       <div className="overflow-x-auto rounded-lg border-thin">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b-thin bg-muted/40 text-left">
+            <tr className="border-b-thin bg-surface-muted/40 text-left">
               <th className="px-inset-md py-inset-sm-md font-medium">Class</th>
               <th className="px-inset-md py-inset-sm-md font-medium">Value</th>
               <th className="px-inset-md py-inset-sm-md font-medium">Figma</th>
@@ -352,7 +352,7 @@ function RadiusScale() {
                       onClick={() =>
                         copyToClipboard(role.className, role.className)
                       }
-                      className="rounded-sm text-left font-mono text-xs text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+                      className="rounded-sm text-left font-mono text-xs text-text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-focus-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
                     >
                       {role.className}
                     </button>
@@ -360,16 +360,16 @@ function RadiusScale() {
                   <td className="px-inset-md py-inset-sm-md tabular-nums">
                     {token.px >= 9999 ? "pill" : `${token.px}px`}
                   </td>
-                  <td className="px-inset-md py-inset-sm-md font-mono text-xs text-muted-foreground">
+                  <td className="px-inset-md py-inset-sm-md font-mono text-xs text-text-secondary">
                     {token.alias}
                   </td>
-                  <td className="px-inset-md py-inset-sm-md text-muted-foreground">
+                  <td className="px-inset-md py-inset-sm-md text-text-secondary">
                     {role.use}
                   </td>
                   <td className="px-inset-md py-inset-sm-md">
                     <span
                       className={cn(
-                        "block h-10 w-24 border-default border-primary bg-secondary",
+                        "block h-10 w-24 border-default border-action-primary bg-action-secondary-surface",
                         role.className
                       )}
                     />
@@ -411,60 +411,20 @@ const TYPE_CLASS: Record<string, string> = {
   label: "type-label",
 }
 
-const SCALES = [
-  { value: 0.5, label: "Web · 0.5×" },
-  { value: 0.75, label: "0.75×" },
-  { value: 1, label: "Social · 1×" },
-]
-
-function readTypeScale() {
-  return (
-    parseFloat(
-      getComputedStyle(document.documentElement).getPropertyValue(
-        "--type-scale"
-      )
-    ) || 0.5
-  )
-}
-
 function TypeScale() {
-  const [scale, setScale] = React.useState(readTypeScale)
-
-  const update = (value: number) => {
-    setScale(value)
-    document.documentElement.style.setProperty("--type-scale", String(value))
-  }
-
   return (
     <div className="flex flex-col gap-stack-md">
       <div className="flex flex-col gap-stack-sm rounded-xl border-thin p-inset-md sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-col gap-stack-xs">
           <span className="text-sm font-medium">Families</span>
-          <span className="text-sm text-muted-foreground">
+          <span className="text-sm text-text-secondary">
             <span className="font-display text-base uppercase">DAMN</span> for
             display and titles 1–2 ·{" "}
-            <span className="font-semibold text-foreground">
+            <span className="font-semibold text-text-primary">
               Bricolage Grotesque
             </span>{" "}
             for everything else, including all components.
           </span>
-        </div>
-        <div
-          className="flex items-center gap-gap-sm"
-          role="group"
-          aria-label="Preview scale"
-        >
-          {SCALES.map((option) => (
-            <Button
-              key={option.value}
-              size="sm"
-              variant={scale === option.value ? "default" : "outline"}
-              aria-pressed={scale === option.value}
-              onClick={() => update(option.value)}
-            >
-              {option.label}
-            </Button>
-          ))}
         </div>
       </div>
 
@@ -481,21 +441,21 @@ function TypeScale() {
                 <button
                   type="button"
                   onClick={() => copyToClipboard(className, className)}
-                  className="w-fit rounded-sm font-mono text-xs text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+                  className="w-fit rounded-sm font-mono text-xs text-text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-focus-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
                 >
                   {className}
                 </button>
-                <span className="text-xs text-muted-foreground">
+                <span className="text-xs text-text-secondary">
                   {role.family} {role.style} ·{" "}
-                  {Math.round(role.size * scale * 10) / 10}px
+                  {role.size}px
                 </span>
-                <span className="text-xs text-muted-foreground">
+                <span className="text-xs text-text-secondary">
                   Line height {role.lineHeight} · tracking {role.letterSpacing}
                   {role.uppercase && " · uppercase"}
                 </span>
               </div>
               <p className={cn(className, "min-w-0 break-words")}>
-                {role.size >= 96
+                {role.size >= 48
                   ? "Sotto cassa"
                   : role.name === "info"
                     ? "Giovedì · 23:00"
@@ -523,13 +483,13 @@ function ProximityExample() {
   return (
     <div className="grid gap-gap-lg lg:grid-cols-[1fr_16rem]">
       <div className="preview-surface rounded-lg border-thin p-inset-lg">
-        <div className="flex max-w-sm flex-col gap-stack-lg rounded-xl bg-card p-inset-lg ring-thin ring-foreground/10">
+        <div className="flex max-w-sm flex-col gap-stack-lg rounded-xl bg-surface-default p-inset-lg ring-thin ring-text-primary/10">
           <div className="flex flex-col gap-stack-md">
             <div className="flex flex-col gap-stack-xs">
               <h3 className="font-heading text-lg font-semibold">
                 Prenota il tuo tavolo
               </h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-text-secondary">
                 Giovedì, dalle 23:00 · Sotto cassa
               </p>
             </div>
@@ -574,10 +534,10 @@ function ProximityExample() {
         ].map(([token, rule]) => (
           <li
             key={token}
-            className="flex flex-col gap-gap-xs border-l-default border-primary pl-inset-sm"
+            className="flex flex-col gap-gap-xs border-l-default border-action-primary pl-inset-sm"
           >
             <code className="font-mono text-xs">{token}</code>
-            <span className="text-muted-foreground">{rule}</span>
+            <span className="text-text-secondary">{rule}</span>
           </li>
         ))}
       </ol>
@@ -598,7 +558,7 @@ function SpacingScale() {
           >
             <div className="flex flex-col gap-stack-xs">
               <span className="font-mono text-sm font-medium">{group}-*</span>
-              <span className="text-xs text-muted-foreground">
+              <span className="text-xs text-text-secondary">
                 {description}
               </span>
             </div>
@@ -616,15 +576,15 @@ function SpacingScale() {
                     <button
                       type="button"
                       onClick={() => copyToClipboard(className, className)}
-                      className="w-32 shrink-0 rounded-sm text-left font-mono text-xs text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
+                      className="w-32 shrink-0 rounded-sm text-left font-mono text-xs text-text-link underline underline-offset-4 outline-none focus-visible:ring-3 focus-visible:ring-focus-ring focus-visible:ring-offset-3 focus-visible:ring-offset-focus-gap"
                     >
                       {className}
                     </button>
-                    <span className="w-12 shrink-0 text-xs text-muted-foreground tabular-nums">
+                    <span className="w-12 shrink-0 text-xs text-text-secondary tabular-nums">
                       {role.px}px
                     </span>
                     <span
-                      className="h-3 rounded-sm bg-primary"
+                      className="h-3 rounded-sm bg-action-primary"
                       style={{ width: Math.max(role.px, 1) }}
                     />
                   </li>
@@ -641,13 +601,13 @@ function SpacingScale() {
           {spacingPrimitives().map((px) => (
             <div key={px} className="flex flex-col items-center gap-stack-xs">
               <span
-                className="bg-primary"
+                className="bg-action-primary"
                 style={{
                   width: Math.max(px / 2, 1),
                   height: Math.max(px / 2, 1),
                 }}
               />
-              <span className="font-mono text-xs text-muted-foreground">
+              <span className="font-mono text-xs text-text-secondary">
                 {px}
               </span>
             </div>
@@ -668,7 +628,7 @@ export function FoundationsPage() {
         <h1 className="font-heading text-3xl font-semibold tracking-tight">
           Color, type, radius & spacing
         </h1>
-        <p className="max-w-2xl text-muted-foreground">
+        <p className="max-w-2xl text-text-secondary">
           The LOCAMIMI tokens behind every component. Colors come straight from
           the Figma exports in{" "}
           <code className="font-mono text-sm">tokens/</code>; contrast ratios
@@ -686,7 +646,7 @@ export function FoundationsPage() {
             <BrandSample mode="light" />
             <BrandSample mode="dark" />
           </div>
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-text-secondary">
             The primary button is shown in its focus state.
           </p>
         </div>
@@ -695,7 +655,7 @@ export function FoundationsPage() {
       <Section
         id="typography"
         title="Typography"
-        description="Twelve roles from the Figma type scale. Sizes use the web scale (0.5× the Figma Social values, set by --type-scale in index.css); the buttons preview other scales."
+        description="Twelve roles from Figma (LOCAMIMI — Tipografia — Web). Social and Print keep their own sizes in Figma."
       >
         <TypeScale />
       </Section>

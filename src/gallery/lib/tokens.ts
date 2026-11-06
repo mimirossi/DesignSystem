@@ -106,10 +106,10 @@ export type TypeRole = {
   uppercase: boolean
 }
 
-/** Type roles from tokens/typography.tokens.json, with the percentages from their descriptions. */
+/** Web type roles from tokens/typography-web.tokens.json, with the percentages from their descriptions. */
 export function typeRoles(): TypeRole[] {
   const roles = files[
-    "../../../tokens/typography.tokens.json"
+    "../../../tokens/typography-web.tokens.json"
   ] as unknown as TypeRoleTokens
   return Object.entries(roles)
     .filter(([name]) => !name.startsWith("$"))

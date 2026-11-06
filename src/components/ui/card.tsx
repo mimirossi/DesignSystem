@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 
 const cardVariants = cva(
-  "group/card overflow-hidden rounded-xl bg-card text-sm text-card-foreground ring-thin ring-foreground/10 [--card-spacing:var(--spacing-inset-lg)] data-[size=sm]:[--card-spacing:var(--spacing-inset-md)]",
+  "group/card overflow-hidden rounded-xl bg-surface-default type-body text-text-primary ring-thin ring-text-primary/10 [--card-spacing:var(--spacing-inset-lg)] data-[size=sm]:[--card-spacing:var(--spacing-inset-md)]",
   {
     variants: {
       variant: {
@@ -56,7 +56,7 @@ function CardMedia({ className, alt = "", ...props }: React.ComponentProps<"img"
 
 /**
  * Inline SVG artwork for a cover card. Shapes drawn in `currentColor` take
- * the theme's text color (set it with a text-* class, e.g. text-brand), so
+ * the theme's text color (set it with a text-* class, e.g. text-brand-primary), so
  * illustrations follow the color tokens in light and dark mode.
  */
 function CardIllustration({
@@ -78,7 +78,7 @@ function CardIllustration({
       aria-label={label}
       aria-hidden={label ? undefined : true}
       className={cn(
-        "absolute inset-0 -z-10 text-foreground transition-transform duration-300 group-hover/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 [&>svg]:size-full",
+        "absolute inset-0 -z-10 text-text-primary transition-transform duration-300 group-hover/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 [&>svg]:size-full",
         className
       )}
       dangerouslySetInnerHTML={{ __html: markup }}
@@ -98,7 +98,7 @@ function CardOverlay({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-overlay"
       className={cn(
-        "dark absolute inset-0 flex flex-col items-start justify-between gap-stack-md bg-linear-to-b from-nero-900/90 via-nero-900/40 to-nero-900/90 p-(--card-spacing) text-foreground translate-y-2 opacity-0 transition duration-200 group-hover/card:translate-y-0 group-hover/card:opacity-100 group-has-[:focus-visible]/card:translate-y-0 group-has-[:focus-visible]/card:opacity-100 motion-reduce:translate-y-0 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100",
+        "dark absolute inset-0 flex flex-col items-start justify-between gap-stack-md bg-linear-to-b from-nero-900/90 via-nero-900/40 to-nero-900/90 p-(--card-spacing) text-text-primary translate-y-2 opacity-0 transition duration-200 group-hover/card:translate-y-0 group-hover/card:opacity-100 group-has-[:focus-visible]/card:translate-y-0 group-has-[:focus-visible]/card:opacity-100 motion-reduce:translate-y-0 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100",
         className
       )}
       {...props}
@@ -124,7 +124,7 @@ function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-title"
       className={cn(
-        "font-heading text-base leading-snug font-medium group-data-[size=sm]/card:text-sm group-data-[variant=cover]/card:font-display group-data-[variant=cover]/card:text-5xl group-data-[variant=cover]/card:leading-[0.9] group-data-[variant=cover]/card:font-normal group-data-[variant=cover]/card:tracking-[0.01em] group-data-[variant=cover]/card:uppercase group-[[data-variant=cover][data-size=sm]]/card:text-3xl",
+        "type-sottotitolo group-data-[size=sm]/card:type-body-strong group-data-[variant=cover]/card:type-titolo-2 group-[[data-variant=cover][data-size=sm]]/card:type-titolo-2",
         className
       )}
       {...props}
@@ -136,7 +136,7 @@ function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-description"
-      className={cn("text-sm text-muted-foreground group-data-[variant=cover]/card:type-info", className)}
+      className={cn("type-body text-text-secondary group-data-[variant=cover]/card:type-info", className)}
       {...props}
     />
   )
@@ -170,7 +170,7 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-footer"
       className={cn(
-        "flex items-center rounded-b-xl border-t-thin bg-muted/50 p-(--card-spacing)",
+        "flex items-center rounded-b-xl border-t-thin bg-surface-muted/50 p-(--card-spacing)",
         // CTA sits stack-lg below the content (the card gap is stack-md).
         "mt-[calc(var(--spacing-stack-lg)-var(--spacing-stack-md))]",
         className

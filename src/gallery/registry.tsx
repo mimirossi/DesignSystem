@@ -462,7 +462,7 @@ const entries: (Omit<ComponentEntry, "sources"> & { files: string[] })[] = [
       ],
       render: (row, state) => (
         <Card variant="cover" size="sm" className={row.media ? "w-44" : "w-44 bg-rosa-chiaro-200"} {...state}>
-          {row.media && <CardIllustration svg={cuorePalpebre} className="text-brand" />}
+          {row.media && <CardIllustration svg={cuorePalpebre} className="text-brand-primary" />}
           <CardOverlay>
             <div className="grid">
               <CardTitle>Sotto cassa</CardTitle>
@@ -475,7 +475,7 @@ const entries: (Omit<ComponentEntry, "sources"> & { files: string[] })[] = [
       code: (props) =>
         [
           props.media ? '<Card variant="cover">' : '<Card variant="cover" className="bg-rosa-chiaro-200">',
-          props.media && '  <CardIllustration svg={illustration} className="text-brand" />',
+          props.media && '  <CardIllustration svg={illustration} className="text-brand-primary" />',
           "  <CardOverlay>",
           '    <div className="grid">',
           "      <CardTitle>Sotto cassa</CardTitle>",

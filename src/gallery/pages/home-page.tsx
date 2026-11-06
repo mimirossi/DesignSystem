@@ -9,7 +9,7 @@ export function HomePage() {
     <div className="flex flex-col gap-section-md">
       <header className="flex flex-col gap-stack-sm">
         <h1 className="font-heading text-3xl font-semibold tracking-tight">Components</h1>
-        <p className="max-w-2xl text-muted-foreground">
+        <p className="max-w-2xl text-text-secondary">
           Browse every component in the design system. Each page shows its variants, its interactive
           states side by side, and copy-ready code for every example.
         </p>
@@ -32,7 +32,7 @@ export function HomePage() {
                   <a
                     key={entry.slug}
                     href={`#/${entry.slug}`}
-                    className="group flex flex-col overflow-hidden rounded-xl border-thin bg-card transition-colors hover:border-foreground/20"
+                    className="group flex flex-col overflow-hidden rounded-xl border-thin bg-surface-default transition-colors hover:border-text-primary/20"
                   >
                     {/* Thumbnails are decorative; the link itself is the interactive element. */}
                     <div
@@ -47,9 +47,9 @@ export function HomePage() {
                     <div className="flex flex-col p-inset-md">
                       <div className="flex items-center justify-between gap-gap-sm">
                         <h3 className="font-medium">{entry.name}</h3>
-                        <ArrowRightIcon className="size-4 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
+                        <ArrowRightIcon className="size-4 text-text-secondary transition-transform group-hover:translate-x-0.5" />
                       </div>
-                      <p className="line-clamp-2 text-sm text-muted-foreground">{entry.description}</p>
+                      <p className="line-clamp-2 text-sm text-text-secondary">{entry.description}</p>
                     </div>
                   </a>
                 )

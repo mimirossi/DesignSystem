@@ -10,8 +10,8 @@ export function StateMatrix({ matrix }: { matrix: StateMatrixConfig }) {
     <div className="overflow-x-auto rounded-lg border-thin">
       <table className="preview-surface w-full border-collapse text-sm">
         <thead>
-          <tr className="border-b-thin bg-muted/40">
-            <th className="w-36 px-inset-md py-inset-sm-md text-left font-medium text-muted-foreground">
+          <tr className="border-b-thin bg-surface-muted/40">
+            <th className="w-36 px-inset-md py-inset-sm-md text-left font-medium text-text-secondary">
               Variant
             </th>
             {columns.map((key) => {
@@ -24,7 +24,7 @@ export function StateMatrix({ matrix }: { matrix: StateMatrixConfig }) {
                       <Tooltip>
                         <TooltipTrigger
                           aria-label={state.hint}
-                          className="text-muted-foreground hover:text-foreground"
+                          className="text-text-secondary hover:text-text-primary"
                         >
                           <InfoIcon className="size-3.5" />
                         </TooltipTrigger>
@@ -40,7 +40,7 @@ export function StateMatrix({ matrix }: { matrix: StateMatrixConfig }) {
         <tbody>
           {rows.map((row) => (
             <tr key={row.label} className="border-b-thin last:border-b-0">
-              <th scope="row" className="px-inset-md py-inset-md text-left align-middle font-normal text-muted-foreground">
+              <th scope="row" className="px-inset-md py-inset-md text-left align-middle font-normal text-text-secondary">
                 {row.label}
               </th>
               {columns.map((key) => {

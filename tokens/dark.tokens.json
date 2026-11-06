@@ -16,7 +16,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1034",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "FRAME_FILL",
+          "SHAPE_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:43949fafa5d0031236a744a62f5a02093f225c91/-1:-1",
@@ -44,11 +45,93 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1035",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "FRAME_FILL",
+          "SHAPE_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:89400d2af15b6abbe9c547239fab51713b164900/-1:-1",
           "targetVariableName": "nero/800",
+          "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Scale tonali"
+        }
+      }
+    },
+    "overlay": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16862745098039217,
+          0.16862745098039217,
+          0.16862745098039217
+        ],
+        "alpha": 1,
+        "hex": "#2B2B2B"
+      },
+      "$description": "Chiaro → crema/50 · Scuro → nero/800",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:570:642",
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:89400d2af15b6abbe9c547239fab51713b164900/-1:-1",
+          "targetVariableName": "nero/800",
+          "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Scale tonali"
+        }
+      }
+    },
+    "muted": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16862745098039217,
+          0.16862745098039217,
+          0.16862745098039217
+        ],
+        "alpha": 1,
+        "hex": "#2B2B2B"
+      },
+      "$description": "Chiaro → crema/100 · Scuro → nero/800",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:570:643",
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:89400d2af15b6abbe9c547239fab51713b164900/-1:-1",
+          "targetVariableName": "nero/800",
+          "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Scale tonali"
+        }
+      }
+    },
+    "hover": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2549019607843137,
+          0.2549019607843137,
+          0.2549019607843137
+        ],
+        "alpha": 1,
+        "hex": "#414141"
+      },
+      "$description": "Chiaro → rosa-chiaro/100 · Scuro → nero/700",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:570:644",
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:ebcc9da6554533585460a07b239a4358dfbac5ba/-1:-1",
+          "targetVariableName": "nero/700",
           "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
           "targetVariableSetName": "LOCAMIMI — Scale tonali"
         }
@@ -72,7 +155,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1036",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "TEXT_FILL",
+          "SHAPE_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:b08c25c910551861994d375e39fd18256b9afb07/-1:-1",
@@ -98,7 +182,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1037",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "TEXT_FILL",
+          "SHAPE_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:bbc7d7f56c5ab22660933141e02566836bf9484d/-1:-1",
@@ -124,7 +209,7 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1041",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "TEXT_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:eff1613ec02a9774f28733053a8c75a8caaae83d/-1:-1",
@@ -152,7 +237,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1038",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "FRAME_FILL",
+          "SHAPE_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:3895ec5cdba9592e5bd6d590e85d4c78efdc8efa/-1:-1",
@@ -178,7 +264,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1039",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "TEXT_FILL",
+          "SHAPE_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:43949fafa5d0031236a744a62f5a02093f225c91/-1:-1",
@@ -204,11 +291,40 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1040",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "TEXT_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:89d8e91dbbd0f4e8f006d8e4d86d27ac861e9f2f/-1:-1",
           "targetVariableName": "rosa-chiaro/200",
+          "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Scale tonali"
+        }
+      }
+    },
+    "secondary-surface": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.28627450980392155,
+          0.13333333333333333,
+          0.23921568627450981
+        ],
+        "alpha": 1,
+        "hex": "#49223D"
+      },
+      "$description": "Chiaro → rosa-chiaro/100 · Scuro → rosa-chiaro/800",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:570:645",
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:da9bf5f42f37c4478732c019933d31c5da66265f/-1:-1",
+          "targetVariableName": "rosa-chiaro/800",
           "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
           "targetVariableSetName": "LOCAMIMI — Scale tonali"
         }
@@ -232,11 +348,37 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1042",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "STROKE_COLOR"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:0063cda858141ee6c7c57723ce61285bfca3a622/-1:-1",
           "targetVariableName": "verde/300",
+          "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Scale tonali"
+        }
+      }
+    },
+    "gap": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16862745098039217,
+          0.16862745098039217,
+          0.16862745098039217
+        ],
+        "alpha": 1,
+        "hex": "#2B2B2B"
+      },
+      "$description": "Chiaro → crema/50 · Scuro → nero/800",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:570:648",
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:89400d2af15b6abbe9c547239fab51713b164900/-1:-1",
+          "targetVariableName": "nero/800",
           "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
           "targetVariableSetName": "LOCAMIMI — Scale tonali"
         }
@@ -260,7 +402,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1043",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "FRAME_FILL",
+          "SHAPE_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:0063cda858141ee6c7c57723ce61285bfca3a622/-1:-1",
@@ -286,7 +429,7 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1044",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "TEXT_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:0063cda858141ee6c7c57723ce61285bfca3a622/-1:-1",
@@ -312,7 +455,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1045",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "TEXT_FILL",
+          "SHAPE_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:43949fafa5d0031236a744a62f5a02093f225c91/-1:-1",
@@ -340,7 +484,10 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1046",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:3895ec5cdba9592e5bd6d590e85d4c78efdc8efa/-1:-1",
@@ -366,11 +513,99 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1047",
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:89d8e91dbbd0f4e8f006d8e4d86d27ac861e9f2f/-1:-1",
           "targetVariableName": "rosa-chiaro/200",
+          "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Scale tonali"
+        }
+      }
+    }
+  },
+  "border": {
+    "default": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2549019607843137,
+          0.2549019607843137,
+          0.2549019607843137
+        ],
+        "alpha": 1,
+        "hex": "#414141"
+      },
+      "$description": "Chiaro → crema/200 · Scuro → nero/700",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:570:646",
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:ebcc9da6554533585460a07b239a4358dfbac5ba/-1:-1",
+          "targetVariableName": "nero/700",
+          "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Scale tonali"
+        }
+      }
+    },
+    "input": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4627450980392157,
+          0.4627450980392157,
+          0.4627450980392157
+        ],
+        "alpha": 1,
+        "hex": "#767676"
+      },
+      "$description": "Chiaro → nero/500 · Scuro → nero/500",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:570:647",
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a6e47e8a77135cd98ca6189623ef7d56df0487d3/-1:-1",
+          "targetVariableName": "nero/500",
+          "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Scale tonali"
+        }
+      }
+    }
+  },
+  "feedback": {
+    "error": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          0.4980392156862745,
+          0.45098039215686275
+        ],
+        "alpha": 1,
+        "hex": "#FF7F73"
+      },
+      "$description": "Chiaro → rosso/700 · Scuro → rosso/400",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:570:649",
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "TEXT_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:f863c3178e90ecccaecc598a9bf71efa01e06415/-1:-1",
+          "targetVariableName": "rosso/400",
           "targetVariableSetId": "VariableCollectionId:3938bd2d0321aadc93cbcb5d45b4f8eb9f2c453c/-1:-1",
           "targetVariableSetName": "LOCAMIMI — Scale tonali"
         }

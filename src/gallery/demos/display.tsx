@@ -44,8 +44,8 @@ export function CardBasic() {
         </CardAction>
       </CardHeader>
       <CardContent>
-        <p className="text-2xl font-semibold">
-          $24<span className="text-sm font-normal text-muted-foreground">/user/month</span>
+        <p className="type-sottotitolo">
+          $24<span className="type-body text-text-secondary">/user/month</span>
         </p>
       </CardContent>
       <CardFooter>
@@ -97,7 +97,7 @@ export function CardSmall() {
 export function CardCoverImage() {
   return (
     <Card variant="cover" className="w-72">
-      <CardIllustration svg={cuorePalpebre} label="LOCAMIMI heart with lowered eyelids" className="text-brand" />
+      <CardIllustration svg={cuorePalpebre} label="LOCAMIMI heart with lowered eyelids" className="text-brand-primary" />
       <CardOverlay>
         <div className="grid">
           <CardTitle>Sotto cassa</CardTitle>
@@ -133,10 +133,10 @@ export function CardCoverSurface() {
 
 export function CardCoverGrid() {
   const releases = [
-    { title: "Sotto cassa", artist: "LOCAMIMI", cover: cuorePalpebre, tone: "text-brand" },
-    { title: "Socchiuso", artist: "Verde Club", cover: cuoreSocchiuso, tone: "text-highlight-text" },
-    { title: "Occhiolino", artist: "N900 Sound", cover: cuoreOcchiolino, tone: "text-primary" },
-    { title: "Aperitivo", artist: "Coppa Records", cover: coppa, tone: "text-foreground" },
+    { title: "Sotto cassa", artist: "LOCAMIMI", cover: cuorePalpebre, tone: "text-brand-primary" },
+    { title: "Socchiuso", artist: "Verde Club", cover: cuoreSocchiuso, tone: "text-accent-text" },
+    { title: "Occhiolino", artist: "N900 Sound", cover: cuoreOcchiolino, tone: "text-action-primary" },
+    { title: "Aperitivo", artist: "Coppa Records", cover: coppa, tone: "text-text-primary" },
   ]
 
   return (
@@ -167,7 +167,7 @@ export function CardCoverCarousel() {
       subtitle: "LOCAMIMI · Giovedì 23:00",
       description: "House e hardgroove fino all'alba. La notte LOCAMIMI comincia qui.",
       illustration: cuorePalpebre,
-      tone: "text-brand",
+      tone: "text-brand-primary",
       cta: { label: "Prendi il tuo posto" },
     },
     {
@@ -176,7 +176,7 @@ export function CardCoverCarousel() {
       subtitle: "Verde Club · Venerdì 22:00",
       description: "Un set lento e ipnotico, per chi arriva presto e resta tardi.",
       illustration: cuoreSocchiuso,
-      tone: "text-highlight-text",
+      tone: "text-accent-text",
       cta: { label: "Scopri la line-up" },
     },
     {
@@ -185,7 +185,7 @@ export function CardCoverCarousel() {
       subtitle: "N900 Sound · Sabato 23:30",
       description: "Disco, edit e qualche sorpresa. Dress code: brillare.",
       illustration: cuoreOcchiolino,
-      tone: "text-primary",
+      tone: "text-action-primary",
       cta: { label: "Biglietti" },
     },
     {
@@ -194,7 +194,7 @@ export function CardCoverCarousel() {
       subtitle: "Coppa Records · Domenica 18:00",
       description: "Vinili, spritz e tramonto in terrazza.",
       illustration: coppa,
-      tone: "text-foreground",
+      tone: "text-text-primary",
       cta: { label: "Prenota un tavolo" },
     },
     {
@@ -203,7 +203,7 @@ export function CardCoverCarousel() {
       subtitle: "LOCAMIMI · Domenica 04:00",
       description: "Per chi non vuole ancora tornare a casa.",
       illustration: cuorePalpebre,
-      tone: "text-foreground",
+      tone: "text-text-primary",
       cta: { label: "Mettiti in lista" },
     },
   ]
@@ -308,10 +308,10 @@ export function TabsDefault() {
           Billing
         </TabsTrigger>
       </TabsList>
-      <TabsContent value="account" className="text-sm text-muted-foreground">
+      <TabsContent value="account" className="type-body text-text-secondary">
         Manage your account details.
       </TabsContent>
-      <TabsContent value="password" className="text-sm text-muted-foreground">
+      <TabsContent value="password" className="type-body text-text-secondary">
         Change your password.
       </TabsContent>
     </Tabs>
@@ -326,13 +326,13 @@ export function TabsLine() {
         <TabsTrigger value="analytics">Analytics</TabsTrigger>
         <TabsTrigger value="reports">Reports</TabsTrigger>
       </TabsList>
-      <TabsContent value="overview" className="text-sm text-muted-foreground">
+      <TabsContent value="overview" className="type-body text-text-secondary">
         Overview content.
       </TabsContent>
-      <TabsContent value="analytics" className="text-sm text-muted-foreground">
+      <TabsContent value="analytics" className="type-body text-text-secondary">
         Analytics content.
       </TabsContent>
-      <TabsContent value="reports" className="text-sm text-muted-foreground">
+      <TabsContent value="reports" className="type-body text-text-secondary">
         Reports content.
       </TabsContent>
     </Tabs>
@@ -347,13 +347,13 @@ export function TabsVertical() {
         <TabsTrigger value="security">Security</TabsTrigger>
         <TabsTrigger value="team">Team</TabsTrigger>
       </TabsList>
-      <TabsContent value="general" className="text-sm text-muted-foreground">
+      <TabsContent value="general" className="type-body text-text-secondary">
         General settings.
       </TabsContent>
-      <TabsContent value="security" className="text-sm text-muted-foreground">
+      <TabsContent value="security" className="type-body text-text-secondary">
         Security settings.
       </TabsContent>
-      <TabsContent value="team" className="text-sm text-muted-foreground">
+      <TabsContent value="team" className="type-body text-text-secondary">
         Team settings.
       </TabsContent>
     </Tabs>
@@ -364,11 +364,11 @@ export function SeparatorDemo() {
   return (
     <div className="w-full max-w-xs">
       <div className="space-y-stack-xs">
-        <h4 className="text-sm font-medium">Design System</h4>
-        <p className="text-sm text-muted-foreground">Components built on shadcn/ui.</p>
+        <h4 className="type-label">Design System</h4>
+        <p className="type-body text-text-secondary">Components built on shadcn/ui.</p>
       </div>
       <Separator className="my-stack-sm" />
-      <div className="flex h-5 items-center gap-gap-md text-sm">
+      <div className="flex h-5 items-center gap-gap-md type-body">
         <span>Docs</span>
         <Separator orientation="vertical" />
         <span>Source</span>
@@ -385,10 +385,10 @@ export function ScrollAreaVertical() {
   return (
     <ScrollArea className="h-64 w-48 rounded-md border-thin">
       <div className="p-inset-md">
-        <h4 className="mb-stack-sm text-sm font-medium">Tags</h4>
+        <h4 className="mb-stack-sm type-label">Tags</h4>
         {tags.map((tag) => (
           <div key={tag}>
-            <div className="text-sm">{tag}</div>
+            <div className="type-body">{tag}</div>
             <Separator className="my-stack-xs" />
           </div>
         ))}
@@ -404,7 +404,7 @@ export function ScrollAreaHorizontal() {
     <ScrollArea className="w-full max-w-sm rounded-md border-thin whitespace-nowrap">
       <div className="flex w-max gap-gap-md p-inset-md">
         {colors.map((color) => (
-          <div key={color} className="flex h-24 w-32 items-end rounded-md bg-muted p-inset-sm text-sm">
+          <div key={color} className="flex h-24 w-32 items-end rounded-md bg-surface-muted p-inset-sm type-body">
             {color}
           </div>
         ))}

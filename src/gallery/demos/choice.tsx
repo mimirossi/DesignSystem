@@ -18,7 +18,7 @@ export function CheckboxWithDescription() {
       <Checkbox id="checkbox-notifications" defaultChecked />
       <div className="grid gap-stack-xs">
         <Label htmlFor="checkbox-notifications">Enable notifications</Label>
-        <p className="text-sm text-muted-foreground">You can change this at any time in settings.</p>
+        <p className="type-body text-text-secondary">You can change this at any time in settings.</p>
       </div>
     </div>
   )
@@ -62,12 +62,12 @@ export function RadioGroupCards() {
         <Label
           key={plan.value}
           htmlFor={`plan-${plan.value}`}
-          className="flex items-start gap-gap-sm rounded-lg border-thin p-inset-md has-data-checked:border-primary has-data-checked:bg-muted/50"
+          className="flex items-start gap-gap-sm rounded-lg border-thin p-inset-md has-data-checked:border-action-primary has-data-checked:bg-surface-muted/50"
         >
           <RadioGroupItem value={plan.value} id={`plan-${plan.value}`} />
           <div className="grid gap-stack-xs">
-            <span className="font-medium">{plan.title}</span>
-            <span className="text-sm font-normal text-muted-foreground">{plan.description}</span>
+            <span className="type-body-strong">{plan.title}</span>
+            <span className="type-body text-text-secondary">{plan.description}</span>
           </div>
         </Label>
       ))}
