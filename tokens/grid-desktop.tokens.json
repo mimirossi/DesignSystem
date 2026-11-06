@@ -1,0 +1,106 @@
+{
+  "gutter": {
+    "$type": "number",
+    "$value": 24,
+    "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Spazio fra le colonne; utilizzabile anche come gap Auto Layout. Le modalità Mobile, Tablet e Desktop si scelgono manualmente sul frame; nessun cambio automatico al resize.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:359:1008",
+      "com.figma.scopes": [
+        "GAP"
+      ]
+    }
+  },
+  "breakpoint": {
+    "min-width": {
+      "$type": "number",
+      "$value": 1024,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Soglia del dispositivo, alias della collection Breakpoint. Le modalità Mobile, Tablet e Desktop si scelgono manualmente sul frame; nessun cambio automatico al resize.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1005",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:638db4b4551e493991c1d527555b8e77e82f1c0c/-1:-1",
+          "targetVariableName": "desktop/min-width",
+          "targetVariableSetId": "VariableCollectionId:5884d7b0221076cf030ca4cedaa2ba0bb5e2b54e/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Web — Breakpoint"
+        }
+      }
+    }
+  },
+  "viewport": {
+    "reference-width": {
+      "$type": "number",
+      "$value": 1440,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Larghezza di progetto del dispositivo, non è una soglia. Le modalità Mobile, Tablet e Desktop si scelgono manualmente sul frame; nessun cambio automatico al resize.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1006",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:d8fbaf4b47dae18e357222be4b6e2f43f49b31da/-1:-1",
+          "targetVariableName": "desktop/reference-width",
+          "targetVariableSetId": "VariableCollectionId:5884d7b0221076cf030ca4cedaa2ba0bb5e2b54e/-1:-1",
+          "targetVariableSetName": "LOCAMIMI — Web — Breakpoint"
+        }
+      }
+    }
+  },
+  "columns": {
+    "count": {
+      "$type": "number",
+      "$value": 12,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Numero di colonne per griglia stretch. Le modalità Mobile, Tablet e Desktop si scelgono manualmente sul frame; nessun cambio automatico al resize.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1007",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    }
+  },
+  "margin": {
+    "inline": {
+      "$type": "number",
+      "$value": 48,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Margine minimo sinistro e destro; utilizzabile come padding orizzontale. Le modalità Mobile, Tablet e Desktop si scelgono manualmente sul frame; nessun cambio automatico al resize.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1009",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    }
+  },
+  "container": {
+    "max-width": {
+      "$type": "number",
+      "$value": 1280,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Larghezza massima del contenuto, gutter inclusi e margini esterni esclusi. Contenitore centrato: min(larghezza viewport − 2 × margin/inline, 1280). Le modalità Mobile, Tablet e Desktop si scelgono manualmente sul frame; nessun cambio automatico al resize.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1010",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ]
+      }
+    }
+  },
+  "baseline": {
+    "step": {
+      "$type": "number",
+      "$value": 8,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Passo base verticale di 8 px. Le modalità Mobile, Tablet e Desktop si scelgono manualmente sul frame; nessun cambio automatico al resize.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1011",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Desktop"
+  }
+}

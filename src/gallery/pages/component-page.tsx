@@ -77,7 +77,7 @@ export function ComponentPage({ entry }: { entry: ComponentEntry }) {
         </section>
       </article>
 
-      <aside className="sticky top-20 hidden h-fit w-44 shrink-0 xl:block">
+      <aside className="sticky top-20 hidden h-fit w-44 shrink-0 desktop:block">
         <p className="mb-stack-sm text-xs font-medium tracking-wide text-text-secondary uppercase">On this page</p>
         <ul className="flex flex-col gap-stack-xs text-sm">
           {toc.map((item) => (

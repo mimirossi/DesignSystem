@@ -61,14 +61,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.16862745098039217,
-          0.16862745098039217,
-          0.16862745098039217
+          0.16862745583057404,
+          0.16862745583057404,
+          0.16862745583057404
         ],
         "alpha": 1,
         "hex": "#2B2B2B"
       },
-      "$description": "Chiaro → crema/50 · Scuro → nero/800",
+      "$description": "Superficie di popover, menu e select.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:642",
         "com.figma.scopes": [
@@ -88,14 +88,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.16862745098039217,
-          0.16862745098039217,
-          0.16862745098039217
+          0.16862745583057404,
+          0.16862745583057404,
+          0.16862745583057404
         ],
         "alpha": 1,
         "hex": "#2B2B2B"
       },
-      "$description": "Chiaro → crema/100 · Scuro → nero/800",
+      "$description": "Superficie attenuata: lista tabs, skeleton, binari di progress e slider.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:643",
         "com.figma.scopes": [
@@ -115,14 +115,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.2549019607843137,
-          0.2549019607843137,
-          0.2549019607843137
+          0.2549019753932953,
+          0.2549019753932953,
+          0.2549019753932953
         ],
         "alpha": 1,
         "hex": "#414141"
       },
-      "$description": "Chiaro → rosa-chiaro/100 · Scuro → nero/700",
+      "$description": "Sfondo di hover e voce evidenziata (menu, bottoni ghost).",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:644",
         "com.figma.scopes": [
@@ -155,8 +155,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1036",
         "com.figma.scopes": [
-          "TEXT_FILL",
-          "SHAPE_FILL"
+          "SHAPE_FILL",
+          "TEXT_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:b08c25c910551861994d375e39fd18256b9afb07/-1:-1",
@@ -182,8 +182,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1037",
         "com.figma.scopes": [
-          "TEXT_FILL",
-          "SHAPE_FILL"
+          "SHAPE_FILL",
+          "TEXT_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:bbc7d7f56c5ab22660933141e02566836bf9484d/-1:-1",
@@ -264,8 +264,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1039",
         "com.figma.scopes": [
-          "TEXT_FILL",
-          "SHAPE_FILL"
+          "SHAPE_FILL",
+          "TEXT_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:43949fafa5d0031236a744a62f5a02093f225c91/-1:-1",
@@ -291,9 +291,9 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1040",
         "com.figma.scopes": [
-          "TEXT_FILL",
           "SHAPE_FILL",
-          "STROKE_COLOR"
+          "TEXT_FILL",
+          "STROKE"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:89d8e91dbbd0f4e8f006d8e4d86d27ac861e9f2f/-1:-1",
@@ -308,14 +308,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.28627450980392155,
-          0.13333333333333333,
-          0.23921568627450981
+          0.2862745225429535,
+          0.13333334028720856,
+          0.239215686917305
         ],
         "alpha": 1,
         "hex": "#49223D"
       },
-      "$description": "Chiaro → rosa-chiaro/100 · Scuro → rosa-chiaro/800",
+      "$description": "Sfondo del bottone secondario; testo e bordo in action/secondary.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:645",
         "com.figma.scopes": [
@@ -348,7 +348,7 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1042",
         "com.figma.scopes": [
-          "STROKE_COLOR"
+          "STROKE"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:0063cda858141ee6c7c57723ce61285bfca3a622/-1:-1",
@@ -363,18 +363,18 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.16862745098039217,
-          0.16862745098039217,
-          0.16862745098039217
+          0.16862745583057404,
+          0.16862745583057404,
+          0.16862745583057404
         ],
         "alpha": 1,
         "hex": "#2B2B2B"
       },
-      "$description": "Chiaro → crema/50 · Scuro → nero/800",
+      "$description": "Spazio di 3 px tra controllo e focus ring.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:648",
         "com.figma.scopes": [
-          "STROKE_COLOR"
+          "STROKE"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:89400d2af15b6abbe9c547239fab51713b164900/-1:-1",
@@ -455,8 +455,8 @@
       "$extensions": {
         "com.figma.variableId": "VariableID:344:1045",
         "com.figma.scopes": [
-          "TEXT_FILL",
-          "SHAPE_FILL"
+          "SHAPE_FILL",
+          "TEXT_FILL"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:43949fafa5d0031236a744a62f5a02093f225c91/-1:-1",
@@ -487,7 +487,7 @@
           "FRAME_FILL",
           "SHAPE_FILL",
           "TEXT_FILL",
-          "STROKE_COLOR"
+          "STROKE"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:3895ec5cdba9592e5bd6d590e85d4c78efdc8efa/-1:-1",
@@ -516,7 +516,7 @@
           "FRAME_FILL",
           "SHAPE_FILL",
           "TEXT_FILL",
-          "STROKE_COLOR"
+          "STROKE"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:89d8e91dbbd0f4e8f006d8e4d86d27ac861e9f2f/-1:-1",
@@ -533,18 +533,18 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.2549019607843137,
-          0.2549019607843137,
-          0.2549019607843137
+          0.2549019753932953,
+          0.2549019753932953,
+          0.2549019753932953
         ],
         "alpha": 1,
         "hex": "#414141"
       },
-      "$description": "Chiaro → crema/200 · Scuro → nero/700",
+      "$description": "Bordi di card, separatori e tabelle.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:646",
         "com.figma.scopes": [
-          "STROKE_COLOR"
+          "STROKE"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:ebcc9da6554533585460a07b239a4358dfbac5ba/-1:-1",
@@ -559,18 +559,18 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.4627450980392157,
-          0.4627450980392157,
-          0.4627450980392157
+          0.4627451002597809,
+          0.4627451002597809,
+          0.4627451002597809
         ],
         "alpha": 1,
         "hex": "#767676"
       },
-      "$description": "Chiaro → nero/500 · Scuro → nero/500",
+      "$description": "Bordo essenziale dei campi; contrasto ≥3:1 sullo sfondo.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:647",
         "com.figma.scopes": [
-          "STROKE_COLOR"
+          "STROKE"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:a6e47e8a77135cd98ca6189623ef7d56df0487d3/-1:-1",
@@ -587,21 +587,21 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          1.0,
-          0.4980392156862745,
-          0.45098039215686275
+          1,
+          0.49803921580314636,
+          0.45098039507865906
         ],
         "alpha": 1,
         "hex": "#FF7F73"
       },
-      "$description": "Chiaro → rosso/700 · Scuro → rosso/400",
+      "$description": "Errori di validazione e azioni distruttive. Contrasto ≥4.5:1 sullo sfondo.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:649",
         "com.figma.scopes": [
           "FRAME_FILL",
           "SHAPE_FILL",
           "TEXT_FILL",
-          "STROKE_COLOR"
+          "STROKE"
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:f863c3178e90ecccaecc598a9bf71efa01e06415/-1:-1",

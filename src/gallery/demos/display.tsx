@@ -140,7 +140,7 @@ export function CardCoverGrid() {
   ]
 
   return (
-    <div className="grid w-full max-w-3xl grid-cols-1 gap-gap-xl sm:grid-cols-2">
+    <div className="grid w-full max-w-3xl grid-cols-1 gap-gap-xl tablet:grid-cols-2">
       {releases.map((release) => (
         <Card key={release.title} variant="cover" size="sm">
           <CardIllustration svg={release.cover} className={release.tone} />

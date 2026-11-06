@@ -1015,14 +1015,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          1.0,
-          0.9490196078431372,
-          0.9411764705882353
+          1,
+          0.9490196108818054,
+          0.9411764740943909
         ],
         "alpha": 1,
         "hex": "#FFF2F0"
       },
-      "$description": "Rosso 50 · #FFF2F0 · stessa luminosità OKLCH di rosa/50, tinta 27°. Solo per feedback di errore.",
+      "$description": "Rosso 50 · stessa luminosità OKLCH di rosa/50, tinta 27°. Solo per feedback di errore.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:632",
         "com.figma.scopes": [
@@ -1035,14 +1035,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          1.0,
-          0.8627450980392157,
-          0.8470588235294118
+          1,
+          0.8627451062202454,
+          0.8470588326454163
         ],
         "alpha": 1,
         "hex": "#FFDCD8"
       },
-      "$description": "Rosso 100 · #FFDCD8 · stessa luminosità OKLCH di rosa/100, tinta 27°. Solo per feedback di errore.",
+      "$description": "Rosso 100 · stessa luminosità OKLCH di rosa/100, tinta 27°. Solo per feedback di errore.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:633",
         "com.figma.scopes": [
@@ -1055,14 +1055,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          1.0,
-          0.7333333333333333,
-          0.6980392156862745
+          1,
+          0.7333333492279053,
+          0.6980392336845398
         ],
         "alpha": 1,
         "hex": "#FFBBB2"
       },
-      "$description": "Rosso 200 · #FFBBB2 · stessa luminosità OKLCH di rosa/200, tinta 27°. Solo per feedback di errore.",
+      "$description": "Rosso 200 · stessa luminosità OKLCH di rosa/200, tinta 27°. Solo per feedback di errore.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:634",
         "com.figma.scopes": [
@@ -1075,14 +1075,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          1.0,
-          0.592156862745098,
-          0.5490196078431373
+          1,
+          0.5921568870544434,
+          0.5490196347236633
         ],
         "alpha": 1,
         "hex": "#FF978C"
       },
-      "$description": "Rosso 300 · #FF978C · stessa luminosità OKLCH di rosa/300, tinta 27°. Solo per feedback di errore.",
+      "$description": "Rosso 300 · stessa luminosità OKLCH di rosa/300, tinta 27°. Solo per feedback di errore.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:635",
         "com.figma.scopes": [
@@ -1095,14 +1095,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          1.0,
-          0.4980392156862745,
-          0.45098039215686275
+          1,
+          0.49803921580314636,
+          0.45098039507865906
         ],
         "alpha": 1,
         "hex": "#FF7F73"
       },
-      "$description": "Rosso 400 · #FF7F73 · stessa luminosità OKLCH di rosa/400, tinta 27°. Solo per feedback di errore.",
+      "$description": "Rosso 400 · stessa luminosità OKLCH di rosa/400, tinta 27°. Solo per feedback di errore.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:636",
         "com.figma.scopes": [
@@ -1115,14 +1115,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          1.0,
-          0.40784313725490196,
-          0.36470588235294116
+          1,
+          0.40784314274787903,
+          0.364705890417099
         ],
         "alpha": 1,
         "hex": "#FF685D"
       },
-      "$description": "Rosso 500 · #FF685D · stessa luminosità OKLCH di rosa/500, tinta 27°. Solo per feedback di errore.",
+      "$description": "Rosso 500 · stessa luminosità OKLCH di rosa/500, tinta 27°. Solo per feedback di errore.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:637",
         "com.figma.scopes": [
@@ -1135,14 +1135,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.8784313725490196,
-          0.09803921568627451,
-          0.12941176470588237
+          0.8784313797950745,
+          0.09803921729326248,
+          0.12941177189350128
         ],
         "alpha": 1,
         "hex": "#E01921"
       },
-      "$description": "Rosso 600 · #E01921 · stessa luminosità OKLCH di rosa/600, tinta 27°. Solo per feedback di errore.",
+      "$description": "Rosso 600 · stessa luminosità OKLCH di rosa/600, tinta 27°. Solo per feedback di errore.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:638",
         "com.figma.scopes": [
@@ -1155,14 +1155,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.6980392156862745,
-          0.0392156862745098,
-          0.08235294117647059
+          0.6980392336845398,
+          0.03921568766236305,
+          0.08235294371843338
         ],
         "alpha": 1,
         "hex": "#B20A15"
       },
-      "$description": "Rosso 700 · #B20A15 · stessa luminosità OKLCH di rosa/700, tinta 27°. Solo per feedback di errore.",
+      "$description": "Rosso 700 · stessa luminosità OKLCH di rosa/700, tinta 27°. Solo per feedback di errore.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:639",
         "com.figma.scopes": [
@@ -1175,14 +1175,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.5058823529411764,
-          0.043137254901960784,
-          0.058823529411764705
+          0.5058823823928833,
+          0.04313725605607033,
+          0.05882352963089943
         ],
         "alpha": 1,
         "hex": "#810B0F"
       },
-      "$description": "Rosso 800 · #810B0F · stessa luminosità OKLCH di rosa/800, tinta 27°. Solo per feedback di errore.",
+      "$description": "Rosso 800 · stessa luminosità OKLCH di rosa/800, tinta 27°. Solo per feedback di errore.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:640",
         "com.figma.scopes": [
@@ -1195,14 +1195,14 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.30980392156862746,
-          0.03137254901960784,
-          0.03137254901960784
+          0.30980393290519714,
+          0.0313725508749485,
+          0.0313725508749485
         ],
         "alpha": 1,
         "hex": "#4F0808"
       },
-      "$description": "Rosso 900 · #4F0808 · stessa luminosità OKLCH di rosa/900, tinta 27°. Solo per feedback di errore.",
+      "$description": "Rosso 900 · stessa luminosità OKLCH di rosa/900, tinta 27°. Solo per feedback di errore.",
       "$extensions": {
         "com.figma.variableId": "VariableID:570:641",
         "com.figma.scopes": [

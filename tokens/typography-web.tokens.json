@@ -161,7 +161,7 @@
     },
     "letter-spacing": {
       "$type": "number",
-      "$value": 0.8,
+      "$value": 0.800000011920929,
       "$description": "Display L · Web · 80 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:648",
@@ -233,7 +233,7 @@
     },
     "line-height": {
       "$type": "number",
-      "$value": 57.6,
+      "$value": 57.599998474121094,
       "$description": "Titolo 1 · Web · 64 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:653",
@@ -250,7 +250,7 @@
     },
     "letter-spacing": {
       "$type": "number",
-      "$value": 0.64,
+      "$value": 0.6399999856948853,
       "$description": "Titolo 1 · Web · 64 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:654",
@@ -322,7 +322,7 @@
     },
     "line-height": {
       "$type": "number",
-      "$value": 43.2,
+      "$value": 43.20000076293945,
       "$description": "Titolo 2 · Web · 48 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:661",
@@ -339,7 +339,7 @@
     },
     "letter-spacing": {
       "$type": "number",
-      "$value": 0.48,
+      "$value": 0.47999998927116394,
       "$description": "Titolo 2 · Web · 48 px · interlinea 90% · spaziatura 1% · uso maiuscolo. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:662",
@@ -411,7 +411,7 @@
     },
     "line-height": {
       "$type": "number",
-      "$value": 35.2,
+      "$value": 35.20000076293945,
       "$description": "Titolo 3 · Web · 32 px · interlinea 110% · spaziatura -1%. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:669",
@@ -428,7 +428,7 @@
     },
     "letter-spacing": {
       "$type": "number",
-      "$value": -0.32,
+      "$value": -0.3199999928474426,
       "$description": "Titolo 3 · Web · 32 px · interlinea 110% · spaziatura -1%. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:670",
@@ -500,7 +500,7 @@
     },
     "line-height": {
       "$type": "number",
-      "$value": 26.4,
+      "$value": 26.399999618530273,
       "$description": "Sottotitolo · Web · 22 px · interlinea 120% · spaziatura -0.5%. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:675",
@@ -517,7 +517,7 @@
     },
     "letter-spacing": {
       "$type": "number",
-      "$value": -0.11,
+      "$value": -0.10999999940395355,
       "$description": "Sottotitolo · Web · 22 px · interlinea 120% · spaziatura -0.5%. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:676",
@@ -589,7 +589,7 @@
     },
     "line-height": {
       "$type": "number",
-      "$value": 22.4,
+      "$value": 22.399999618530273,
       "$description": "Lead · Web · 16 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:682",
@@ -678,7 +678,7 @@
     },
     "line-height": {
       "$type": "number",
-      "$value": 20.3,
+      "$value": 20.299999237060547,
       "$description": "Body · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:689",
@@ -767,7 +767,7 @@
     },
     "line-height": {
       "$type": "number",
-      "$value": 20.3,
+      "$value": 20.299999237060547,
       "$description": "Body strong · Web · 14 px · interlinea 145% · spaziatura 0%. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:694",
@@ -856,7 +856,7 @@
     },
     "line-height": {
       "$type": "number",
-      "$value": 16.8,
+      "$value": 16.799999237060547,
       "$description": "Caption · Web · 12 px · interlinea 140% · spaziatura 0%. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:701",
@@ -945,7 +945,7 @@
     },
     "line-height": {
       "$type": "number",
-      "$value": 14.4,
+      "$value": 14.399999618530273,
       "$description": "Info · Web · 12 px · interlinea 120% · spaziatura 8% · uso maiuscolo. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:707",
@@ -962,7 +962,7 @@
     },
     "letter-spacing": {
       "$type": "number",
-      "$value": 0.96,
+      "$value": 0.9599999785423279,
       "$description": "Info · Web · 12 px · interlinea 120% · spaziatura 8% · uso maiuscolo. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:708",
@@ -1051,7 +1051,7 @@
     },
     "letter-spacing": {
       "$type": "number",
-      "$value": 0.28,
+      "$value": 0.2800000011920929,
       "$description": "Label · Web · 14 px · interlinea 100% · spaziatura 2%. Scala per interfacce e componenti.",
       "$extensions": {
         "com.figma.variableId": "VariableID:571:715",

@@ -23,7 +23,7 @@ export function HomePage() {
       {CATEGORIES.map((category) => (
         <section key={category} className="flex flex-col gap-stack-md">
           <h2 className="font-heading text-lg font-medium">{category}</h2>
-          <div className="grid gap-gap-lg sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-gap-lg tablet:grid-cols-2 desktop:grid-cols-3">
             {registry
               .filter((entry) => entry.category === category)
               .map((entry) => {

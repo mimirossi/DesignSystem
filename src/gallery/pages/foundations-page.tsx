@@ -13,6 +13,7 @@ import {
   contrast,
   paletteHex,
   semanticRoles,
+  gridModes,
   radiusTokens,
   spacingPrimitives,
   spacingRoles,
@@ -61,7 +62,7 @@ function Palette() {
             <span className="font-medium">{family.label}</span>
             <span className="text-text-secondary">{family.role}</span>
           </div>
-          <div className="grid grid-cols-5 gap-gap-sm sm:grid-cols-10">
+          <div className="grid grid-cols-5 gap-gap-sm tablet:grid-cols-10">
             {STEPS.map((step) => {
               const hex = paletteHex(family.id, step)
               const token = `${family.id}-${step}`
@@ -290,7 +291,7 @@ function BrandSample({ mode }: { mode: "light" | "dark" }) {
       </div>
       {/* Stacks below 28rem of card width instead of wrapping, so the
           distances stay on tokens: stack-sm stacked, gap-md side by side. */}
-      <div className="flex flex-col items-start gap-stack-sm @md:flex-row @md:items-center @md:gap-gap-md">
+      <div className="flex flex-col items-start gap-stack-sm @tablet:flex-row @tablet:items-center @tablet:gap-gap-md">
         <Button size="lg" data-force-focus="">
           Prendi il tuo posto
           <ArrowRightIcon data-icon="inline-end" />
@@ -414,7 +415,7 @@ const TYPE_CLASS: Record<string, string> = {
 function TypeScale() {
   return (
     <div className="flex flex-col gap-stack-md">
-      <div className="flex flex-col gap-stack-sm rounded-xl border-thin p-inset-md sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-stack-sm rounded-xl border-thin p-inset-md tablet:flex-row tablet:items-center tablet:justify-between">
         <div className="flex flex-col gap-stack-xs">
           <span className="text-sm font-medium">Families</span>
           <span className="text-sm text-text-secondary">
@@ -434,7 +435,7 @@ function TypeScale() {
           return (
             <div
               key={role.name}
-              className="grid gap-stack-md border-b-thin py-inset-lg last:border-b-0 lg:grid-cols-[14rem_1fr]"
+              className="grid gap-stack-md border-b-thin py-inset-lg last:border-b-0 desktop:grid-cols-[14rem_1fr]"
             >
               <div className="flex flex-col gap-stack-xs text-sm">
                 <span className="font-medium">{role.label}</span>
@@ -481,7 +482,7 @@ const SPACING_CLASS: Record<string, string> = {
 
 function ProximityExample() {
   return (
-    <div className="grid gap-gap-lg lg:grid-cols-[1fr_16rem]">
+    <div className="grid gap-gap-lg desktop:grid-cols-[1fr_16rem]">
       <div className="preview-surface rounded-lg border-thin p-inset-lg">
         <div className="flex max-w-sm flex-col gap-stack-lg rounded-xl bg-surface-default p-inset-lg ring-thin ring-text-primary/10">
           <div className="flex flex-col gap-stack-md">
@@ -550,7 +551,7 @@ function SpacingScale() {
     <div className="flex flex-col gap-stack-xl">
       <ProximityExample />
 
-      <div className="grid gap-gap-lg md:grid-cols-2">
+      <div className="grid gap-gap-lg tablet:grid-cols-2">
         {spacingRoles().map(({ group, description, roles }) => (
           <div
             key={group}
@@ -618,6 +619,71 @@ function SpacingScale() {
   )
 }
 
+/* ---------- Breakpoints & grid ---------- */
+
+const PREFIX: Record<string, string> = {
+  mobile: "(none)",
+  tablet: "tablet:",
+  desktop: "desktop:",
+}
+
+function GridScale() {
+  return (
+    <div className="flex flex-col gap-stack-md">
+      <div className="overflow-x-auto rounded-lg border-thin">
+        <table className="w-full type-body">
+          <thead>
+            <tr className="border-b-thin bg-surface-muted/40 text-left">
+              <th className="px-inset-md py-inset-sm-md type-body-strong">Device</th>
+              <th className="px-inset-md py-inset-sm-md type-body-strong">Prefix</th>
+              <th className="px-inset-md py-inset-sm-md type-body-strong">From</th>
+              <th className="px-inset-md py-inset-sm-md type-body-strong">Design width</th>
+              <th className="px-inset-md py-inset-sm-md type-body-strong">Columns</th>
+              <th className="px-inset-md py-inset-sm-md type-body-strong">Gutter</th>
+              <th className="px-inset-md py-inset-sm-md type-body-strong">Margin</th>
+              <th className="px-inset-md py-inset-sm-md type-body-strong">Container</th>
+            </tr>
+          </thead>
+          <tbody>
+            {gridModes().map((mode) => (
+              <tr key={mode.name} className="border-b-thin last:border-b-0">
+                <td className="px-inset-md py-inset-sm-md capitalize">{mode.name}</td>
+                <td className="px-inset-md py-inset-sm-md font-mono type-caption">
+                  {PREFIX[mode.name]}
+                </td>
+                <td className="px-inset-md py-inset-sm-md tabular-nums">{mode.minWidth}px</td>
+                <td className="px-inset-md py-inset-sm-md tabular-nums">{mode.referenceWidth}px</td>
+                <td className="px-inset-md py-inset-sm-md tabular-nums">{mode.columns}</td>
+                <td className="px-inset-md py-inset-sm-md tabular-nums">{mode.gutter}px</td>
+                <td className="px-inset-md py-inset-sm-md tabular-nums">{mode.margin}px</td>
+                <td className="px-inset-md py-inset-sm-md tabular-nums">max {mode.containerMax}px</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="flex flex-col gap-stack-xs">
+        <span className="type-body-strong">Live grid · current device</span>
+        <div className="layout-grid rounded-lg border-thin p-inset-sm">
+          {Array.from({ length: 12 }, (_, i) => (
+            <span
+              key={i}
+              className="h-12 rounded-xs bg-action-secondary-surface [&:nth-child(n+5)]:hidden tablet:[&:nth-child(n+5)]:block tablet:[&:nth-child(n+9)]:hidden desktop:[&:nth-child(n+9)]:block"
+            />
+          ))}
+        </div>
+        <span className="type-caption text-text-secondary">
+          <code className="font-mono">layout-container</code> centres the page ·{" "}
+          <code className="font-mono">layout-grid</code> gives columns and gutter ·{" "}
+          <code className="font-mono">gap-gutter</code> and{" "}
+          <code className="font-mono">px-margin</code> reuse the same values.
+        </span>
+      </div>
+    </div>
+  )
+}
+
 /* ---------- Page ---------- */
 
 export function FoundationsPage() {
@@ -642,7 +708,7 @@ export function FoundationsPage() {
         description="The Figma application example, rebuilt with the components in both themes."
       >
         <div className="flex flex-col gap-stack-xs">
-          <div className="grid gap-gap-lg lg:grid-cols-2">
+          <div className="grid gap-gap-lg desktop:grid-cols-2">
             <BrandSample mode="light" />
             <BrandSample mode="dark" />
           </div>
@@ -673,7 +739,7 @@ export function FoundationsPage() {
         title="Theme contrast"
         description="How the shadcn/ui variables map onto the roles, checked against WCAG AA: 4.5:1 for text, 3:1 for control borders and focus rings."
       >
-        <div className="grid gap-gap-lg lg:grid-cols-2">
+        <div className="grid gap-gap-lg desktop:grid-cols-2">
           <ContrastPanel mode="light" />
           <ContrastPanel mode="dark" />
         </div>
@@ -701,6 +767,14 @@ export function FoundationsPage() {
         description="Distance expresses relationship: the more related two elements are, the closer they sit. Every value is on the 4px grid; use the role tokens, not raw numbers."
       >
         <SpacingScale />
+      </Section>
+
+      <Section
+        id="grid"
+        title="Breakpoints & grid"
+        description="Three devices from Figma (Web — Breakpoint, Web — Griglie). Tailwind's default breakpoints are off: use tablet: and desktop:."
+      >
+        <GridScale />
       </Section>
     </div>
   )

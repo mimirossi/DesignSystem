@@ -21,6 +21,7 @@ export const FAMILIES = [
   { id: "verde", label: "Verde", code: "V", role: "Accent" },
   { id: "nero", label: "Nero", code: "N", role: "Neutral · dark" },
   { id: "crema", label: "Crema", code: "C", role: "Neutral · warm" },
+  { id: "rosso", label: "Rosso", code: "E", role: "Error feedback" },
 ] as const
 
 export const STEPS = [
@@ -203,4 +204,40 @@ export function radiusTokens(): RadiusToken[] {
     px: token.$value,
     alias: token.$extensions?.["com.figma.aliasData"]?.targetVariableName ?? "",
   }))
+}
+
+export type GridMode = {
+  name: string
+  minWidth: number
+  referenceWidth: number
+  columns: number
+  gutter: number
+  margin: number
+  containerMax: number
+}
+
+type NumberToken = { $value: number }
+type GridTokens = {
+  gutter: NumberToken
+  breakpoint: { "min-width": NumberToken }
+  viewport: { "reference-width": NumberToken }
+  columns: { count: NumberToken }
+  margin: { inline: NumberToken }
+  container: { "max-width": NumberToken }
+}
+
+/** Breakpoints and grids from tokens/grid-*.tokens.json (Figma · Web — Griglie). */
+export function gridModes(): GridMode[] {
+  return (["mobile", "tablet", "desktop"] as const).map((name) => {
+    const t = load(`grid-${name}`) as unknown as GridTokens
+    return {
+      name,
+      minWidth: t.breakpoint["min-width"].$value,
+      referenceWidth: t.viewport["reference-width"].$value,
+      columns: t.columns.count.$value,
+      gutter: t.gutter.$value,
+      margin: t.margin.inline.$value,
+      containerMax: t.container["max-width"].$value,
+    }
+  })
 }

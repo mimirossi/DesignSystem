@@ -25,11 +25,11 @@ export function App() {
   return (
     <div className="min-h-svh">
       <header className="sticky top-0 z-40 border-b-thin bg-background-default/80 backdrop-blur">
-        <div className="mx-auto flex h-14 max-w-screen-2xl items-center gap-gap-sm px-inset-md sm:px-inset-lg">
+        <div className="layout-container flex h-14 items-center gap-gap-sm">
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden"
+            className="desktop:hidden"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((open) => !open)}
@@ -48,18 +48,18 @@ export function App() {
         </div>
       </header>
 
-      <div className="mx-auto flex max-w-screen-2xl">
+      <div className="layout-container flex">
         <aside
           className={
             menuOpen
-              ? "fixed inset-x-0 top-14 bottom-0 z-30 overflow-y-auto bg-background-default p-inset-md lg:hidden"
-              : "sticky top-14 hidden h-[calc(100svh-3.5rem)] w-60 shrink-0 overflow-y-auto border-r-thin p-inset-md lg:block"
+              ? "fixed inset-x-0 top-14 bottom-0 z-30 overflow-y-auto bg-background-default p-inset-md desktop:hidden"
+              : "sticky top-14 hidden h-[calc(100svh-3.5rem)] w-60 shrink-0 overflow-y-auto border-r-thin p-inset-md desktop:block"
           }
         >
           <SidebarNav active={entry ? entry.slug : route} onNavigate={() => setMenuOpen(false)} />
         </aside>
 
-        <main className="min-w-0 flex-1 px-inset-md py-inset-xl sm:px-inset-xl lg:py-inset-2xl">
+        <main className="min-w-0 flex-1 px-inset-md py-inset-xl tablet:px-inset-xl desktop:py-inset-2xl">
           {entry ? (
             <ComponentPage key={entry.slug} entry={entry} />
           ) : route === "foundations" ? (

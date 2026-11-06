@@ -26,7 +26,7 @@ export function DialogBasic() {
   return (
     <Dialog>
       <DialogTrigger render={<Button variant="outline" />}>Edit profile</DialogTrigger>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="tablet:max-w-md">
         <DialogHeader>
           <DialogTitle>Edit profile</DialogTitle>
           <DialogDescription>Make changes to your profile here. Click save when you're done.</DialogDescription>
@@ -54,7 +54,7 @@ export function DialogConfirm() {
   return (
     <Dialog>
       <DialogTrigger render={<Button variant="destructive" />}>Delete project</DialogTrigger>
-      <DialogContent showCloseButton={false} className="sm:max-w-sm">
+      <DialogContent showCloseButton={false} className="tablet:max-w-sm">
         <DialogHeader>
           <DialogTitle>Delete this project?</DialogTitle>
           <DialogDescription>This action cannot be undone. All files will be permanently removed.</DialogDescription>

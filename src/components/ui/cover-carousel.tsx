@@ -151,7 +151,7 @@ function CoverCarousel({
                 key={item.id}
                 data-id={item.id}
                 aria-label={`${i + 1} of ${items.length}: ${item.title}`}
-                className="flex w-[min(44rem,85%)] shrink-0 snap-start flex-col gap-stack-md sm:flex-row sm:items-end sm:gap-gap-lg"
+                className="flex w-[min(44rem,85%)] shrink-0 snap-start flex-col gap-stack-md tablet:flex-row tablet:items-end tablet:gap-gap-lg"
               >
                 <div
                   className="w-full max-w-80 shrink-0"

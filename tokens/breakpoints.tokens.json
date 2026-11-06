@@ -1,0 +1,77 @@
+{
+  "mobile": {
+    "min-width": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Soglia inclusiva. Mobile: 0–767; Tablet: 768–1023; Desktop: da 1024. Non ridimensiona automaticamente i frame e non cambia modalità in base alla larghezza.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:999",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ]
+      }
+    },
+    "reference-width": {
+      "$type": "number",
+      "$value": 390,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Larghezza di riferimento per progettare e controllare il layout; non è una soglia di breakpoint.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1000",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ]
+      }
+    }
+  },
+  "tablet": {
+    "min-width": {
+      "$type": "number",
+      "$value": 768,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Soglia inclusiva. Mobile: 0–767; Tablet: 768–1023; Desktop: da 1024. Non ridimensiona automaticamente i frame e non cambia modalità in base alla larghezza.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1001",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ]
+      }
+    },
+    "reference-width": {
+      "$type": "number",
+      "$value": 834,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Larghezza di riferimento per progettare e controllare il layout; non è una soglia di breakpoint.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1002",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ]
+      }
+    }
+  },
+  "desktop": {
+    "min-width": {
+      "$type": "number",
+      "$value": 1024,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Soglia inclusiva. Mobile: 0–767; Tablet: 768–1023; Desktop: da 1024. Non ridimensiona automaticamente i frame e non cambia modalità in base alla larghezza.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1003",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ]
+      }
+    },
+    "reference-width": {
+      "$type": "number",
+      "$value": 1440,
+      "$description": "Base proposta per il web responsive LOCAMIMI, non ricavata dalle grafiche social o stampa. Tutte le misure sono in px. Larghezza di riferimento per progettare e controllare il layout; non è una soglia di breakpoint.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:359:1004",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ]
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Base"
+  }
+}

@@ -54,7 +54,7 @@ function AlertDescription({
     <div
       data-slot="alert-description"
       className={cn(
-        "type-body text-balance text-text-secondary md:text-pretty [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-text-primary [&_p:not(:last-child)]:mb-stack-md",
+        "type-body text-balance text-text-secondary tablet:text-pretty [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-text-primary [&_p:not(:last-child)]:mb-stack-md",
         className
       )}
       {...props}

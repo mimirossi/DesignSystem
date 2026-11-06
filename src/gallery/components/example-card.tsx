@@ -32,7 +32,7 @@ export function ExampleCard({
           <CopyButton value={code} />
         </div>
         <TabsContent value="preview">
-          <div className="preview-surface flex min-h-48 flex-wrap items-center justify-center gap-gap-md rounded-lg border-thin p-inset-lg sm:p-inset-2xl">
+          <div className="preview-surface flex min-h-48 flex-wrap items-center justify-center gap-gap-md rounded-lg border-thin p-inset-lg tablet:p-inset-2xl">
             {children}
           </div>
         </TabsContent>
