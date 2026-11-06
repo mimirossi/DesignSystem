@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { CodeBlock } from "@/gallery/components/code-block"
+import utilsSource from "@/lib/utils.ts?raw"
 import { ExampleCard } from "@/gallery/components/example-card"
 import { StateMatrix } from "@/gallery/components/state-matrix"
 import type { ComponentEntry } from "@/gallery/registry"
@@ -56,6 +57,7 @@ export function ComponentPage({ entry }: { entry: ComponentEntry }) {
           <SectionHeading id="source" title="Source">
             Copy the component into your project, e.g. <code className="font-mono text-xs">src/{entry.sources[0].file}</code>.
           </SectionHeading>
+          <SetupSteps />
           {entry.sources.length === 1 ? (
             <CodeBlock code={entry.sources[0].code} maxHeight="32rem" />
           ) : (
@@ -94,5 +96,53 @@ export function ComponentPage({ entry }: { entry: ComponentEntry }) {
         </ul>
       </aside>
     </div>
+  )
+}
+
+const INSTALL =
+  "npm i @base-ui/react class-variance-authority cn lucide-react tw-animate-css shadcn @fontsource-variable/bricolage-grotesque"
+
+const REPO = "https://github.com/mimirossi/DesignSystem/blob/main"
+
+/** What a fresh project needs once before any copied component renders. */
+function SetupSteps() {
+  return (
+    <details className="group rounded-lg border-thin border-border-default bg-surface-default">
+      <summary className="cursor-pointer px-inset-md py-inset-sm-md type-body-strong">
+        Setup, once per project — without it the classes have no values and nothing shows
+      </summary>
+      <ol className="flex list-decimal flex-col gap-stack-md px-inset-md pb-inset-md pl-inset-xl type-body">
+        <li className="flex flex-col gap-stack-xs">
+          <span>
+            A React project with Tailwind CSS v4 and the <code className="font-mono type-caption">@/</code> alias
+            to <code className="font-mono type-caption">src/</code> (the shadcn/ui setup). Then install:
+          </span>
+          <CodeBlock code={INSTALL} />
+        </li>
+        <li className="flex flex-col gap-stack-xs">
+          <span>
+            <code className="font-mono type-caption">src/lib/utils.ts</code> — class merging that knows the LOCAMIMI
+            tokens. Replace the shadcn default: theirs drops <code className="font-mono type-caption">border-thin</code>{" "}
+            and mixes up type roles.
+          </span>
+          <CodeBlock code={utilsSource} maxHeight="16rem" />
+        </li>
+        <li className="flex flex-col gap-stack-xs">
+          <span>
+            The theme: copy{" "}
+            <a className="text-text-link underline underline-offset-4" href={`${REPO}/src/index.css`} target="_blank" rel="noreferrer">
+              src/index.css
+            </a>{" "}
+            (colors, spacing, radius, stroke, type, breakpoints, grid) as your main CSS file, and the DAMN font{" "}
+            <a className="text-text-link underline underline-offset-4" href={`${REPO}/src/assets/fonts/damn.ttf`} target="_blank" rel="noreferrer">
+              src/assets/fonts/damn.ttf
+            </a>
+            . Every class in the component — <code className="font-mono type-caption">bg-action-primary</code>,{" "}
+            <code className="font-mono type-caption">px-inset-sm-md</code>, <code className="font-mono type-caption">type-label</code> — is
+            defined there.
+          </span>
+        </li>
+      </ol>
+    </details>
   )
 }

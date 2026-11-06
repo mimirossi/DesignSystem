@@ -1,6 +1,6 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
-import { cn } from "cn"
+import { cn } from "@/lib/utils"
 
 const cardVariants = cva(
   "group/card overflow-hidden rounded-xl bg-surface-default type-body text-text-primary ring-thin ring-text-primary/10 [--card-spacing:var(--spacing-inset-lg)] data-[size=sm]:[--card-spacing:var(--spacing-inset-md)]",

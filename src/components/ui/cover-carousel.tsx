@@ -1,7 +1,7 @@
 import * as React from "react"
 import { flushSync } from "react-dom"
 import { ArrowRightIcon, XIcon } from "lucide-react"
-import { cn } from "cn"
+import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardIllustration, CardMedia, CardOverlay, CardTitle } from "@/components/ui/card"
 
