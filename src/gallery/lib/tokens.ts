@@ -159,12 +159,15 @@ export function spacingRoles(): {
       return {
         group,
         description: (first.$description ?? "").split(".")[0],
-        roles: Object.entries(steps).map(([name, token]) => ({
-          group,
-          name,
-          px: token.$value,
-          alias: `space/${token.$value}`,
-        })),
+        // Figma appends new variables at the end of a group; list by value.
+        roles: Object.entries(steps)
+          .map(([name, token]) => ({
+            group,
+            name,
+            px: token.$value,
+            alias: `space/${token.$value}`,
+          }))
+          .sort((a, b) => a.px - b.px),
       }
     })
 }
